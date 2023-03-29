@@ -97,7 +97,6 @@ for index, row in df.iterrows():
         notes.append(note)
         agentRecord['notes'] = notes
 
-
     # Create dictionary for item log.
     itemLog = {}
 
@@ -111,9 +110,9 @@ for index, row in df.iterrows():
             post = requests.post(baseURL+'/agents/corporate_entities', headers=headers, data=agentRecord).json()
             print(json.dumps(post))
             uri = post['uri']
-            title = post['uri']
+            sort_name = post['sort_name']
             print('Corporate entity successfully created with URI: {}'.format(uri))
-            itemLog = {'uri': uri, 'title': title}
+            itemLog = {'uri': uri, 'sort_name': sort_name}
             # Add item log to list of logs
             logForAllItems.append(itemLog)
 
@@ -145,9 +144,9 @@ log = pd.DataFrame.from_dict(logForAllItems)
 
 # Create CSV of all item logs.
 dt = datetime.now().strftime('%Y-%m-%d %H.%M.%S')
-familyCSV = 'postNewFamilyEntities_'+dt+'.csv'
-log.to_csv(familyCSV)
-print('{} created.'.format(familyCSV))
+corporateCSV = 'postNewCorporateAgents_'+dt+'.csv'
+log.to_csv(corporateCSV)
+print('{} created.'.format(corporateCSV))
 
 elapsedTime = time.time() - startTime
 m, s = divmod(elapsedTime, 60)
