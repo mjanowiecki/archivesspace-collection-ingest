@@ -57,7 +57,10 @@ for index, row in df.iterrows():
     # Get agent information from CSV.
     agentRecord = {'agent_type': 'agent_family', 'publish': True}
     names = []
-    name = {}
+    name = {'jsonmodel_type': 'name_family',
+            'sort_name_auto_generate': True,
+            'authorized': True,
+            'is_display_name': True}
     ev.add_to_dict(row, name, 'family_name', 'family_name')
     ev.add_to_dict(row, name, 'sort_name', 'sort_name')
     ev.add_to_dict(row, name, 'rules', 'rules')

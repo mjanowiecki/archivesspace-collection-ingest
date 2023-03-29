@@ -59,7 +59,10 @@ for index, row in df.iterrows():
     agentRecord = {'agent_type': 'agent_person'}
     ev.add_to_dict(row, agentRecord, 'publish', 'publish_person')
     names = []
-    name = {'jsonmodel_type': 'name_person'}
+    name = {'jsonmodel_type': 'name_person',
+            'sort_name_auto_generate': True,
+            'authorized': True,
+            'is_display_name': True}
     ev.add_to_dict(row, name, 'primary_name', 'primary_name')
     ev.add_to_dict(row, name, 'rest_of name', 'rest_of name')
     ev.add_to_dict(row, name, 'name_order', 'name_order')

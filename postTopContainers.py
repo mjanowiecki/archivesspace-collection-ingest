@@ -58,7 +58,7 @@ for index, row in df.iterrows():
     # Build JSON record for top container.
     containerRecord = {'jsonmodel_type': 'top_container', 'publish': True, 'restricted': False,
                        'repository': {'ref': '/repositories/3'}}
-    ev.add_to_dict(row, containerRecord, 'barcode', barcode)
+    ev.add_to_dict(row, containerRecord, 'barcode', 'barcode')
     ev.add_to_dict(row, containerRecord, 'indicator', 'indicator')
 
     locations = []
