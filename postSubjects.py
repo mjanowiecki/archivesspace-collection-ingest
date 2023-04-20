@@ -58,9 +58,9 @@ for index, row in df.iterrows():
     authority_id = row['authority_id']
 
     # Build JSON record for subject.
-    subjectRecord = {}
+    subjectRecord = {'jsonmodel_type': 'subject'}
     terms = []
-    term_dict = {'jsonmodel_type': 'subject', 'term':  term, 'term_type': subject_type, 'vocabulary': '/vocabularies/1'}
+    term_dict = {'jsonmodel_type': 'term', 'term':  term, 'term_type': subject_type, 'vocabulary': '/vocabularies/1'}
     terms.append(term_dict)
     subjectRecord['terms'] = terms
     subjectRecord['title'] = term
