@@ -126,7 +126,7 @@ for index, row in df.iterrows():
         except KeyError:
             # If JSON error occurs, record here.
             error = post['error']
-            itemLog = {'error': error, 'term': term}
+            itemLog = {'error': error, 'sort_name': sort_name}
             # Add item log to list of logs
             logForAllItems.append(itemLog)
             print('POST to AS failed.')
