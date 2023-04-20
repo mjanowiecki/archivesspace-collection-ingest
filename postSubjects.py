@@ -66,6 +66,7 @@ for index, row in df.iterrows():
     subjectRecord['title'] = term
     subjectRecord['publish'] = True
     subjectRecord['source'] = source
+    subjectRecord['vocabulary'] = '/vocabularies/1'
     subjectRecord['authority_id'] = authority_id
 
     # Create dictionary for item log.
@@ -74,11 +75,13 @@ for index, row in df.iterrows():
     if postRecord == 'True':
         # Create JSON record for subject.
         subjectRecord = json.dumps(subjectRecord)
+        print(subjectRecord)
         print('JSON created for {}.'.format(term))
 
         try:
             # Try to POST JSON to ArchivesSpace API subject endpoint.
             post = requests.post(baseURL+'/subjects', headers=headers, data=subjectRecord).json()
+            print(post)
             # Get URI and add to item log
             uri = post['uri']
             print('Subject successfully created with URI: {}'.format(uri))
@@ -91,8 +94,15 @@ for index, row in df.iterrows():
             itemLog = {'uri': 'error', 'term': term}
             # Add item log to list of logs
             logForAllItems.append(itemLog)
-            print('POST to AS failed, breaking loop.')
-            break
+            print('POST to AS failed.')
+
+        except KeyError:
+            # If JSON error occurs, record here.
+            error = post['error']
+            itemLog = {'error': error, 'term': term}
+            # Add item log to list of logs
+            logForAllItems.append(itemLog)
+            print('POST to AS failed.')
 
     else:
         # Create JSON records on your computer to review. Does not post to AS.
