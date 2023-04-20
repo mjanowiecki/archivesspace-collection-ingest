@@ -122,7 +122,14 @@ for index, row in df.iterrows():
             # Add item log to list of logs
             logForAllItems.append(itemLog)
             print('POST to AS failed, breaking loop.')
-            break
+
+        except KeyError:
+            # If JSON error occurs, record here.
+            error = post['error']
+            itemLog = {'error': error, 'term': term}
+            # Add item log to list of logs
+            logForAllItems.append(itemLog)
+            print('POST to AS failed.')
 
     else:
         # Create JSON records on your computer to review. Does not post to AS.
