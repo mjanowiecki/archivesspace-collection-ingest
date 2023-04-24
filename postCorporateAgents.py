@@ -52,8 +52,8 @@ df = pd.read_csv(filename)
 logForAllItems = []
 for index, row in df.iterrows():
     # Get agent information from CSV.
-    sort_name = row['sort_name']
-    print('Gathering corporate entity #{}: {}.'.format(index, sort_name))
+    primary_name = row['primary_name']
+    print('Gathering corporate entity #{}: {}.'.format(index, primary_name))
 
     agentRecord = {'jsonmodel_type': 'agent_corporate_entity'}
     ev.add_to_dict(row, agentRecord, 'publish', 'publish_corporate_body')
@@ -68,7 +68,6 @@ for index, row in df.iterrows():
     ev.add_to_dict(row, name, 'subordinate_name_3', 'subordinate_name_3')
     ev.add_to_dict(row, name, 'subordinate_name_4', 'subordinate_name_4')
     ev.add_to_dict(row, name, 'qualifier', 'qualifier')
-    ev.add_to_dict(row, name, 'sort_name', 'sort_name')
     ev.add_to_dict(row, name, 'authority_id', 'authority_id')
     ev.add_to_dict(row, name, 'source', 'source')
     ev.add_to_dict(row, name, 'rules', 'rules')
@@ -110,15 +109,15 @@ for index, row in df.iterrows():
             post = requests.post(baseURL+'/agents/corporate_entities', headers=headers, data=agentRecord).json()
             print(json.dumps(post))
             uri = post['uri']
-            sort_name = post['sort_name']
+            title = post['title']
             print('Corporate entity successfully created with URI: {}'.format(uri))
-            itemLog = {'uri': uri, 'sort_name': sort_name}
+            itemLog = {'uri': uri, 'title': title}
             # Add item log to list of logs
             logForAllItems.append(itemLog)
 
         except requests.exceptions.JSONDecodeError:
             # If POST to ArchivesSpace fails, break loop.
-            itemLog = {'uri': 'error', 'sort_name': sort_name}
+            itemLog = {'uri': 'error', 'primary_name': primary_name}
             # Add item log to list of logs
             logForAllItems.append(itemLog)
             print('POST to AS failed, breaking loop.')
@@ -126,7 +125,7 @@ for index, row in df.iterrows():
         except KeyError:
             # If JSON error occurs, record here.
             error = post['error']
-            itemLog = {'error': error, 'sort_name': sort_name}
+            itemLog = {'error': error, 'primary_name': primary_name}
             # Add item log to list of logs
             logForAllItems.append(itemLog)
             print('POST to AS failed.')
