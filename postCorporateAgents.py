@@ -102,7 +102,7 @@ for index, row in df.iterrows():
     if postRecord == 'True':
         # Create JSON record for corporate entity.
         agentRecord = json.dumps(agentRecord)
-        print('JSON created for {}.'.format(sort_name))
+        print('JSON created for {}.'.format(primary_name))
 
         try:
             # Try to POST JSON to ArchivesSpace API corporate entities' endpoint.
@@ -140,7 +140,7 @@ for index, row in df.iterrows():
         with open(directory+ca_filename, 'w') as fp:
             json.dump(agentRecord, fp)
         print('Agent record JSON successfully created with filename {}'.format(ca_filename))
-        itemLog = {'filename': ca_filename, 'sort_name': sort_name}
+        itemLog = {'filename': ca_filename, 'primary_name': primary_name}
         logForAllItems.append(itemLog)
     print('')
 
