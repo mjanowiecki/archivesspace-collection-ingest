@@ -64,7 +64,7 @@ for index, row in df.iterrows():
             'authorized': True,
             'is_display_name': True}
     ev.add_to_dict(row, name, 'primary_name', 'primary_name')
-    ev.add_to_dict(row, name, 'rest_of name', 'rest_of name')
+    ev.add_to_dict(row, name, 'rest_of_name', 'rest_of_name')
     ev.add_to_dict(row, name, 'name_order', 'name_order')
     ev.add_to_dict(row, name, 'sort_name', 'sort_name')
     ev.add_to_dict(row, name, 'authority_id', 'authority_id')
@@ -88,6 +88,7 @@ for index, row in df.iterrows():
     subnote = {}
     ev.add_to_dict(row, note, 'jsonmodel_type', 'note_jsonmodel_type')
     ev.add_to_dict(row, note, 'publish', 'publish_note')
+    ev.add_to_dict(row, note, 'label', 'label')
     ev.add_to_dict(row, subnote, 'content', 'content')
     ev.add_to_dict(row, subnote, 'jsonmodel_type', 'subnote_jsonmodel_type')
     ev.add_to_dict(row, subnote, 'publish', 'publish_subnote')
