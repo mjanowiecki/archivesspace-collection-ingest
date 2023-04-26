@@ -1,0 +1,37 @@
+{
+  "lock_version": 22,
+  "barcode": "31151030135432",
+  "indicator": "20",
+  "created_by": "ldavi107",
+  "last_modified_by": "eengland",
+  "create_time": "2017-08-08T18:14:37Z",
+  "system_mtime": "2020-06-25T17:55:32Z",
+  "user_mtime": "2018-11-13T17:11:37Z",
+  "jsonmodel_type": "top_container",
+  "active_restrictions": [],
+  "container_locations": [],
+  "series": [],
+  "collection": [
+    {
+      "ref": "/repositories/3/resources/7",
+      "identifier": "COLL--0011",
+      "display_string": "Homewood Photography records"
+    },
+    {
+      "ref": "/repositories/3/accessions/1767",
+      "identifier": "2014-15--UA--008",
+      "display_string": "Homewood Photography DVDs of digital images (100100-103000)"
+    }
+  ],
+  "uri": "/repositories/3/top_containers/12682",
+  "repository": {
+    "ref": "/repositories/3"
+  },
+  "container_profile": {
+    "ref": "/container_profiles/185"
+  },
+  "restricted": false,
+  "is_linked_to_published_record": false,
+  "display_string": " 20: [31151030135432]",
+  "long_display_string": "COLL--0011,  20 [31151030135432], Cardfile (optical media)"
+}

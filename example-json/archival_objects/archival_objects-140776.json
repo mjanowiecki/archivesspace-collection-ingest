@@ -1,0 +1,172 @@
+{
+  "ancestors": [
+    {
+      "level": "collection",
+      "ref": "/repositories/3/resources/661"
+    }
+  ],
+  "create_time": "2016-05-31T18:51:07Z",
+  "created_by": "atang",
+  "dates": [
+    {
+      "begin": "1863",
+      "create_time": "2016-07-27T16:08:58Z",
+      "created_by": "atang",
+      "date_type": "inclusive",
+      "end": "1865",
+      "expression": "1863-1865",
+      "jsonmodel_type": "date",
+      "label": "creation",
+      "last_modified_by": "atang",
+      "lock_version": 0,
+      "system_mtime": "2016-07-27T16:08:58Z",
+      "user_mtime": "2016-07-27T16:08:58Z"
+    }
+  ],
+  "display_string": "Ann Peck Pugh letters, 1863-1865",
+  "extents": [
+    {
+      "container_summary": "1 legal size folder",
+      "create_time": "2016-07-27T16:08:58Z",
+      "created_by": "atang",
+      "extent_type": "cubic_feet",
+      "jsonmodel_type": "extent",
+      "last_modified_by": "atang",
+      "lock_version": 0,
+      "number": ".167",
+      "portion": "whole",
+      "system_mtime": "2016-07-27T16:08:58Z",
+      "user_mtime": "2016-07-27T16:08:58Z"
+    }
+  ],
+  "external_documents": [
+  ],
+  "external_ids": [
+  ],
+  "has_unpublished_ancestor": false,
+  "instances": [
+    {
+      "create_time": "2016-07-27T16:08:58Z",
+      "created_by": "atang",
+      "instance_type": "text",
+      "is_representative": false,
+      "jsonmodel_type": "instance",
+      "last_modified_by": "atang",
+      "lock_version": 0,
+      "sub_container": {
+        "create_time": "2016-07-27T16:08:58Z",
+        "created_by": "atang",
+        "indicator_2": "18",
+        "jsonmodel_type": "sub_container",
+        "last_modified_by": "atang",
+        "lock_version": 0,
+        "system_mtime": "2016-07-27T16:08:58Z",
+        "top_container": {
+          "ref": "/repositories/3/top_containers/5088"
+        },
+        "type_2": "folder",
+        "user_mtime": "2016-07-27T16:08:58Z"
+      },
+      "system_mtime": "2016-07-27T16:08:58Z",
+      "user_mtime": "2016-07-27T16:08:58Z"
+    }
+  ],
+  "is_slug_auto": false,
+  "jsonmodel_type": "archival_object",
+  "lang_materials": [
+  ],
+  "last_modified_by": "atang",
+  "level": "series",
+  "linked_agents": [
+  ],
+  "linked_events": [
+  ],
+  "lock_version": 11,
+  "notes": [
+    {
+      "jsonmodel_type": "note_multipart",
+      "label": "Ann Peck Pugh",
+      "persistent_id": "6f10dd9e5d0213e2c8f0f75cb4dca5eb",
+      "publish": true,
+      "subnotes": [
+        {
+          "content": "Rewritten from dealer description:\n\nAnn Wilson (1782-1865) was the daughter of Quaker parents John Wilson (1738-1800), born in England, and Alisanna Webster (1742-1801) of Maryland. In 1803 Ann married John Peck (1773-1818). They had no children.\n\nJohn Pugh (1778-1860) was the son of Quaker parents Jonathan and Naomi Pugh of Pughtown, Chester County, Pennsylvania. He married Sarah Townsend (1777-1826) and his brother Evan Pugh (1765-1841) married her cousin Lydia Townsend (1770-1837). In 1804 the couples moved to Fallston, Beaver County, Pennsylvania, where the Pugh brothers established flouring mills and factories for wool carding and cloth dressing. The children of John and Sarah were: Jonathan Pugh (1802-?), Caroline Pugh (1804-1831), Mary Ann Pugh (1807-1881), and Joseph T. Pugh (1809-1903). After Sarah's death, John Pugh married the widow Ann Wilson Peck. They lived in New Brighton, Pennsylvania, where John was a wealthy flour merchant and served as president of the branch of the United States Bank there. [See History of Beaver County, Pennsylvania ... (1888)] \n\nIn 1833 Joseph T. Pugh married Nancy McCreary. They had the following children: John Pugh (1834-1924), Sarah Ann Pugh (1837-?), Evan Pugh (1840-1890), Mary Pugh (c. 1844-?), Caroline Cecelia Pugh (c. 1848-?), Irene Ida Pugh (1850-?), and Henry Pugh ( c. 1854-?). Joseph learned the trade of machinist and established a business manufacturing flour barrels and window sashes. See History of Beaver County, Pennsylvania .. . (1888). \n\nAfter the death of John Pugh, Ann Peck Pugh returned to Baltimore. She joined the family of her sister Alisanna Wilson (1786-1870) and her husband Robert Cornthwaite (1779-1864). The household included son William Cornthwaite (1818-1873), daughter Ann Cornthwaite, her husband John Dukehart and their children: John Peck Dukehm1 (1824-1892), who was a conductor for the Baltimore and Ohio Railroad, and Sarah Jane Dukehart (1828-1919). Robert Cornthwaite passed away on September 17, 1864. Thomas Matthews, Ann's cousin mentioned in her letter, died on October 1, 1864, at the age of 81. See Okely: A Pedigree and Family History ... (1899) and A Record of Interments at the Friends Burial Ground, Baltimore, Maryland (1995). \n\nIn 1861 Joseph Pugh's son John joined the Union Navy. He served on the U.S.S. Quaker City, patrolling the blockade from the Bahamas to Florida. Several letters that he wrote to his father during his service detail his adventures and are held in the Pugh Family Letters in Rare Books and Special Collections at the University of Notre Dame. \nIn August 1862, John's brother Evan Pugh enlisted as a private in Company G, Pennsylvania 1st Cavalry Regiment, of the Cavalry Corps of the Army of the Potomac. He was mustered out in May 1865 with the rank of sergeant. Edward J. Hoopes, the young man Ann mentions in her letter, enlisted from Beaver County and served in Company A, 9th Regiment of the Pennsylvania Reserve Corps, 38th Regiment, Pennsylvania Volunteer Infantry. He was killed at the Battle of Fredericksburg on December 13, 1862. See History of Beaver County, Pennsylvania ..., Vol. 1 (1904). \n\nAccording to information contained in letters written by Joseph T. Pugh in the Pugh Family Letters, he appears to have been working in Columbus, OH, in the Quartermaster's office, assisting in establishing hospital wards for Camp Chase. From Ann Pugh's letter it would seem that Sarah Jane Cornthwaite was most likely volunteering in a hospital in Baltimore. After the assassination of President Lincoln, detailed plans were made for his funeral train to travel from Washington, DC, to Springfield, stopping at towns along the way with the body lying in state so that citizens could pay their respects. \n\nThe timetable was established by Governor John Brough of Ohio and John W. Garrett, President of the Baltimore and Ohio Railroad. Brigadier General Daniel C. McCall um was given military control of the train and John Peck Dukehm1, \"the veteran and efficient conductor\", was assigned to accompany the body along the way. The train left Washington, DC, on April 21, 1865, and reached Springfield on May 3, 1865. See Anecdotes of the Civil War in the United States (1884). \n\nAnn Peck Pugh passed away October 10, 1865, and was buried in the Friends Burial Ground in Baltimore. After the war, Joseph T. Pugh worked as a bookkeeper in a bank in New Brighton. Nancy passed away by 1870 and Sarah Ann, who never married, lived with her father. John Pugh became a dentist and practiced in Philadelphia before moving back to New Brighton. Evan Pugh operated a bookstore in New Brighton. Evan passed away in 1890, Joseph in 1903, John in 1924, and Sarah Ann sometime after 1920.",
+          "jsonmodel_type": "note_text",
+          "publish": true
+        }
+      ],
+      "type": "bioghist"
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "525607a9326629ae1eba15281801e61c",
+      "publish": true,
+      "subnotes": [
+        {
+          "content": "Rewritten from dealer description:\n\nThis holding of letters includes three letters written from 1863-1865 by Ann Peck Pugh of Baltimore to her stepson Joseph Pugh and his daughter Sarah Ann Pugh, whom were most likely at New Brighton, Pennsylvania at the time. Ann writes from Baltimore, using Quaker dating and language. She discusses family members and friends who are serving in the military and in civilian positions during the Civil War. She reports that her great nephew John Peck Dukehart is accompanying Abraham Lincoln's body on the President's funeral train. \n\nLetter 1:\nFebruary 20, 1863. Written in Baltimore by Ann P. Pugh and sent to Sarah Ann Pugh, most likely at New Brighton, Pennsylvania. Length: 3 pages. Pages measure approximately 4 ¾” x 7 3/4\". Ann writes to Sarah Ann inquiring about her health and asking about her parents and siblings. She wants Sarah Ann to: \" ... keep me posted where thy dear Brothers are[.] have they heard yet from Edda Hoops[.] poore fellow I expect he has gone to his long home.\" She reports that she has just been handed a letter that includes: \" ... a little account of Joseph['s] letter from John[.] how thankful, it was no worse and that he made so happy an escape. I hope he will be allowed a visite Home.\" She reports: \"this is Sarah Janes day at the Hospital.\"  \n\nLetter 2:\nOctober 11, 1864. Written at Baltimore by Ann P. Pugh and sent to Sarah Ann Pugh, most likely at New Brighton, Pennsylvania. Length: 2 1/2 pages. Pages measure approximately  5”  x 8 1/4\".  Ann writes to Sarah Ann soon after her brother-in-law has passed away and reports on the death of a cousin: \"we miss Brother Robert his room looks so lonely, and poore dear Cousin Thomas Matthews is gone died the first day of this month very sudden eat a batty breakfast and died before bedtime[.] I have lost a kind friend. well dear Sarah we know not what a day may bring faith but my prayer is that I may be ready when called and be able to say thy will be done.\" She continues: \"thy account of dear Even was very pleasing and gratifying[.] it shows that he is respected and beloved in the station that he holds and that he is trust worthy.\" She writes: \"l often look back at you all and think I would love to step in and get some ofNancy['s] good Dinner as I used to tell her every thing was so good\" and regrets that her visit the previous summer was not a good one due to her being ill. She reports \"every thing keeps up in Baltimore and it takes us little to keep up such a family as ours numbering from nineteen to twenty all get a long pleasantly.\" \n\nLetter 3:\nMay 17, 1865. Written at Baltimore by Ann P. Pugh and sent to Joseph T. Pugh, most likely at New Brighton, Pennsylvania. Length: 1 1/2 pages. Letter measures approximately 5\" x 8\". Ann writes to Joseph: \"how pleasant it must be to have Even at home with you a gain I suppose without a scratch. and that cruel war is over. but sad sad at last. well my dear child I am still very weak but I feel as if I am a little improveing my appetite is better and still obliged to ly down two or three times a day. I was in hopes of seeing Even on his way home[.] do let me hear from you often how you are and what you are doing and what Even will now do[.] I feel so much interest for every one.\" She reports: \"JP Dukehart has gone on with the corps of our much Loved President[.]\" \n",
+          "jsonmodel_type": "note_text",
+          "publish": true
+        }
+      ],
+      "type": "scopecontent"
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "ff78a9f10ec83f8e9a2d25c78c68406c",
+      "publish": true,
+      "subnotes": [
+        {
+          "content": "This holding was purchased from M. Benjamin Katz, Fine Books/Rare Manuscripts in October 2013.",
+          "jsonmodel_type": "note_text",
+          "publish": true
+        }
+      ],
+      "type": "acqinfo"
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "f92582f317e7050fee66b35d3b9b82c6",
+      "publish": true,
+      "subnotes": [
+        {
+          "content": "These letters were processed by Annie Tang in May 2016.",
+          "jsonmodel_type": "note_text",
+          "publish": true
+        }
+      ],
+      "type": "processinfo"
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "c0f308531a0f89b3d5ffcb4d065fc12b",
+      "publish": true,
+      "subnotes": [
+        {
+          "content": "Accession 2015-16.MS.069",
+          "jsonmodel_type": "note_text",
+          "publish": true
+        }
+      ],
+      "type": "accruals"
+    }
+  ],
+  "position": 43,
+  "publish": true,
+  "ref_id": "d266897025f0ef13573bb9486cfb279e",
+  "repository": {
+    "ref": "/repositories/3"
+  },
+  "resource": {
+    "ref": "/repositories/3/resources/661"
+  },
+  "restrictions_apply": false,
+  "rights_statements": [
+  ],
+  "subjects": [
+  ],
+  "suppressed": false,
+  "system_mtime": "2021-06-02T19:05:00Z",
+  "title": "Ann Peck Pugh letters",
+  "uri": "/repositories/3/archival_objects/140776",
+  "user_mtime": "2016-07-27T16:08:58Z"
+}

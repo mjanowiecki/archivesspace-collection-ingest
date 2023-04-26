@@ -1,0 +1,29 @@
+{
+  "lock_version": 4,
+  "barcode": "aspace.112044.box.21",
+  "indicator": "21",
+  "created_by": "admin",
+  "last_modified_by": "admin",
+  "create_time": "2016-05-19T21:37:07Z",
+  "system_mtime": "2020-09-28T22:24:53Z",
+  "user_mtime": "2016-05-19T21:37:07Z",
+  "jsonmodel_type": "top_container",
+  "active_restrictions": [],
+  "container_locations": [],
+  "series": [],
+  "collection": [
+    {
+      "ref": "/repositories/3/resources/946",
+      "identifier": "RG--09--001",
+      "display_string": "Office of the Treasurer records"
+    }
+  ],
+  "uri": "/repositories/3/top_containers/7704",
+  "repository": {
+    "ref": "/repositories/3"
+  },
+  "restricted": false,
+  "is_linked_to_published_record": true,
+  "display_string": " 21: [Barcode: aspace.112044.box.21]",
+  "long_display_string": " 21 [Barcode: aspace.112044.box.21], RG--09--001, Office of the Treasurer records"
+}

@@ -1,0 +1,239 @@
+{
+  "lock_version": 8,
+  "title": "Benjamin Herman papers",
+  "publish": true,
+  "restrictions": false,
+  "ead_id": "MS.0555",
+  "finding_aid_title": "Benjamin Herman papers",
+  "created_by": "admin",
+  "last_modified_by": "admin",
+  "create_time": "2016-05-13T19:10:55Z",
+  "system_mtime": "2019-01-25T00:57:59Z",
+  "user_mtime": "2018-05-31T23:29:32Z",
+  "suppressed": false,
+  "is_slug_auto": false,
+  "id_0": "MS",
+  "id_1": "0555",
+  "level": "collection",
+  "finding_aid_language": "und",
+  "finding_aid_script": "Zyyy",
+  "jsonmodel_type": "resource",
+  "external_ids": [
+    {
+      "external_id": "2602",
+      "source": "Archivists Toolkit Database::RESOURCE",
+      "created_by": "admin",
+      "last_modified_by": "admin",
+      "create_time": "2018-05-31T23:29:32Z",
+      "system_mtime": "2018-05-31T23:29:32Z",
+      "user_mtime": "2018-05-31T23:29:32Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "1.25",
+      "container_summary": "1 record center carton",
+      "created_by": "admin",
+      "last_modified_by": "admin",
+      "create_time": "2018-05-31T23:29:32Z",
+      "system_mtime": "2018-05-31T23:29:32Z",
+      "user_mtime": "2018-05-31T23:29:32Z",
+      "portion": "whole",
+      "extent_type": "cubic_feet",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "lang_materials": [
+    {
+      "lock_version": 0,
+      "create_time": "2016-05-13T19:10:55Z",
+      "system_mtime": "2019-01-25T00:57:59Z",
+      "user_mtime": "2018-05-31T23:29:32Z",
+      "jsonmodel_type": "lang_material",
+      "notes": [],
+      "language_and_script": {
+        "lock_version": 0,
+        "create_time": "2016-05-13T19:10:55Z",
+        "system_mtime": "2019-01-25T00:57:59Z",
+        "user_mtime": "2018-05-31T23:29:32Z",
+        "language": "eng",
+        "jsonmodel_type": "language_and_script"
+      }
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "circa 1970-2010",
+      "begin": "1970",
+      "end": "2010",
+      "created_by": "admin",
+      "last_modified_by": "admin",
+      "create_time": "2018-05-31T23:29:32Z",
+      "system_mtime": "2018-05-31T23:29:32Z",
+      "user_mtime": "2018-05-31T23:29:32Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [
+    {
+      "role": "creator",
+      "terms": [],
+      "ref": "/agents/people/1424"
+    },
+    {
+      "role": "creator",
+      "terms": [],
+      "ref": "/agents/people/4005"
+    }
+  ],
+  "revision_statements": [],
+  "instances": [],
+  "deaccessions": [],
+  "related_accessions": [],
+  "classifications": [],
+  "notes": [
+    {
+      "persistent_id": "fa1942ba376a09072bfec9b08026b629",
+      "type": "processinfo",
+      "subnotes": [
+        {
+          "content": "Processed by Massimo Petrozzi and Kelly Spring in 2011.",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "publish": true
+    },
+    {
+      "persistent_id": "514226c63adbb825b9efa25c7e55c665",
+      "type": "acqinfo",
+      "subnotes": [
+        {
+          "content": "The papers were donated by Benjamin Herman in October 2010.",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "publish": true
+    },
+    {
+      "content": [
+        "Author Benjamin Herman was a journalist and novelist. The bulk of this collection consist of articles written for the <emph render=\"italic\">Sun Magazine</emph> and the <emph render=\"italic\">Baltimore Sun</emph> from circa 1970 to 2010."
+      ],
+      "persistent_id": "00fabc1d114b66cbba5872a66a434047",
+      "type": "abstract",
+      "jsonmodel_type": "note_singlepart",
+      "publish": true
+    },
+    {
+      "persistent_id": "3f397df220e8b3c110390db66e387f94",
+      "type": "bioghist",
+      "subnotes": [
+        {
+          "content": "Author Benjamin Herman was a native of Dundalk, Maryland and a graduate of Sparrows Point High School and Johns Hopkins University.\n\nHe served with the U.S. Army in Italy, taught school in Dundalk, and was an editor with the Maryland State Department of Education.\n\nHerman wrote numerous articles for the Baltimore Sunday Sun, the Evening Sun, and the Baltimore Sunday News American. His first book <emph render=\"italic\">Sunday After Sunday After Sunday</emph> was published in 1972, followed by <emph render=\"italic\">How High Up Is Heaven</emph> and his novel <emph render=\"italic\">The Rhapsody in Blue of Mickey Klein</emph>.",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "publish": true
+    },
+    {
+      "persistent_id": "4dc8d2dff9d90c389c5f61444f3831f9",
+      "type": "accessrestrict",
+      "subnotes": [
+        {
+          "content": "This collection is housed off-site and requires 48-hours' notice for retrieval. Please contact Special Collections for more information.\n\nCollection is open for use.",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "publish": true
+    },
+    {
+      "persistent_id": "2e32a62ac8310566ed73a4ef23c73d99",
+      "type": "userestrict",
+      "subnotes": [
+        {
+          "content": "Single copies may be made for research purposes. Researchers are responsible for determining any copyright questions. It is not necessary to seek our permission as the owner of the physical work to publish or otherwise use public domain materials that we have made available for use, unless Johns Hopkins University holds the copyright.",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "publish": true
+    },
+    {
+      "subnotes": [
+        {
+          "content": "[Name of folder or item], [Date], [Box number], [Folder number], [Collection title], [Collection number], Special Collections, The Johns Hopkins University.",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "3f3917c43b35bb81ca3d30f411f56391",
+      "label": "Preferred Citation",
+      "type": "prefercite",
+      "publish": true
+    },
+    {
+      "persistent_id": "c2bb523e0589e64b73c99626d94d0a20",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "content": "The bulk of this collection consist of articles written for the <emph render=\"italic\">Sun Magazine</emph> and the <emph render=\"italic\">Baltimore Sun</emph> by Benjamin Herman from circa 1970 to 2010.",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_bibliography",
+      "items": [],
+      "persistent_id": "0db10d1d23083571b674610f490100c1",
+      "label": "Bibliography",
+      "content": [
+        "Contemporary Authors. A bio-bibliographical guide to current writers in fiction, general nonfiction, poetry, journalism, drama, motion pictures, television, and other fields. Volume 104. Detroit: Gale Research, 1982. \nBiography and Genealogy Master Index. Farmington Hills, Mich.: Gale, Cengage Learning. 1980- 2011. "
+      ],
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/3/resources/543",
+  "repository": {
+    "ref": "/repositories/3"
+  },
+  "user_defined": {
+    "lock_version": 0,
+    "boolean_1": false,
+    "boolean_2": false,
+    "boolean_3": false,
+    "real_1": "3897814",
+    "created_by": "admin",
+    "last_modified_by": "admin",
+    "create_time": "2018-05-31T23:29:32Z",
+    "system_mtime": "2018-05-31T23:29:32Z",
+    "user_mtime": "2018-05-31T23:29:32Z",
+    "jsonmodel_type": "user_defined",
+    "repository": {
+      "ref": "/repositories/3"
+    }
+  },
+  "tree": {
+    "ref": "/repositories/3/resources/543/tree"
+  }
+}

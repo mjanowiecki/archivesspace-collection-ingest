@@ -1,0 +1,100 @@
+{
+  "lock_version": 99,
+  "publish": true,
+  "created_by": "admin",
+  "last_modified_by": "mjanowiecki",
+  "create_time": "2016-05-13T18:15:44Z",
+  "system_mtime": "2022-05-20T20:12:47Z",
+  "user_mtime": "2019-02-28T13:51:24Z",
+  "is_slug_auto": false,
+  "jsonmodel_type": "agent_corporate_entity",
+  "agent_contacts": [
+    {
+      "lock_version": 0,
+      "name": "Space Telescope Science Institute (U.S.)",
+      "created_by": "mjanowiecki",
+      "last_modified_by": "mjanowiecki",
+      "create_time": "2019-02-28T13:51:24Z",
+      "system_mtime": "2019-02-28T13:51:24Z",
+      "user_mtime": "2019-02-28T13:51:24Z",
+      "jsonmodel_type": "agent_contact",
+      "telephones": []
+    }
+  ],
+  "linked_agent_roles": [
+    "creator",
+    "subject"
+  ],
+  "external_documents": [],
+  "notes": [],
+  "used_within_repositories": [],
+  "used_within_published_repositories": [],
+  "dates_of_existence": [],
+  "names": [
+    {
+      "lock_version": 0,
+      "primary_name": "Space Telescope Science Institute (U.S.)",
+      "sort_name": "Space Telescope Science Institute (U.S.)",
+      "sort_name_auto_generate": true,
+      "created_by": "mjanowiecki",
+      "last_modified_by": "mjanowiecki",
+      "create_time": "2019-02-28T13:51:24Z",
+      "system_mtime": "2019-02-28T13:51:24Z",
+      "user_mtime": "2019-02-28T13:51:24Z",
+      "authorized": true,
+      "is_display_name": true,
+      "source": "viaf",
+      "rules": "rda",
+      "jsonmodel_type": "name_corporate_entity",
+      "use_dates": [],
+      "authority_id": "http://viaf.org/viaf/123013418"
+    }
+  ],
+  "related_agents": [
+    {
+      "relator": "is_associative_with",
+      "jsonmodel_type": "agent_relationship_associative",
+      "description": "The Space Telescope Science Institute is an independent entity that is located on the Homewood campus of Johns Hopkins University. The Institute was established in part by members of the Physics department. Physics faculty continue to collaborate with the Institute to research the field of astrophysics.",
+      "created_by": "mjanowiecki",
+      "last_modified_by": "mjanowiecki",
+      "create_time": "2019-02-28 13:51:25 UTC",
+      "system_mtime": "2019-02-28 13:51:25 UTC",
+      "user_mtime": "2019-02-28 13:51:25 UTC",
+      "dates": {
+        "lock_version": 8,
+        "expression": "1981-",
+        "created_by": "mjanowiecki",
+        "last_modified_by": "mjanowiecki",
+        "create_time": "2019-02-28T13:51:25Z",
+        "system_mtime": "2019-02-28T13:51:25Z",
+        "user_mtime": "2019-02-28T13:51:25Z",
+        "date_type": "range",
+        "label": "agent_relation",
+        "jsonmodel_type": "date"
+      },
+      "ref": "/agents/corporate_entities/231"
+    }
+  ],
+  "uri": "/agents/corporate_entities/24",
+  "agent_type": "agent_corporate_entity",
+  "is_linked_to_published_record": true,
+  "display_name": {
+    "lock_version": 0,
+    "primary_name": "Space Telescope Science Institute (U.S.)",
+    "sort_name": "Space Telescope Science Institute (U.S.)",
+    "sort_name_auto_generate": true,
+    "created_by": "mjanowiecki",
+    "last_modified_by": "mjanowiecki",
+    "create_time": "2019-02-28T13:51:24Z",
+    "system_mtime": "2019-02-28T13:51:24Z",
+    "user_mtime": "2019-02-28T13:51:24Z",
+    "authorized": true,
+    "is_display_name": true,
+    "source": "viaf",
+    "rules": "rda",
+    "jsonmodel_type": "name_corporate_entity",
+    "use_dates": [],
+    "authority_id": "http://viaf.org/viaf/123013418"
+  },
+  "title": "Space Telescope Science Institute (U.S.)"
+}

@@ -1,0 +1,36 @@
+{
+  "lock_version": 35,
+  "title": "Academic libraries",
+  "authority_id": "http://id.worldcat.org/fast/794997",
+  "created_by": "admin",
+  "last_modified_by": "admin",
+  "create_time": "2016-07-07T20:26:25Z",
+  "system_mtime": "2019-05-17T18:28:12Z",
+  "user_mtime": "2016-07-07T20:26:25Z",
+  "is_slug_auto": false,
+  "source": "fast",
+  "jsonmodel_type": "subject",
+  "external_ids": [],
+  "publish": true,
+  "used_within_repositories": [],
+  "used_within_published_repositories": [],
+  "terms": [
+    {
+      "lock_version": 0,
+      "term": "Academic libraries",
+      "created_by": "admin",
+      "last_modified_by": "admin",
+      "create_time": "2016-07-07T20:26:25Z",
+      "system_mtime": "2016-07-07T20:26:25Z",
+      "user_mtime": "2016-07-07T20:26:25Z",
+      "term_type": "topical",
+      "jsonmodel_type": "term",
+      "uri": "/terms/335",
+      "vocabulary": "/vocabularies/1"
+    }
+  ],
+  "external_documents": [],
+  "uri": "/subjects/339",
+  "vocabulary": "/vocabularies/1",
+  "is_linked_to_published_record": true
+}

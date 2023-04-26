@@ -1,0 +1,63 @@
+{
+  "lock_version": 4,
+  "publish": true,
+  "created_by": "kdiehl2",
+  "last_modified_by": "kdiehl2",
+  "create_time": "2020-03-16T14:16:44Z",
+  "system_mtime": "2020-03-16T14:45:30Z",
+  "user_mtime": "2020-03-16T14:16:44Z",
+  "is_slug_auto": false,
+  "jsonmodel_type": "agent_corporate_entity",
+  "agent_contacts": [],
+  "linked_agent_roles": [
+    "creator"
+  ],
+  "external_documents": [],
+  "notes": [],
+  "used_within_repositories": [],
+  "used_within_published_repositories": [],
+  "dates_of_existence": [],
+  "names": [
+    {
+      "lock_version": 0,
+      "primary_name": "Socialist Party (U.S.)",
+      "subordinate_name_1": "Woman's National Committee",
+      "sort_name": "Socialist Party (U.S.). Woman's National Committee",
+      "sort_name_auto_generate": true,
+      "created_by": "kdiehl2",
+      "last_modified_by": "kdiehl2",
+      "create_time": "2020-03-16T14:16:44Z",
+      "system_mtime": "2020-03-16T14:16:44Z",
+      "user_mtime": "2020-03-16T14:16:44Z",
+      "authorized": true,
+      "is_display_name": true,
+      "source": "viaf",
+      "jsonmodel_type": "name_corporate_entity",
+      "use_dates": [],
+      "authority_id": "http://viaf.org/viaf/165145003298061300441"
+    }
+  ],
+  "related_agents": [],
+  "uri": "/agents/corporate_entities/1262",
+  "agent_type": "agent_corporate_entity",
+  "is_linked_to_published_record": false,
+  "display_name": {
+    "lock_version": 0,
+    "primary_name": "Socialist Party (U.S.)",
+    "subordinate_name_1": "Woman's National Committee",
+    "sort_name": "Socialist Party (U.S.). Woman's National Committee",
+    "sort_name_auto_generate": true,
+    "created_by": "kdiehl2",
+    "last_modified_by": "kdiehl2",
+    "create_time": "2020-03-16T14:16:44Z",
+    "system_mtime": "2020-03-16T14:16:44Z",
+    "user_mtime": "2020-03-16T14:16:44Z",
+    "authorized": true,
+    "is_display_name": true,
+    "source": "viaf",
+    "jsonmodel_type": "name_corporate_entity",
+    "use_dates": [],
+    "authority_id": "http://viaf.org/viaf/165145003298061300441"
+  },
+  "title": "Socialist Party (U.S.). Woman's National Committee"
+}

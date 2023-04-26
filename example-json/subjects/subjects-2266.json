@@ -1,0 +1,36 @@
+{
+  "lock_version": 150,
+  "title": "ceramic (material)",
+  "authority_id": "http://vocab.getty.edu/page/aat/300235507",
+  "created_by": "kdiehl2",
+  "last_modified_by": "kdiehl2",
+  "create_time": "2019-03-28T14:05:00Z",
+  "system_mtime": "2022-02-07T17:58:27Z",
+  "user_mtime": "2019-03-28T14:05:00Z",
+  "is_slug_auto": false,
+  "source": "aat",
+  "jsonmodel_type": "subject",
+  "external_ids": [],
+  "publish": true,
+  "used_within_repositories": [],
+  "used_within_published_repositories": [],
+  "terms": [
+    {
+      "lock_version": 0,
+      "term": "ceramic (material)",
+      "created_by": "kdiehl2",
+      "last_modified_by": "kdiehl2",
+      "create_time": "2019-03-28T14:05:00Z",
+      "system_mtime": "2019-03-28T14:05:00Z",
+      "user_mtime": "2019-03-28T14:05:00Z",
+      "term_type": "genre_form",
+      "jsonmodel_type": "term",
+      "uri": "/terms/2277",
+      "vocabulary": "/vocabularies/1"
+    }
+  ],
+  "external_documents": [],
+  "uri": "/subjects/2266",
+  "vocabulary": "/vocabularies/1",
+  "is_linked_to_published_record": true
+}

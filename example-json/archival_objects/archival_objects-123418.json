@@ -1,0 +1,58 @@
+{
+  "lock_version": 1,
+  "system_mtime": "2018-10-11T20:32:25Z",
+  "extents": [],
+  "jsonmodel_type": "archival_object",
+  "ref_id": "ref16_lox",
+  "instances": [],
+  "create_time": "2016-05-13T19:53:23Z",
+  "created_by": "admin",
+  "parent": {
+    "ref": "/repositories/3/archival_objects/123416"
+  },
+  "title": "Volume 1",
+  "display_string": "Volume 1, 1920-1921",
+  "publish": true,
+  "subjects": [],
+  "external_documents": [],
+  "linked_agents": [],
+  "repository": {
+    "ref": "/repositories/3"
+  },
+  "has_unpublished_ancestor": false,
+  "user_mtime": "2018-10-05T18:14:05Z",
+  "rights_statements": [],
+  "linked_events": [],
+  "external_ids": [{
+    "system_mtime": "2018-10-05T18:14:05Z",
+    "jsonmodel_type": "external_id",
+    "user_mtime": "2018-10-05T18:14:05Z",
+    "last_modified_by": "vaddoni2",
+    "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+    "create_time": "2018-10-05T18:14:05Z",
+    "created_by": "vaddoni2",
+    "external_id": "173732"
+  }],
+  "suppressed": false,
+  "dates": [{
+    "lock_version": 0,
+    "system_mtime": "2018-10-05T18:14:05Z",
+    "jsonmodel_type": "date",
+    "date_type": "single",
+    "user_mtime": "2018-10-05T18:14:05Z",
+    "last_modified_by": "vaddoni2",
+    "label": "creation",
+    "create_time": "2018-10-05T18:14:05Z",
+    "created_by": "vaddoni2",
+    "expression": "1920-1921"
+  }],
+  "resource": {
+    "ref": "/repositories/3/resources/989"
+  },
+  "level": "file",
+  "notes": [],
+  "uri": "/repositories/3/archival_objects/123418",
+  "last_modified_by": "vaddoni2",
+  "restrictions_apply": false,
+  "position": 0
+}

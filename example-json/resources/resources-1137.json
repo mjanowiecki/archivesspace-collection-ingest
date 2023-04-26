@@ -1,0 +1,321 @@
+{
+  "lock_version": 36,
+  "title": "Dummy processed collection - title",
+  "publish": false,
+  "restrictions": false,
+  "repository_processing_note": "Can be used to record staff-only notes about a collection or action taken on a collection, such as \"Creator research undertaken in 2016, no creator found.\"",
+  "ead_id": "Do use, ex MS.0001",
+  "ead_location": "Public address of finding aid, ex. http://aspace.library.jhu.edu/repositories/3/resources/533",
+  "finding_aid_title": "We do use this field, beginning with \"Guide to the\" as in \"Guide to the Roland Park Company records\"",
+  "finding_aid_filing_title": "We do not use this field.",
+  "finding_aid_date": "2019",
+  "finding_aid_author": "We do use this field. Can be pre-populated if only one or two individuals is usually responsible for creating FAs.",
+  "finding_aid_language": "English",
+  "finding_aid_sponsor": "Used infrequently when a donor or granting agency is responsible for the financial support of processing a collection. Example: This collection was processed with the support of a Cataloging Hidden Special Collections grant, funded by the Council on Library and Information Resources.",
+  "finding_aid_edition_statement": "Do not use.",
+  "finding_aid_series_statement": "Do not use.",
+  "finding_aid_note": "Do not use. And do not use Status, above.",
+  "created_by": "vaddoni2",
+  "last_modified_by": "vaddoni2",
+  "create_time": "2016-11-22T17:56:31Z",
+  "system_mtime": "2019-05-20T14:46:06Z",
+  "user_mtime": "2019-05-20T14:46:06Z",
+  "suppressed": false,
+  "finding_aid_subtitle": "Optional, but generally not used.",
+  "id_0": "0000",
+  "id_1": "Fake",
+  "language": "eng",
+  "level": "collection",
+  "finding_aid_description_rules": "dacs",
+  "jsonmodel_type": "resource",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "0",
+      "container_summary": "Optional but heavily suggested. 1 record center carton",
+      "physical_details": "Optional. Used to record physical details that will limit access, such as \"VHS tapes require special equipment for playback and may not be accessible. Please contact Special Collections for more information.\"",
+      "created_by": "vaddoni2",
+      "last_modified_by": "vaddoni2",
+      "create_time": "2019-05-20T14:46:07Z",
+      "system_mtime": "2019-05-20T14:46:07Z",
+      "user_mtime": "2019-05-20T14:46:07Z",
+      "portion": "whole",
+      "extent_type": "cubic_feet",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "Optional and at the archivists discretion. However, dates entered below will not format to a human-friendly format and so when possible, date expressions are desired. Use is highly encouraged for complex dates, such as: 1911, 1986, 2006-2016, undated",
+      "begin": "1911",
+      "end": "2016",
+      "created_by": "vaddoni2",
+      "last_modified_by": "vaddoni2",
+      "create_time": "2019-05-20T14:46:07Z",
+      "system_mtime": "2019-05-20T14:46:07Z",
+      "user_mtime": "2019-05-20T14:46:07Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    },
+    {
+      "lock_version": 0,
+      "begin": "1970-08-23",
+      "created_by": "vaddoni2",
+      "last_modified_by": "vaddoni2",
+      "create_time": "2019-05-20T14:46:07Z",
+      "system_mtime": "2019-05-20T14:46:07Z",
+      "user_mtime": "2019-05-20T14:46:07Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [
+    {
+      "lock_version": 0,
+      "title": "Do not use. Some legacy values will persist.",
+      "location": "Do not use. Some legacy values will persist.",
+      "publish": false,
+      "created_by": "vaddoni2",
+      "last_modified_by": "vaddoni2",
+      "create_time": "2019-05-20T14:46:07Z",
+      "system_mtime": "2019-05-20T14:46:07Z",
+      "user_mtime": "2019-05-20T14:46:07Z",
+      "jsonmodel_type": "external_document"
+    }
+  ],
+  "rights_statements": [],
+  "linked_agents": [],
+  "revision_statements": [
+    {
+      "date": "2/15/2017",
+      "description": "On this day we decided that we do not use revision statements. We record major revisions in the Process Info note instead.",
+      "created_by": "vaddoni2",
+      "last_modified_by": "vaddoni2",
+      "create_time": "2019-05-20T14:46:07Z",
+      "system_mtime": "2019-05-20T14:46:07Z",
+      "user_mtime": "2019-05-20T14:46:07Z",
+      "jsonmodel_type": "revision_statement",
+      "uri": "/revision_statement/22",
+      "repository": {
+        "ref": "/repositories/3"
+      }
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "vaddoni2",
+      "last_modified_by": "vaddoni2",
+      "create_time": "2019-05-20T14:46:07Z",
+      "system_mtime": "2019-05-20T14:46:07Z",
+      "user_mtime": "2019-05-20T14:46:07Z",
+      "instance_type": "mixed_materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "12",
+        "created_by": "vaddoni2",
+        "last_modified_by": "vaddoni2",
+        "create_time": "2019-05-20T14:46:07Z",
+        "system_mtime": "2019-05-20T14:46:07Z",
+        "user_mtime": "2019-05-20T14:46:07Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/3/top_containers/12051"
+        }
+      }
+    }
+  ],
+  "deaccessions": [
+    {
+      "lock_version": 0,
+      "description": "This section to be used only in the case of a deaccession and only with the permission of the University Archivist.",
+      "notification": false,
+      "created_by": "vaddoni2",
+      "last_modified_by": "vaddoni2",
+      "create_time": "2019-05-20T14:46:07Z",
+      "system_mtime": "2019-05-20T14:46:07Z",
+      "user_mtime": "2019-05-20T14:46:07Z",
+      "scope": "whole",
+      "jsonmodel_type": "deaccession",
+      "extents": [
+        {
+          "lock_version": 0,
+          "number": "0",
+          "container_summary": "1 record center carton",
+          "created_by": "vaddoni2",
+          "last_modified_by": "vaddoni2",
+          "create_time": "2019-05-20T14:46:07Z",
+          "system_mtime": "2019-05-20T14:46:07Z",
+          "user_mtime": "2019-05-20T14:46:07Z",
+          "portion": "whole",
+          "extent_type": "cubic_feet",
+          "jsonmodel_type": "extent"
+        }
+      ],
+      "repository": {
+        "ref": "/repositories/3"
+      },
+      "date": {
+        "lock_version": 0,
+        "begin": "2016",
+        "created_by": "vaddoni2",
+        "last_modified_by": "vaddoni2",
+        "create_time": "2019-05-20T14:46:07Z",
+        "system_mtime": "2019-05-20T14:46:07Z",
+        "user_mtime": "2019-05-20T14:46:07Z",
+        "date_type": "single",
+        "label": "deaccession",
+        "jsonmodel_type": "date"
+      }
+    }
+  ],
+  "related_accessions": [],
+  "classifications": [],
+  "notes": [
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "3b4ce84cbd1efef2eeab2912868c4b9f",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "This collection is housed off-site and requires 48-hours' notice for retrieval. Please contact Special Collections for more information.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "97618c9fe888c7ed14bf2b60f00d3f88",
+      "type": "bioghist",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "[insert note here]\n\nOR\n\nNo biographical or historical information is available at this time. \n\nOR\n\nThis is an artificially assembled collection, so no biographical or historical note is required.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "d17d7b905c04591ac30a38205d7aa794",
+      "type": "acqinfo",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "[Write acquisition information here]\n\nOR\n\nThere is no known acquisition information for this collection.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "ee9c7d92124f65cad5836e10894ce2df",
+      "type": "processinfo",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "This collection was processed in [date] by [name] (with additional description by [name] in [date]).\n\nor\n\nThere is no known processing information for this collection.\n\nor\n\nThis collection has not been processed.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "36ed54b25601117007adf7e946598315",
+      "type": "userestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Single copies may be made for research purposes. Researchers are responsible for determining any copyright questions. It is not necessary to seek our permission as the owner of the physical work to publish or otherwise use public domain materials that we have made available for use, unless Johns Hopkins University holds the copyright.",
+          "publish": true
+        }
+      ],
+      "publish": false
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "b0fefb5860312fa98ed903556dbec6f6",
+      "type": "prefercite",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "[Name of folder or item], [Date], [Box number], [Folder number], [Collection title], [Collection number], Special Collections, The Johns Hopkins University.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/3/resources/1137",
+  "repository": {
+    "ref": "/repositories/3"
+  },
+  "collection_management": {
+    "lock_version": 0,
+    "rights_determined": false,
+    "created_by": "vaddoni2",
+    "last_modified_by": "vaddoni2",
+    "create_time": "2019-05-20T14:46:07Z",
+    "system_mtime": "2019-05-20T14:46:07Z",
+    "user_mtime": "2019-05-20T14:46:07Z",
+    "processing_total_extent_type": "cubic_feet",
+    "jsonmodel_type": "collection_management",
+    "external_ids": [],
+    "uri": "/repositories/3/collection_management/20318",
+    "repository": {
+      "ref": "/repositories/3"
+    },
+    "parent": {
+      "ref": "/repositories/3/resources/1137"
+    }
+  },
+  "user_defined": {
+    "lock_version": 0,
+    "boolean_1": false,
+    "boolean_2": false,
+    "boolean_3": false,
+    "real_1": "0000001",
+    "string_1": "Do not use. Legacy values will persist.",
+    "string_2": "Assign Agent > Role > Source > Relator > Curator instead.",
+    "string_3": "Do not use. Legacy values will persist.",
+    "string_4": "Do not use. Legacy values will persist.",
+    "text_1": "Use Immediate Source of Acquisition note instead.",
+    "text_2": "Lora needs the legacy info, but this is no longer used",
+    "text_3": "Optional: essentially a See also for processing.",
+    "text_4": "Lora needs the legacy info, but this is no longer used",
+    "text_5": "We do use this.",
+    "created_by": "vaddoni2",
+    "last_modified_by": "vaddoni2",
+    "create_time": "2019-05-20T14:46:07Z",
+    "system_mtime": "2019-05-20T14:46:07Z",
+    "user_mtime": "2019-05-20T14:46:07Z",
+    "enum_1": "Complete",
+    "jsonmodel_type": "user_defined",
+    "repository": {
+      "ref": "/repositories/3"
+    }
+  },
+  "tree": {
+    "ref": "/repositories/3/resources/1137/tree"
+  }
+}

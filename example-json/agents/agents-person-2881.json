@@ -1,0 +1,81 @@
+{
+  "lock_version": 102,
+  "publish": true,
+  "created_by": "admin",
+  "last_modified_by": "admin",
+  "create_time": "2018-05-23T14:32:50Z",
+  "system_mtime": "2019-12-19T19:51:21Z",
+  "user_mtime": "2018-05-23T14:32:50Z",
+  "is_slug_auto": false,
+  "jsonmodel_type": "agent_person",
+  "agent_contacts": [],
+  "linked_agent_roles": [
+    "subject"
+  ],
+  "external_documents": [],
+  "notes": [],
+  "used_within_repositories": [],
+  "used_within_published_repositories": [],
+  "dates_of_existence": [
+    {
+      "lock_version": 0,
+      "begin": "1850",
+      "end": "1918",
+      "created_by": "admin",
+      "last_modified_by": "admin",
+      "create_time": "2018-05-23T14:32:50Z",
+      "system_mtime": "2018-05-23T14:32:50Z",
+      "user_mtime": "2018-05-23T14:32:50Z",
+      "date_type": "range",
+      "label": "existence",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "names": [
+    {
+      "lock_version": 0,
+      "primary_name": "Clark",
+      "rest_of_name": "A. Howard",
+      "fuller_form": "Alonzo Howard",
+      "dates": "1850-1918",
+      "sort_name": "Clark, A. Howard (Alonzo Howard), 1850-1918",
+      "sort_name_auto_generate": true,
+      "created_by": "admin",
+      "last_modified_by": "admin",
+      "create_time": "2018-05-23T14:32:50Z",
+      "system_mtime": "2018-05-23T14:32:50Z",
+      "user_mtime": "2018-05-23T14:32:50Z",
+      "authorized": true,
+      "is_display_name": true,
+      "rules": "rda",
+      "name_order": "inverted",
+      "jsonmodel_type": "name_person",
+      "use_dates": []
+    }
+  ],
+  "related_agents": [],
+  "uri": "/agents/people/2881",
+  "agent_type": "agent_person",
+  "is_linked_to_published_record": true,
+  "display_name": {
+    "lock_version": 0,
+    "primary_name": "Clark",
+    "rest_of_name": "A. Howard",
+    "fuller_form": "Alonzo Howard",
+    "dates": "1850-1918",
+    "sort_name": "Clark, A. Howard (Alonzo Howard), 1850-1918",
+    "sort_name_auto_generate": true,
+    "created_by": "admin",
+    "last_modified_by": "admin",
+    "create_time": "2018-05-23T14:32:50Z",
+    "system_mtime": "2018-05-23T14:32:50Z",
+    "user_mtime": "2018-05-23T14:32:50Z",
+    "authorized": true,
+    "is_display_name": true,
+    "rules": "rda",
+    "name_order": "inverted",
+    "jsonmodel_type": "name_person",
+    "use_dates": []
+  },
+  "title": "Clark, A. Howard (Alonzo Howard), 1850-1918"
+}

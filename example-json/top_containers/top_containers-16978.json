@@ -1,0 +1,43 @@
+{
+  "lock_version": 2,
+  "barcode": "31151034442297",
+  "indicator": "OF-1",
+  "created_by": "jsteel13",
+  "last_modified_by": "jsteel13",
+  "create_time": "2019-07-05T18:56:59Z",
+  "system_mtime": "2020-09-28T22:24:53Z",
+  "user_mtime": "2019-07-05T18:56:59Z",
+  "created_for_collection": "/repositories/3/accessions/1206",
+  "type": "folder",
+  "jsonmodel_type": "top_container",
+  "active_restrictions": [],
+  "container_locations": [
+    {
+      "jsonmodel_type": "container_location",
+      "status": "current",
+      "start_date": "2019-07-05",
+      "system_mtime": "2019-07-05 18:56:59 UTC",
+      "user_mtime": "2019-07-05 18:56:59 UTC",
+      "ref": "/locations/33"
+    }
+  ],
+  "series": [],
+  "collection": [
+    {
+      "ref": "/repositories/3/accessions/1206",
+      "identifier": "2008-09--MS--014",
+      "display_string": "Architectural plans and sketch books of A.W. Osnowitz, Baltimore architect"
+    }
+  ],
+  "uri": "/repositories/3/top_containers/16978",
+  "repository": {
+    "ref": "/repositories/3"
+  },
+  "container_profile": {
+    "ref": "/container_profiles/226"
+  },
+  "restricted": false,
+  "is_linked_to_published_record": false,
+  "display_string": "Folder OF-1: [Barcode: 31151034442297]",
+  "long_display_string": "Folder OF-1 [Barcode: 31151034442297], Map case folder, MSEL, D, Archives Cage [Map case: 01, Drawer: 03], 2008-09--MS--014, Architectural plans and sketch books of A.W. Osnowitz, Baltimore architect"
+}

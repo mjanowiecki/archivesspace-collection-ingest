@@ -1,0 +1,59 @@
+{
+  "lock_version": 5,
+  "publish": true,
+  "created_by": "admin",
+  "last_modified_by": "admin",
+  "create_time": "2018-05-23T14:25:18Z",
+  "system_mtime": "2019-01-25T00:57:45Z",
+  "user_mtime": "2018-05-23T14:25:18Z",
+  "is_slug_auto": false,
+  "jsonmodel_type": "agent_family",
+  "agent_contacts": [],
+  "linked_agent_roles": [
+    "subject"
+  ],
+  "external_documents": [],
+  "notes": [],
+  "used_within_repositories": [],
+  "used_within_published_repositories": [],
+  "dates_of_existence": [],
+  "names": [
+    {
+      "lock_version": 0,
+      "family_name": "Buck family (Baltimore, Md.)",
+      "sort_name": "Buck family (Baltimore, Md.)",
+      "sort_name_auto_generate": true,
+      "created_by": "admin",
+      "last_modified_by": "admin",
+      "create_time": "2018-05-23T14:25:18Z",
+      "system_mtime": "2018-05-23T14:25:18Z",
+      "user_mtime": "2018-05-23T14:25:18Z",
+      "authorized": true,
+      "is_display_name": true,
+      "rules": "rda",
+      "jsonmodel_type": "name_family",
+      "use_dates": []
+    }
+  ],
+  "related_agents": [],
+  "uri": "/agents/families/52",
+  "agent_type": "agent_family",
+  "is_linked_to_published_record": true,
+  "display_name": {
+    "lock_version": 0,
+    "family_name": "Buck family (Baltimore, Md.)",
+    "sort_name": "Buck family (Baltimore, Md.)",
+    "sort_name_auto_generate": true,
+    "created_by": "admin",
+    "last_modified_by": "admin",
+    "create_time": "2018-05-23T14:25:18Z",
+    "system_mtime": "2018-05-23T14:25:18Z",
+    "user_mtime": "2018-05-23T14:25:18Z",
+    "authorized": true,
+    "is_display_name": true,
+    "rules": "rda",
+    "jsonmodel_type": "name_family",
+    "use_dates": []
+  },
+  "title": "Buck family (Baltimore, Md.)"
+}

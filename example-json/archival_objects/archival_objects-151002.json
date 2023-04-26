@@ -1,0 +1,255 @@
+{
+  "lock_version": 18,
+  "position": 1,
+  "publish": true,
+  "ref_id": "881a05cfd2342e96985880e36c430183",
+  "title": "Series 2: Digital photographs",
+  "display_string": "Series 2: Digital photographs, 2004-2009",
+  "restrictions_apply": true,
+  "repository_processing_note": "Series 2 is currently unpublished in the finding aid. While what is included in series 2 is all processed, there is an agreed to 8 year restriction period from the time of creation and access jpegs have not yet been created. It would be a challenge to provide access to this scale of content in DSpace. What is currently in series 2 represents the processing of approximately 6,000 DVDs. There are approximately 10,000 more DVDs in accessions 2018-19.ua.007 and 2019-20.ua.012 that haven't been addressed. -EE 3/2/20",
+  "created_by": "eengland",
+  "last_modified_by": "jsteel13",
+  "create_time": "2017-07-11T20:19:35Z",
+  "system_mtime": "2020-06-25T17:54:59Z",
+  "user_mtime": "2020-06-25T17:54:59Z",
+  "suppressed": false,
+  "level": "series",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [
+    {
+      "ref": "/repositories/3/events/10094"
+    },
+    {
+      "ref": "/repositories/3/events/10097"
+    }
+  ],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "2004-2009",
+      "begin": "2004",
+      "end": "2009",
+      "created_by": "jsteel13",
+      "last_modified_by": "jsteel13",
+      "create_time": "2020-06-25T17:55:00Z",
+      "system_mtime": "2020-06-25T17:55:00Z",
+      "user_mtime": "2020-06-25T17:55:00Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/3/resources/7",
+      "level": "collection"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "jsteel13",
+      "last_modified_by": "jsteel13",
+      "create_time": "2020-06-25T17:55:00Z",
+      "system_mtime": "2020-06-25T17:55:00Z",
+      "user_mtime": "2020-06-25T17:55:00Z",
+      "instance_type": "digital_object",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "digital_object": {
+        "ref": "/repositories/3/digital_objects/7132"
+      }
+    },
+    {
+      "lock_version": 0,
+      "created_by": "jsteel13",
+      "last_modified_by": "jsteel13",
+      "create_time": "2020-06-25T17:55:00Z",
+      "system_mtime": "2020-06-25T17:55:00Z",
+      "user_mtime": "2020-06-25T17:55:00Z",
+      "instance_type": "digital_object",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "digital_object": {
+        "ref": "/repositories/3/digital_objects/7133"
+      }
+    },
+    {
+      "lock_version": 0,
+      "created_by": "jsteel13",
+      "last_modified_by": "jsteel13",
+      "create_time": "2020-06-25T17:55:00Z",
+      "system_mtime": "2020-06-25T17:55:00Z",
+      "user_mtime": "2020-06-25T17:55:00Z",
+      "instance_type": "digital_object",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "digital_object": {
+        "ref": "/repositories/3/digital_objects/7134"
+      }
+    },
+    {
+      "lock_version": 0,
+      "created_by": "jsteel13",
+      "last_modified_by": "jsteel13",
+      "create_time": "2020-06-25T17:55:00Z",
+      "system_mtime": "2020-06-25T17:55:00Z",
+      "user_mtime": "2020-06-25T17:55:00Z",
+      "instance_type": "digital_object",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "digital_object": {
+        "ref": "/repositories/3/digital_objects/7135"
+      }
+    },
+    {
+      "lock_version": 0,
+      "created_by": "jsteel13",
+      "last_modified_by": "jsteel13",
+      "create_time": "2020-06-25T17:55:00Z",
+      "system_mtime": "2020-06-25T17:55:00Z",
+      "user_mtime": "2020-06-25T17:55:00Z",
+      "instance_type": "digital_object",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "digital_object": {
+        "ref": "/repositories/3/digital_objects/7136"
+      }
+    },
+    {
+      "lock_version": 0,
+      "created_by": "jsteel13",
+      "last_modified_by": "jsteel13",
+      "create_time": "2020-06-25T17:55:00Z",
+      "system_mtime": "2020-06-25T17:55:00Z",
+      "user_mtime": "2020-06-25T17:55:00Z",
+      "instance_type": "digital_object",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "digital_object": {
+        "ref": "/repositories/3/digital_objects/7137"
+      }
+    },
+    {
+      "lock_version": 0,
+      "created_by": "jsteel13",
+      "last_modified_by": "jsteel13",
+      "create_time": "2020-06-25T17:55:00Z",
+      "system_mtime": "2020-06-25T17:55:00Z",
+      "user_mtime": "2020-06-25T17:55:00Z",
+      "instance_type": "digital_object",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "digital_object": {
+        "ref": "/repositories/3/digital_objects/7138"
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "7709e062c1b4533ae551aee6df137302",
+      "type": "acqinfo",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "The optical discs (DVDs) containing these digital photographs were transferred from Homewood Photography in 2014 and 2017.",
+          "publish": false
+        }
+      ],
+      "publish": false
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "bf8b464229c4a8639c816867516716c0",
+      "type": "arrangement",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "The series is arranged alphabetically by the office or department that requested the shoot. In cases where the client is unknown, the most closely related office or department is used.",
+          "publish": false
+        }
+      ],
+      "publish": false
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "4b670c7c961ac14343ccecb50c3a6ae6",
+      "type": "processinfo",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "This series was processed by Elizabeth England in 2017 and 2018, with the support of a National Digital Stewardship Residency grant, funded by the Institute of Museum and Library Services.",
+          "publish": false
+        }
+      ],
+      "publish": false
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "3db3270cffa56099b1a3f0b39d360707",
+      "type": "appraisal",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Computer-automated sampling techniques were used in processing this series of digital photographs. Shoots that were in-scope for retention were sampled down to 10% of the original volume, accomplished through systematically retaining every 10th digital image. Athletic events, individual and group portraits were further sampled to retain only representative samples of the contents.",
+          "publish": false
+        }
+      ],
+      "publish": false
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "9145b929feba05f41c1e1f2426330351",
+      "type": "originalsloc",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "The original DVDs exist for all content. In some cases, there is no container profile (box and dvd) associated to the archival object because the database received from Homewood Photo isn't comprehensive. When processing this series, Homewood Photo's database was used to associate the archival objects to the containers as best as possible.",
+          "publish": false
+        }
+      ],
+      "publish": false
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "bf54b1a7edd2a2444c0db0f5f8dfdb63",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "The Homewood Photography digital photographs series consists entirely of born-digital images ranging in date from 2004-2009. Topics include students and faculty, including portraits of individuals, lectures, awards, and receptions; university events, buildings, commemorations, dedications, and commencements; alumni and alumnae events; and other topics related to Homewood campus life, the student body, faculty, community programs, and campus events. There are approximately 22,000 unique images in the series.",
+          "publish": false
+        }
+      ],
+      "publish": false
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "779d7a2f4b1217cbc5c241536445314b",
+      "type": "altformavail",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "[add in information about access restrictions at point of providing access to unrestricted content]",
+          "publish": false
+        }
+      ],
+      "publish": false
+    }
+  ],
+  "uri": "/repositories/3/archival_objects/151002",
+  "repository": {
+    "ref": "/repositories/3"
+  },
+  "resource": {
+    "ref": "/repositories/3/resources/7"
+  },
+  "has_unpublished_ancestor": false
+}

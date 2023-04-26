@@ -1,0 +1,218 @@
+{
+  "lock_version": 8,
+  "title": "Department of Mathematics records",
+  "publish": true,
+  "restrictions": false,
+  "ead_id": "RG.04.050",
+  "finding_aid_title": "Department of Mathematics records",
+  "finding_aid_language": "Finding aid written in <language langcode=\"eng\">English</language>",
+  "created_by": "admin",
+  "last_modified_by": "ehanson8",
+  "create_time": "2016-05-13T19:35:00Z",
+  "system_mtime": "2019-01-25T00:57:59Z",
+  "user_mtime": "2018-05-04T15:20:04Z",
+  "suppressed": false,
+  "id_0": "RG",
+  "id_1": "04",
+  "id_2": "050",
+  "language": "eng",
+  "level": "collection",
+  "jsonmodel_type": "resource",
+  "external_ids": [
+    {
+      "external_id": "526",
+      "source": "Archivists Toolkit Database::RESOURCE",
+      "created_by": "ehanson8",
+      "last_modified_by": "ehanson8",
+      "create_time": "2018-05-04T15:20:04Z",
+      "system_mtime": "2018-05-04T15:20:04Z",
+      "user_mtime": "2018-05-04T15:20:04Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [
+    {
+      "ref": "/subjects/546"
+    }
+  ],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "2.01",
+      "container_summary": "1 record center carton, 2 letter size document boxes",
+      "created_by": "ehanson8",
+      "last_modified_by": "ehanson8",
+      "create_time": "2018-05-04T15:20:04Z",
+      "system_mtime": "2018-05-04T15:20:04Z",
+      "user_mtime": "2018-05-04T15:20:04Z",
+      "portion": "whole",
+      "extent_type": "cubic_feet",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1891-1980",
+      "begin": "1891",
+      "end": "1980",
+      "created_by": "ehanson8",
+      "last_modified_by": "ehanson8",
+      "create_time": "2018-05-04T15:20:04Z",
+      "system_mtime": "2018-05-04T15:20:04Z",
+      "user_mtime": "2018-05-04T15:20:04Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [
+    {
+      "role": "creator",
+      "terms": [],
+      "ref": "/agents/corporate_entities/44"
+    },
+    {
+      "role": "subject",
+      "terms": [],
+      "ref": "/agents/corporate_entities/44"
+    },
+    {
+      "role": "subject",
+      "terms": [],
+      "ref": "/agents/corporate_entities/665"
+    }
+  ],
+  "revision_statements": [],
+  "instances": [],
+  "deaccessions": [],
+  "related_accessions": [],
+  "classifications": [],
+  "notes": [
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "f7e117891fb0a087d63c073ed69e4c07",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "The records of the Department of Mathematics span the years 1891 to 1894 and 1940 to 1980. With the exception of departmental newsletters for the years 1941 and 1942, the records before 1980 consist primarily of files on graduate students. Following the student files (series 1) there are two folders concerning the J. J. Sylvester Symposium on Algebraic Geometry held in honor of the University's Centennial in 1976. At the end of series 2 are materials dealing with the symposium held at Hopkins in 1980 in honor of retiring professor Philip Hartman. In addition to the boxed records there are eight volumes of papers read in the Mathematics Seminary from 1891 to 1894. The record group is divided into three series: (1) Student Records, 1940-1980; (2) Departmental Symposia, 1941-1942, 1976 and 1980; and (3) Seminar Papers, 1891-1894.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "f6e69de59e7e681c6afe40ee1eeb6e69",
+      "label": "Provenance",
+      "type": "acqinfo",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "The files were transferred to the Archives by Margaret A. Einstein, Secretary, Department of Mathematics. The volumes were transferred to the Archives by the Special Collections Department, Milton S. Eisenhower Library. ",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "cb4e58f665faf819f247a5e4d9c4304a",
+      "label": "Accession Number",
+      "type": "processinfo",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "81.44, 82.29",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "802f7493220ee98b5525ea5a5790ec12",
+      "label": "Use Restrictions",
+      "type": "userestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Education records in series 1, as defined by the Family Educational Rights and Privacy Act, are restricted. For details, see Regulations Governing Access to Restricted Records, at the front of each binder.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "e38909e6a311fc43a7a8d9c5983649a2",
+      "label": "History",
+      "type": "bioghist",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "At the time of the University's founding in 1876, the Department of Mathematics consisted of one professor and one instructor. The professor, James J. Sylvester, was a graduate of Cambridge University, a fellow of the Royal Society of England, and a former professor at the Royal Military Academy. He was assisted by William Story, a Harvard graduate who took his Ph.D. at the University of Leipzig. There were also three graduate fellows in the department: Thomas Craig (later a Hopkins professor), Joshua Gore, and George Halstead. Each fellow was granted a stipend of five hundred dollars to conduct research at the University.\n\nOne of the oldest departmental institutions was created in 1878 with the founding of the Mathematics Seminary. In the seminary, the graduate students would present weekly papers on specific mathematical topics. Many of the earlier papers dealt with the lives of famous mathematicians, while others were devoted to recording the evolution of a particular mathematical concept. Of course, the department offered undergraduate courses in addition to the program for graduate students; the President's Report of 1876 shows course offerings in calculus, analytic geometry, differential equations, and logic. In addition to the graduate and undergraduate courses of study, in 1878 Sylvester founded the American Journal of Mathematics. This publication would eventually contain not only articles by Hopkins students and professors, but also pieces by university professors from all over the country.\n\nIn 1884, Sylvester resigned his post at Hopkins to assume a professorship at Oxford. His replacement as chairman of the department was Simon Newcomb, an Englishman educated at Harvard and a former professor at the United States Naval Academy. Under Newcomb's influence, the department expanded its course selection, with \"pure mathematics\" courses such as analysis and topology replacing logic and mathematical history as subjects of study. Newcomb's interest in astronomy led to the founding of that department in conjunction with the Mathematics Department.\n\nSimon Newcomb's tenure as chairman ended in 1900, when he was succeeded by Frank Morley, a graduate of Cambridge University and instructor at Haverford College. In an attempt to increase the number and quality of contributions being made to the American Journal of Mathematics, in 1927 Morley initiated a joint operations plan whereby the Journal was operated by a four-man editorial board, two members of which were to be from Hopkins and another two from the membership of the American Mathematical Society. The new plan was successful, for Professor Francis Murnaghan, reporting for the department in the 1928 President's Report, stated that \"a marked improvement in the general character of [the Journal's] articles is evident.\" Another organization which Morley founded, in 1917, was the Undergraduate Mathematics Club, an informal discussion group designed to stimulate interest in mathematics among undergraduates.\n\nOn Morley's retirement in 1928, Francis Murnaghan became Department Chairman. A specialist in applied mathematics, Murnaghan attended undergraduate school at the National University of Ireland and took his Ph.D. at Hopkins in 1916. In 1935 he began a program of guest lectures at Hopkins, which brought a number of professors, both American and foreign, to the University throughout the academic year. Publications of books and articles by faculty members rose as well during Murnaghan's tenure, and a high volume of published material was to remain a constant distinguishing mark of the Hopkins Mathematics Department. The increasing prominence and popularity of the department was confirmed in 1946, when sixteen new graduate students, the largest class in the department's history, were admitted. The influence which Murnaghan had over the department was so great that, on his retirement in 1948, University President Isaiah Bowman stated that \"the Mathematics Department as he left it was entirely of his own building.\" \n\nThe new Chairman, Daniel C. Lewis, was a graduate of Harvard and the son of one of Frank Morley's former Haverford students. A former professor at the University of Maryland, he was, like Murnaghan, an applied mathematician. During his first year as Chairman, Lewis hired Philip Hartman and Wei-Liang Chow, two future Chairmen, as assistant professors. In 1950, students and faculty from the department read papers before the American Mathematical Society, and the tradition of having faculty members spend a year teaching at other universities was begun at this time as well. \n\nWhen Lewis resigned as Chairman in 1953, an administrative committee was formed to manage the department in lieu of an individual. Chow served as chair, with the rest of the committee consisting of Hartman, Lewis and Alfred Clifford. The first task of the committee was to organize the American Mathematical Society meeting in December 1953. This was the first meeting of the Society ever held at Hopkins, and President Lowell Reed cites in his Report of 1954 the \"heavy work\" which the preparations for the meeting entailed. In 1954, the department held the first in its series of annual colloquia, which featured professors from the Institute for Advanced Study at Princeton.\n\nChow's administration of the department was so effective that he was promoted officially to the post of Chairman in 1955. A native of China, Chow had studied at the Universities of Chicago and Leipzig, where he had become known for his work with algebraic systems. He was succeeded as Chairman in 1965 by Philip Hartman, a 1938 Hopkins Ph.D. and former professor at Queen's College, New York, who specialized in statistical analysis. Hartman chaired the department until 1969 and returned to the chairmanship briefly from 1974 to 1975. \n\nThe shifting of the department away from applied mathematics continued with the appointment of Joseph Sampson as Chairman in 1975. A specialist in differential geometry, Sampson steered the department in the direction of more theoretical mathematics, a step facilitated by the creation in 1977 of the School of Engineering (later named the Whiting School) and the establishment within it of the Department of Mathematical Sciences. Sampson's greatest task as Chairman, however, was the organization of the J. J. Sylvester Symposium on Algebraic Geometry in 1976. Held during the University's Centennial, the symposium was funded by a National Science Foundation grant and featured addresses given over a period of three days on a variety of topics dealing with geometry. The speakers included Chow, Otto Zariski and Heisuke Hironata of Harvard, D. B. Mumford of the Institut des Hautes Etudes Scientifiques in France, Michael Artin of the Massachusetts Institute of Technology, Philip Griffiths of Berkeley, Enrico Bombieri of the Istituto Matematico in Italy, and Bernard Dwork of the University of Paris. The number of guests invited to the symposium was considerable, and the extant correspondence testifies to the amount of work involved in organizing the symposium. \n\nAnother symposium was sponsored by the department in 1980. Joseph Shalika had become Chairman in 1979, and it was his decision to hold a conference on differential equations in honor of Philip Hartman, who was retiring. The symposium was organized in conjunction with the mathematics departments of the University of Virginia and the City University of New York and included the following speakers: Jack Hale of Brown University, Lewis Nirenberg of the Courant Institute in England, C. C. Pugh of Berkeley, Clifford Truesdell of Hopkins, and S. T. Yau of Stanford. \n\nIn 1982, Shalika was succeeded as Chairman of the Department of Mathematics by John Boardman, a specialist in topology. Boardman retained the post of Chairman until 1986, when he was replaced by the current Chairman, Jean-Pierre Meyer. \n\nBibliography: <lb/>\"Francis D. Murnaghan Dies; was JHU mathematics Head\". The (Baltimore) Sun, October 18, 1937. <lb/>\"Frank Morley, Professor at Hopkins, Dies\". The Sun, March 25, 1976. <lb/>The Johns Hopkins University Circular. Annual Report of the President, 1876- 1968. ",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "76131e49377ef2e0e8fc09702366229b",
+      "type": "processinfo",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Finding aid prepared by James Knighton.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "b5b2f94d7ac4c23d69bcd53ab2a78209",
+      "label": "Preferred Citation",
+      "type": "prefercite",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "[Name of folder or item], [Date], [Box number], [Folder number], [Collection title], [Collection number], Special Collections, The Johns Hopkins University.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/3/resources/855",
+  "repository": {
+    "ref": "/repositories/3"
+  },
+  "user_defined": {
+    "lock_version": 0,
+    "boolean_1": false,
+    "boolean_2": false,
+    "boolean_3": false,
+    "real_1": "2654049",
+    "created_by": "ehanson8",
+    "last_modified_by": "ehanson8",
+    "create_time": "2018-05-04T15:20:04Z",
+    "system_mtime": "2018-05-04T15:20:04Z",
+    "user_mtime": "2018-05-04T15:20:04Z",
+    "jsonmodel_type": "user_defined",
+    "repository": {
+      "ref": "/repositories/3"
+    }
+  },
+  "tree": {
+    "ref": "/repositories/3/resources/855/tree"
+  }
+}

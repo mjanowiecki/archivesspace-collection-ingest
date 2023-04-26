@@ -1,0 +1,155 @@
+{
+  "lock_version": 10,
+  "system_mtime": "2018-05-31T23:02:48Z",
+  "extents": [{
+    "lock_version": 0,
+    "system_mtime": "2018-05-31T23:02:48Z",
+    "jsonmodel_type": "extent",
+    "user_mtime": "2018-05-31T23:02:48Z",
+    "number": "0.167",
+    "last_modified_by": "admin",
+    "container_summary": "3 volumes",
+    "portion": "whole",
+    "create_time": "2018-05-31T23:02:48Z",
+    "created_by": "admin",
+    "extent_type": "cubic_feet"
+  }],
+  "jsonmodel_type": "resource",
+  "external_documents": [],
+  "instances": [],
+  "create_time": "2016-05-13T19:02:11Z",
+  "publish": true,
+  "external_ids": [{
+    "system_mtime": "2018-05-31T23:02:48Z",
+    "jsonmodel_type": "external_id",
+    "user_mtime": "2018-05-31T23:02:48Z",
+    "last_modified_by": "admin",
+    "source": "Archivists Toolkit Database::RESOURCE",
+    "create_time": "2018-05-31T23:02:48Z",
+    "created_by": "admin",
+    "external_id": "416"
+  }],
+  "title": "Honorius Autun papers",
+  "related_accessions": [],
+  "created_by": "admin",
+  "user_defined": {
+    "lock_version": 0,
+    "last_modified_by": "admin",
+    "repository": {
+      "ref": "/repositories/3"
+    },
+    "jsonmodel_type": "user_defined",
+    "user_mtime": "2018-05-31T23:02:48Z",
+    "created_by": "admin",
+    "boolean_1": false,
+    "boolean_2": false,
+    "boolean_3": false,
+    "create_time": "2018-05-31T23:02:48Z",
+    "real_1": "2672123",
+    "system_mtime": "2018-05-31T23:02:48Z"
+  },
+  "subjects": [{
+    "ref": "/subjects/165"
+  }, {
+    "ref": "/subjects/1956"
+  }],
+  "deaccessions": [],
+  "ead_id": "MS.0451",
+  "linked_agents": [{
+    "terms": [],
+    "ref": "/agents/people/385",
+    "role": "creator"
+  }, {
+    "terms": [],
+    "ref": "/agents/people/385",
+    "role": "subject"
+  }],
+  "repository": {
+    "ref": "/repositories/3"
+  },
+  "user_mtime": "2018-05-31T23:02:48Z",
+  "rights_statements": [],
+  "revision_statements": [],
+  "linked_events": [],
+  "finding_aid_title": "Honorius Autun papers",
+  "suppressed": false,
+  "restrictions": false,
+  "dates": [{
+    "lock_version": 0,
+    "system_mtime": "2018-05-31T23:02:48Z",
+    "begin": "1895",
+    "end": "1895",
+    "jsonmodel_type": "date",
+    "date_type": "inclusive",
+    "user_mtime": "2018-05-31T23:02:48Z",
+    "last_modified_by": "admin",
+    "label": "creation",
+    "create_time": "2018-05-31T23:02:48Z",
+    "created_by": "admin",
+    "expression": "1895"
+  }],
+  "classifications": [],
+  "language": "ger",
+  "level": "collection",
+  "notes": [{
+    "type": "scopecontent",
+    "persistent_id": "859db5082b3d421e95c9909ff89b6a41",
+    "subnotes": [{
+      "content": "This collection consists of three small bound volumes containing notes on two works by Honorius Augustodunensis or Honorius of Autun (1080-1156). One volume contains notes on Elucidarium and the other two volumes contains notes on Speculum Ecclesiae. The notes are written in German. The title page of each volume indicates that they were written in Paris in 1895.",
+      "jsonmodel_type": "note_text",
+      "publish": true
+    }],
+    "jsonmodel_type": "note_multipart",
+    "publish": true
+  }, {
+    "subnotes": [{
+      "content": "Reverend E.A. Hoffman S.T.D. D.C.L. of New York",
+      "jsonmodel_type": "note_text",
+      "publish": true
+    }],
+    "jsonmodel_type": "note_multipart",
+    "persistent_id": "269282592507f96f367da64af2b365d0",
+    "publish": true,
+    "label": "Provenance",
+    "type": "acqinfo"
+  }, {
+    "type": "userestrict",
+    "persistent_id": "bb76648161765de10aacafc397b4dcfb",
+    "subnotes": [{
+      "content": "Single copies may be made for research purposes. Researchers are responsible for determining any copyright questions. It is not necessary to seek our permission as the owner of the physical work to publish or otherwise use public domain materials that we have made available for use, unless Johns Hopkins University holds the copyright.",
+      "jsonmodel_type": "note_text",
+      "publish": true
+    }],
+    "jsonmodel_type": "note_multipart",
+    "publish": true
+  }, {
+    "type": "processinfo",
+    "persistent_id": "d9ab597cd69115a2d5b7b9e745472d3c",
+    "subnotes": [{
+      "content": "This is no known processing information for this collection.",
+      "jsonmodel_type": "note_text",
+      "publish": true
+    }],
+    "jsonmodel_type": "note_multipart",
+    "publish": true
+  }, {
+    "subnotes": [{
+      "content": "[Name of folder or item], [Date], [Box number], [Folder number], [Collection title], [Collection number], Special Collections, The Johns Hopkins University.",
+      "jsonmodel_type": "note_text",
+      "publish": true
+    }],
+    "jsonmodel_type": "note_multipart",
+    "persistent_id": "8bea3bfa50aa6cf6606367ba2a76d659",
+    "publish": true,
+    "label": "Preferred Citation",
+    "type": "prefercite"
+  }],
+  "tree": {
+    "ref": "/repositories/3/resources/442/tree"
+  },
+  "uri": "/repositories/3/resources/442",
+  "last_modified_by": "admin",
+  "id_0": "MS",
+  "id_1": "0451",
+  "finding_aid_language": "Finding aid written in <language langcode=\"eng\">English</language>"
+}

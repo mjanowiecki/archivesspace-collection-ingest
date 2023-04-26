@@ -1,0 +1,56 @@
+{
+  "lock_version": 2,
+  "barcode": "31151034442313",
+  "indicator": "OF-1",
+  "created_by": "jsteel13",
+  "last_modified_by": "jsteel13",
+  "create_time": "2019-07-05T19:04:18Z",
+  "system_mtime": "2020-09-28T22:24:53Z",
+  "user_mtime": "2019-07-05T19:04:18Z",
+  "created_for_collection": "/repositories/3/resources/827",
+  "type": "folder",
+  "jsonmodel_type": "top_container",
+  "active_restrictions": [
+    {
+      "id": 31669,
+      "archival_object_id": 231692,
+      "restriction_note_type": "accessrestrict",
+      "jsonmodel_type": "rights_restriction",
+      "local_access_restriction_type": [
+        "Institutional policy imposed"
+      ],
+      "linked_records": {
+        "ref": "/repositories/3/archival_objects/231692"
+      }
+    }
+  ],
+  "container_locations": [
+    {
+      "jsonmodel_type": "container_location",
+      "status": "current",
+      "start_date": "2019-07-05",
+      "system_mtime": "2019-07-05 19:04:18 UTC",
+      "user_mtime": "2019-07-05 19:04:18 UTC",
+      "ref": "/locations/33"
+    }
+  ],
+  "series": [],
+  "collection": [
+    {
+      "ref": "/repositories/3/resources/827",
+      "identifier": "RG--02--010",
+      "display_string": "Office of General Counsel records"
+    }
+  ],
+  "uri": "/repositories/3/top_containers/16980",
+  "repository": {
+    "ref": "/repositories/3"
+  },
+  "container_profile": {
+    "ref": "/container_profiles/226"
+  },
+  "restricted": true,
+  "is_linked_to_published_record": false,
+  "display_string": "Folder OF-1: [Barcode: 31151034442313]",
+  "long_display_string": "Folder OF-1 [Barcode: 31151034442313], Map case folder, MSEL, D, Archives Cage [Map case: 01, Drawer: 03], RG--02--010, Office of General Counsel records"
+}

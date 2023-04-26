@@ -1,0 +1,79 @@
+{
+  "lock_version": 10,
+  "publish": true,
+  "created_by": "mvtesta",
+  "last_modified_by": "mvtesta",
+  "create_time": "2018-08-03T15:00:45Z",
+  "system_mtime": "2019-03-25T19:20:50Z",
+  "user_mtime": "2018-08-03T15:00:45Z",
+  "jsonmodel_type": "agent_person",
+  "agent_contacts": [],
+  "linked_agent_roles": [
+    "creator"
+  ],
+  "external_documents": [],
+  "notes": [
+    {
+      "jsonmodel_type": "note_bioghist",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Choreographer and artistic directory of the Peabody Preparatory dance department, circa 1985-2010.",
+          "publish": true
+        }
+      ],
+      "persistent_id": "cf950756bf28be3b238bde48095d0779",
+      "publish": true
+    }
+  ],
+  "used_within_repositories": [],
+  "used_within_published_repositories": [],
+  "dates_of_existence": [],
+  "names": [
+    {
+      "lock_version": 0,
+      "primary_name": "Bartlett",
+      "rest_of_name": "Carol",
+      "dates": "1945-2012",
+      "sort_name": "Bartlett, Carol, 1945-2012",
+      "sort_name_auto_generate": true,
+      "created_by": "mvtesta",
+      "last_modified_by": "mvtesta",
+      "create_time": "2018-08-03T15:00:45Z",
+      "system_mtime": "2018-08-03T15:00:45Z",
+      "user_mtime": "2018-08-03T15:00:45Z",
+      "authorized": true,
+      "is_display_name": true,
+      "source": "local",
+      "rules": "rda",
+      "name_order": "inverted",
+      "jsonmodel_type": "name_person",
+      "use_dates": []
+    }
+  ],
+  "related_agents": [],
+  "uri": "/agents/people/4623",
+  "agent_type": "agent_person",
+  "is_linked_to_published_record": false,
+  "display_name": {
+    "lock_version": 0,
+    "primary_name": "Bartlett",
+    "rest_of_name": "Carol",
+    "dates": "1945-2012",
+    "sort_name": "Bartlett, Carol, 1945-2012",
+    "sort_name_auto_generate": true,
+    "created_by": "mvtesta",
+    "last_modified_by": "mvtesta",
+    "create_time": "2018-08-03T15:00:45Z",
+    "system_mtime": "2018-08-03T15:00:45Z",
+    "user_mtime": "2018-08-03T15:00:45Z",
+    "authorized": true,
+    "is_display_name": true,
+    "source": "local",
+    "rules": "rda",
+    "name_order": "inverted",
+    "jsonmodel_type": "name_person",
+    "use_dates": []
+  },
+  "title": "Bartlett, Carol, 1945-2012"
+}

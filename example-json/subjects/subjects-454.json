@@ -1,0 +1,36 @@
+{
+  "lock_version": 7,
+  "title": "Connecticut--Stamford",
+  "authority_id": "http://id.worldcat.org/fast/1205479",
+  "created_by": "admin",
+  "last_modified_by": "admin",
+  "create_time": "2016-07-07T20:26:33Z",
+  "system_mtime": "2019-01-25T00:57:45Z",
+  "user_mtime": "2016-07-07T20:26:33Z",
+  "is_slug_auto": false,
+  "source": "fast",
+  "jsonmodel_type": "subject",
+  "external_ids": [],
+  "publish": true,
+  "used_within_repositories": [],
+  "used_within_published_repositories": [],
+  "terms": [
+    {
+      "lock_version": 0,
+      "term": "Connecticut--Stamford",
+      "created_by": "admin",
+      "last_modified_by": "admin",
+      "create_time": "2016-07-07T20:26:33Z",
+      "system_mtime": "2016-07-07T20:26:33Z",
+      "user_mtime": "2016-07-07T20:26:33Z",
+      "term_type": "geographic",
+      "jsonmodel_type": "term",
+      "uri": "/terms/450",
+      "vocabulary": "/vocabularies/1"
+    }
+  ],
+  "external_documents": [],
+  "uri": "/subjects/454",
+  "vocabulary": "/vocabularies/1",
+  "is_linked_to_published_record": true
+}

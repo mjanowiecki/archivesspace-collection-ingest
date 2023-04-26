@@ -1,0 +1,37 @@
+{
+  "lock_version": 10,
+  "indicator": "2013-14.UA.007",
+  "created_by": "admin",
+  "last_modified_by": "admin",
+  "create_time": "2016-05-19T21:15:28Z",
+  "system_mtime": "2020-09-28T22:24:53Z",
+  "user_mtime": "2016-05-19T21:15:28Z",
+  "jsonmodel_type": "top_container",
+  "active_restrictions": [],
+  "container_locations": [
+    {
+      "jsonmodel_type": "container_location",
+      "status": "current",
+      "start_date": "2016-05-13",
+      "system_mtime": "2016-05-19 21:15:28 UTC",
+      "user_mtime": "2016-05-19 21:15:28 UTC",
+      "ref": "/locations/7"
+    }
+  ],
+  "series": [],
+  "collection": [
+    {
+      "ref": "/repositories/3/accessions/1631",
+      "identifier": "2013-14--UA--007",
+      "display_string": "Whiting School of Engineering student records"
+    }
+  ],
+  "uri": "/repositories/3/top_containers/299",
+  "repository": {
+    "ref": "/repositories/3"
+  },
+  "restricted": false,
+  "is_linked_to_published_record": false,
+  "display_string": " 2013-14.UA.007",
+  "long_display_string": " 2013-14.UA.007, Library Services Center [See Horizon Record: unspecified], 2013-14--UA--007, Whiting School of Engineering student records"
+}
