@@ -53,22 +53,24 @@ logForAllItems = []
 for index, row in df.iterrows():
     # Get top container information from CSV.
     barcode = row['barcode']
+    indicator = row['indicator']
     print('Gathering top container #{}: {}.'.format(index, barcode))
 
     # Build JSON record for top container.
     containerRecord = {'jsonmodel_type': 'top_container', 'publish': True, 'restricted': False,
                        'repository': {'ref': '/repositories/3'}}
-    ev.add_to_dict(row, containerRecord, 'barcode', 'barcode')
-    ev.add_to_dict(row, containerRecord, 'indicator', 'indicator')
+    containerRecord['barcode'] = str(barcode)
+    containerRecord['indicator'] = str(indicator)
 
     locations = []
-    location = {'jsonmodel_type': 'container_location'}
+    location = {}
     ev.add_to_dict(row, location, 'ref', 'location_ref')
     ev.add_to_dict(row, location, 'status', 'status')
     ev.add_to_dict(row, location, 'start_date', 'start_date')
     ev.add_to_dict(row, location, 'end_date', 'end_date')
     ev.add_to_dict(row, location, 'note', 'note')
     if location:
+        location['jsonmodel_type'] = 'container_location'
         locations.append(location)
         containerRecord['container_locations'] = locations
 
