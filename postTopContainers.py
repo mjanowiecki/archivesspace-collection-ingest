@@ -87,12 +87,11 @@ for index, row in df.iterrows():
 
         try:
             # Try to POST JSON to ArchivesSpace API top container endpoint.
-            post = requests.post(baseURL+'/top_containers', headers=headers, data=containerRecord).json()
+            post = requests.post(baseURL+'/repositories/'+repository+'/top_containers', headers=headers, data=containerRecord).json()
             print(json.dumps(post))
             uri = post['uri']
-            long_display_string = post['long_display_string']
             print('Top container successfully created with URI: {}'.format(uri))
-            itemLog = {'uri': uri, 'barcode': barcode, 'sort_name': long_display_string}
+            itemLog = {'uri': uri, 'barcode': barcode, 'indicator': indicator}
             # Add item log to list of logs
             logForAllItems.append(itemLog)
 
