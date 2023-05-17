@@ -63,25 +63,57 @@ for index, row in df.iterrows():
     # For optional fields, try to find value and add to archivalObjectRecord if found.
     ev.add_to_dict(row, archivalObjectRecord, 'repository_processing_note', 'repository_processing_note')
     ev.add_to_dict(row, archivalObjectRecord, 'position', 'position')
+    ev.add_to_dict(row, archivalObjectRecord, 'component_id', 'component_id')
     ev.add_to_dict(row, archivalObjectRecord, 'other_level', 'other_level')
+    ev.add_to_dict(row, archivalObjectRecord, 'component_id', 'component_id')
+    ev.add_to_dict(row, archivalObjectRecord, 'has_unpublished_ancestor', 'has_unpublished_ancestor')
+    ev.add_to_dict(row, archivalObjectRecord, 'is_slug_auto', 'is_slug_auto')
 
     # For optional fields with 'ref' key, use function to add.
     ev.add_with_ref(row, archivalObjectRecord, 'parent', 'parent', 'single')
     ev.add_with_ref(row, archivalObjectRecord, 'repository', 'repository', 'single')
-    ev.add_with_ref(row, archivalObjectRecord, 'linked_events', 'linked_events', 'multi')
+    ev.add_with_ref(row, archivalObjectRecord, 'series', 'series', 'single')
+    ev.add_with_ref(row, archivalObjectRecord, 'accession_links', 'accession_links', 'multi')
     ev.add_with_ref(row, archivalObjectRecord, 'subjects', 'subjects', 'multi')
+
+    # Add dates.
+    dates = ev.add_dates(row, 'dates')
+    if dates:
+        archivalObjectRecord['dates'] = dates
+
+    # Add linked_agents.
+    linked_agents = ev.add_linked_agents(row, 'linked_agents')
+    if linked_agents:
+        archivalObjectRecord['linked_agents'] = linked_agents
 
     # Add notes.
     notes_multipart = ev.add_multipart_note(row, 'multipart_note')
     notes_singlepart = ev.add_singlepart_note(row, 'singlepart_note')
-    notes = notes_multipart + notes_singlepart
+    notes = []
+    if notes_singlepart:
+        notes.append(notes_singlepart)
+    if notes_multipart:
+        notes.append(notes_multipart)
     if notes:
         archivalObjectRecord['notes'] = notes
 
-    # Add extent.
+    # Add language materials.
+    lang_materials = ev.add_lang_materials(row, 'lang_materials')
+    if lang_materials:
+        archivalObjectRecord['lang_materials'] = lang_materials
+
+    # Add rights statements.
+
+
+    # Add extents.
     extents = ev.add_extents(row, 'extents')
     if extents:
         archivalObjectRecord['extents'] = extents
+
+    # Add instances.
+    instances = ev.add_instances(row, 'instances')
+    if instances:
+        archivalObjectRecord['instances'] = instances
 
     # Create dictionary for item log.
     itemLog = {}
@@ -107,7 +139,15 @@ for index, row in df.iterrows():
             # Add item log to list of logs
             logForAllItems.append(itemLog)
             print('POST to AS failed, breaking loop.')
-            break
+
+        except KeyError:
+            # If JSON error occurs, record here.
+            error = post['error']
+            itemLog = {'error': error, 'title': title}
+            # Add item log to list of logs
+            logForAllItems.append(itemLog)
+            print('POST to AS failed.')
+
     else:
         # Create JSON records on your computer to review. Does not post to AS.
         dt = datetime.now().strftime('%Y-%m-%d')

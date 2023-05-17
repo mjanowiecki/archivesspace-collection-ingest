@@ -84,13 +84,13 @@ for index, row in df.iterrows():
             # Get URI and add to item log
             uri = post['uri']
             print('Subject successfully created with URI: {}'.format(uri))
-            itemLog = {'uri': uri, 'term': term}
+            itemLog = {'uri': uri, 'subject_name': term}
             # Add item log to list of logs
             logForAllItems.append(itemLog)
 
         except requests.exceptions.JSONDecodeError:
             # If POST to ArchivesSpace fails, break loop.
-            itemLog = {'uri': 'error', 'term': term}
+            itemLog = {'uri': 'error', 'subject_name': term}
             # Add item log to list of logs
             logForAllItems.append(itemLog)
             print('POST to AS failed.')
@@ -98,7 +98,7 @@ for index, row in df.iterrows():
         except KeyError:
             # If JSON error occurs, record here.
             error = post['error']
-            itemLog = {'error': error, 'term': term}
+            itemLog = {'error': error, 'subject_name': term}
             # Add item log to list of logs
             logForAllItems.append(itemLog)
             print('POST to AS failed.')

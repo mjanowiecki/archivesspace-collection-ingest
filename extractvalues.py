@@ -1,66 +1,112 @@
 import pandas as pd
 
-# note_multipart
-# Repeatable, separate by ||
-# Multipart note pattern: type==;;publish==;;content==
-# Example: type==accessrestrict;;publish==True;;content==This digital content is available offline. Contact Special Collections for more information.
 
-note_type_valid_values = ['abstract', 'accessrestrict', 'accruals', 'acqinfo', 'altformavail',
-                          'appraisal', 'arrangement', 'bioghist', 'custodhist', 'materialsspec',
-                          'odd', 'originalsloc', 'otherfindaid', 'physdesc', 'physfacet' 'phystech',
-                          'prefercite', 'processinfo', 'relatedmaterial', 'scopecontent', 'separatedmaterial',
-                          'userestrict']
+df = pd.read_csv('enumerations.csv', index_col='Enumeration code')
+df = df.drop(columns=['Enumeration', 'Value', 'Position', 'Read-only'])
+ser = df['Value code']
+boolean_values = ['True', 'False']
 
-publish_valid_values = ['True', 'False']
+# dates (repeatable, separate by ||)
+# example: label==creation;;date_type==single;;expression==2007 April 30;;begin==2007-04-30
+label_values = list(ser.get('date_label'))
+date_type_values = list(ser.get('date_type'))
+certainty_values = list(ser.get('date_certainty'))
+date_fields = {'begin': 'Not controlled',
+               'date_type': date_type_values,
+               'certainty': certainty_values,
+               'end': 'Not controlled',
+               'expression': 'Not controlled',
+               'label': label_values}
 
-note_valid_fields = {'type': note_type_valid_values, 'publish': publish_valid_values, 'content': 'Not controlled'}
+# extents (repeatable, separate by ||)
+# example: portion==whole;;extent_type==cubic_feet;;number==.167;;container_summary==1 legal size folder
+portion_values = list(ser.get('extent_portion'))
+extent_type_values = list(ser.get('extent_extent_type'))
+extent_fields = {'container_summary': 'Not controlled',
+                 'dimensions': 'Not controlled',
+                 'extent_type': extent_type_values,
+                 'number': 'Not controlled',
+                 'physical_details': 'Not controlled',
+                 'portion': portion_values}
 
-# note_singlepart
-# Not repeatable
-# Singlepart note pattern: type==;;publish==;;content==
-# Example: type==physdesc;;publish==True;;content==The handwritten letter in this collection is fragile and should be handled with care.
+
+# instances (repeatable, separate by ||)
+# example: instance_type==mixed_materials;;is_representative==False;;indicator_2==2;;type_2==folder;;ref==/repositories/3/top_containers/16978
+instance_type_values = list(ser.get('instance_instance_type'))
+instance_fields = {'instance_type': instance_type_values,
+                   'is_representative': boolean_values}
+sub_container_fields = {'indicator_2': 'Not controlled',
+                        'ref': 'Not controlled',
+                        'type_2': instance_type_values}
+
+# lang_materials (repeatable, separate by ||)
+# example: language==fre;;publish==True;;script==Latn;;content==French
+language_values = list(ser.get('language_iso639_2'))
+script_values = list(ser.get('script_iso15924'))
+lang_material_fields = {'content': 'Not controlled',
+                        'language': language_values,
+                        'label': 'Not controlled',
+                        'publish': boolean_values,
+                        'script': script_values}
 
 
-subnote_type_valid_value = []
+# linked_agents (repeatable, separate by ||)
+# example: role==creator;;relator==pht;;ref==/agents/corporate_entities/388
+role_values = list(ser.get('linked_agent_role'))
+relator_values = list(ser.get('linked_agent_archival_record_relators'))
+linked_agents_fields = {'ref': 'Not controlled',
+                        'relators': relator_values,
+                        'role': role_values}
 
-# dates
-# Repeatable, separate by ||
-# Date pattern: label==;;date_type==;;certainty==;;calendar==;;era==;;expression==;;begin==;;end==
-# Example: label==creation;;date_type==single;;expression==2007 April 30;;begin==2007-04-30
+# note_multipart (repeatable, separate by ||)
+# example: type==accessrestrict;;publish==True;;content==This digital content is available offline. Contact Special Collections for more information.
+note_type_values = list(ser.get('note_multipart_type'))
+note_fields = {'content': 'Not controlled',
+               'publish': boolean_values,
+               'type': note_type_values}
 
-label_valid_values = ['agent_relation', 'copyright', 'creation', 'deaccession', 'digitized', 'event', 'existence',
-                      'modified', 'other', 'usage']
+# note_singlepart (not repeatable)
+# example: type==physdesc;;publish==True;;content==The handwritten letter in this collection is fragile and should be handled with care.
+subnote_type_values = list(ser.get('note_singlepart_type'))
+subnote_fields = {'content': 'Not controlled',
+                  'publish': boolean_values,
+                  'type': note_type_values}
 
-date_type_valid_values = ['inclusive', 'single', 'range', 'bulk']
+# note_index
 
-certainty_valid_values = ['approximate', 'inferred']
+# note_bibliography
 
-date_valid_fields = {'label': label_valid_values, 'date_type': date_type_valid_values, 'certainty': certainty_valid_values, 'expression': 'Not controlled', 'begin': 'Not controlled', 'end': 'Not controlled'}
+# rights_statements
+rights_type_values = list(ser.get('rights_statement_rights_type'))
+status_values = list(ser.get('rights_statement_ip_status'))
+jurisdiction_values = list(ser.get('country_iso_3166'))
+other_rights_basis_values = list(ser.get('rights_statement_other_rights_basis'))
+right_statement_fields = {'rights_type': rights_type_values,
+                          'identifier': 'Not controlled',
+                          'status': status_values,
+                          'determination_date': 'Not controlled',
+                          'start_date': 'Not controlled',
+                          'end_date': 'Not controlled',
+                          'license_terms': 'Not controlled',
+                          'statue_citation': 'Not controlled',
+                          'jurisdiction': jurisdiction_values,
+                          'other_rights_basis': other_rights_basis_values,
+                          'external_documents': 'Not controlled',
+                          'acts': 'Not controlled',
+                          'linked_agents': 'Not controlled',
+                          'notes': 'Not controlled'}
 
-# extents
-# Repeatable, separate by ||
-# Extent pattern: portion==;;extent_type==;;number==;;container_summary==;;physical_details==;;dimensions==
-# Example: portion==whole;;extent_type==cubic_feet;;number==.167;;container_summary==1 legal size folder
+act_values = list(ser.get('rights_statement_act_type'))
+restriction_values = list(ser.get('rights_statement_act_restriction'))
+acts_fields = {'act_type': act_values,
+               'restriction': restriction_values,
+               'start_date': 'Not controlled',
+               'end_date': 'Not controlled',
+               'notes': 'Not controlled'}
 
-portion_valid_values = ['whole', 'part']
-
-extent_type_valid_values = ['cubic_feet', 'gigabytes', 'photographic_prints', 'items', 'Folders', 'volumes',
-                            'megabytes', 'terabytes', 'Boxes', 'Disks', 'Website(s)']
-
-extent_valid_fields = {'portion': portion_valid_values, 'extent_type': extent_type_valid_values, 'number': 'Not controlled', 'container_summary': 'Not controlled'}
-
-# linked_agents
-# Repeatable, separate by ||
-# Linked agents pattern: role==;;relator==;;ref==
-# Example: role==creator;;relator==pht;;ref==/agents/corporate_entities/388
-# Example: role==subject;;ref==/agents/corporate_entities/609
-
-role_valid_values = ['creator', 'source', 'subject']
-
-relator_valid_values = ['art', 'asn', 'auc', 'aut', 'bsl', 'cll', 'col;;', 'com', 'cre;;', 'crp', 'cur', 'dnr', 'dpt',
-                        'edt', 'eng', 'fmo', 'ive', 'ivr', 'own', 'pbl', 'pht', 'prt', 'spn']
-
-linked_agents_valid_fields = {'role': role_valid_values, 'relators': relator_valid_values, 'ref': 'Not controlled'}
+note_rights_statement_values = list(ser.get('note_rights_statement_type'))
+notes_rights_statement_fields = {'content': 'Not controlled',
+                                 'type': note_rights_statement_values}
 
 
 # This function grabs a value from your spreadsheet and adds it to the JSON record you are building.
@@ -123,7 +169,7 @@ def validate_field_values(container, field_key, field_value, valid_field_dict):
             print('{} field has bad {} field_value.'.format(field_key, field_value))
 
 
-# This function splits up field components for dates, notes, and extent fields based on specified patterns.
+# This function splits up field components based on specified patterns.
 def split_pattern(value_from_csv):
     list_of_values = []
     if pd.notna(value_from_csv):
@@ -136,10 +182,35 @@ def split_pattern(value_from_csv):
                 field_name = field_and_value[0]
                 field_value = field_and_value[1]
                 value_in_dict[field_name] = field_value
-            list_of_values.append(value_in_dict)              
+            list_of_values.append(value_in_dict)
     else:
         pass
     return list_of_values
+
+
+def check_for_values(row_name, value_from_csv):
+    try:
+        value_from_csv = row_name[value_from_csv]
+        list_of_values = split_pattern(value_from_csv)
+        return list_of_values
+
+    except KeyError:
+        pass
+
+
+def build_json(row_name, value_from_csv, jsonmodel_type, field_dictionary):
+    list_of_values = check_for_values(row_name, value_from_csv)
+    container_for_objects = []
+    if list_of_values:
+        for entry in list_of_values:
+            json_object = {'jsonmodel_type': jsonmodel_type}
+            for key, value in entry.items():
+                validate_field_values(json_object, key, value, field_dictionary)
+            container_for_objects.append(json_object)
+        if container_for_objects:
+            return container_for_objects
+    else:
+        pass
 
 
 def add_multipart_note(row_name, value_from_csv):
@@ -154,9 +225,9 @@ def add_multipart_note(row_name, value_from_csv):
                 subnote = {}
                 for key, value in entry.items():
                     if key == 'type':
-                        validate_field_values(note, key, value, note_valid_fields)
+                        validate_field_values(note, key, value, note_fields)
                     else:
-                        validate_field_values(subnote, key, value, note_valid_fields)
+                        validate_field_values(subnote, key, value, note_fields)
                 subnotes.append(subnote)
             note['subnotes'] = subnotes
             notes_multipart.append(note)
@@ -167,48 +238,73 @@ def add_multipart_note(row_name, value_from_csv):
 
 
 def add_singlepart_note(row_name, value_from_csv):
-    try:
-        value_from_csv = row_name[value_from_csv]
-        notes_singlepart = []
-        list_of_values = split_pattern(value_from_csv)
-        for entry in list_of_values:
-            note = {'jsonmodel_type': 'note_singlepart', 'publish': True}
-            for key, value in entry.items():
-                validate_field_values(note, key, value, note_valid_fields)
-            notes_singlepart.append(note)
-        if notes_singlepart:
-            return notes_singlepart
-    except KeyError:
-        pass
+    build_json(row_name, value_from_csv, 'note_singlepart', note_fields)
 
 
 def add_extents(row_name, value_from_csv):
-    try:
-        value_from_csv = row_name[value_from_csv]
-        list_of_values = split_pattern(value_from_csv)
-        extents = []
-        for entry in list_of_values:
-            extent = {'jsonmodel_type': 'extent'}
-            for key, value in entry.items():
-                validate_field_values(extent, key, value, extent_valid_fields)
-            extents.append(extent)
-        if extents:
-            return extents
-    except KeyError:
-        pass
+    build_json(row_name, value_from_csv, 'extent', extent_fields)
 
 
 def add_dates(row_name, value_from_csv):
-    try:
-        value_from_csv = row_name[value_from_csv]
-        list_of_values = split_pattern(value_from_csv)
-        dates = []
+    build_json(row_name, value_from_csv, 'date', date_fields)
+
+
+def add_linked_agents(row_name, value_from_csv):
+    list_of_values = check_for_values(row_name, value_from_csv)
+    if list_of_values:
+        agents = []
         for entry in list_of_values:
-            date = {'jsonmodel_type': 'date'}
+            linked_agents = {}
             for key, value in entry.items():
-                validate_field_values(date, key, value, date_valid_fields)
-            dates.append(date)
-        if dates:
-            return dates
-    except KeyError:
+                validate_field_values(linked_agents, key, value, linked_agents_fields)
+            agents.append(linked_agents)
+        if agents:
+            return agents
+    else:
+        pass
+
+
+def add_instances(row_name, value_from_csv):
+    list_of_values = check_for_values(row_name, value_from_csv)
+    if list_of_values:
+        instances = []
+        for entry in list_of_values:
+            instance = {'jsonmodel_type': 'instance'}
+            sub_container = {'jsonmodel_type': 'sub_container'}
+            for key, value in entry.items():
+                list_valid_fields = list(instance_fields.keys())
+                if key in list_valid_fields:
+                    validate_field_values(instance, key, value, instance_fields)
+                elif key == 'ref':
+                    sub_container['top_container'] = {'ref': value}
+                else:
+                    validate_field_values(sub_container, key, value, sub_container_fields)
+            instance['sub_container'] = sub_container
+            instances.append(instance)
+        if instances:
+            return instances
+    else:
+        pass
+
+
+def add_lang_materials(row_name, value_from_csv):
+    list_of_values = check_for_values(row_name, value_from_csv)
+    if list_of_values:
+        lang_materials = []
+        for entry in list_of_values:
+            lang_material = {'jsonmodel_type': 'lang_material'}
+            for key, value in entry.items():
+                if key == 'language':
+                    validate_field_values(lang_material, key, value, lang_material_fields)
+                else:
+                    notes = []
+                    note = {'jsonmodel_type': 'note_langmaterial'}
+                    validate_field_values(note, key, value, lang_material_fields)
+            if note:
+                notes.append(note)
+                lang_material['notes'] = notes
+            lang_materials.append(lang_material)
+        if lang_materials:
+            return lang_materials
+    else:
         pass
