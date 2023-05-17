@@ -1,0 +1,1845 @@
+Enumeration code,Enumeration,Value code,Value,Position,Read-only
+accession_acquisition_type,Accession Acquisition Type,deposit,Deposit,0,0
+accession_acquisition_type,Accession Acquisition Type,gift,Gift,1,0
+accession_acquisition_type,Accession Acquisition Type,purchase,Purchase,2,0
+accession_acquisition_type,Accession Acquisition Type,transfer,Transfer,3,0
+accession_parts_relator,Accession Parts Relator,forms_part_of,Forms Part of,0,0
+accession_parts_relator,Accession Parts Relator,has_part,Has Part,1,0
+accession_parts_relator_type,Accession Parts Relator Type,part,"""Part"" relationship",0,0
+accession_resource_type,Accession Resource Type,collection,Collection,0,0
+accession_resource_type,Accession Resource Type,papers,Papers,1,0
+accession_resource_type,Accession Resource Type,publications,Publications,2,0
+accession_resource_type,Accession Resource Type,records,Records,3,0
+accession_resource_type,Accession Resource Type,photographs,photographs,4,0
+accession_resource_type,Accession Resource Type,manuscript item,manuscript item,5,0
+accession_resource_type,Accession Resource Type,artifact,artifact,6,0
+accession_resource_type,Accession Resource Type,oral histories,oral histories,7,0
+accession_sibling_relator,Accession Sibling Relator,sibling_of,Is Sibling of,0,0
+accession_sibling_relator_type,Accession Sibling Relator Type,bound_with,"""Bound With"" relationship",0,0
+agency_code_type,Record Control Agency Code Type,oclc,OCLC,0,0
+agency_code_type,Record Control Agency Code Type,local,Local,1,0
+agent_contact_salutation,Agent Contact Salutation,madame,Madame,0,0
+agent_contact_salutation,Agent Contact Salutation,mr,Mr.,1,0
+agent_contact_salutation,Agent Contact Salutation,mrs,Mrs.,2,0
+agent_contact_salutation,Agent Contact Salutation,ms,Ms.,3,0
+agent_contact_salutation,Agent Contact Salutation,sir,Sir,4,0
+agent_relationship_associative_relator,Agent Relationship Associative Relator,is_associative_with,Associative with Related,0,1
+agent_relationship_earlierlater_relator,Agent Relationship Earlierlater Relator,is_earlier_form_of,Earlier Form of Related,0,1
+agent_relationship_earlierlater_relator,Agent Relationship Earlierlater Relator,is_later_form_of,Later Form of Related,1,1
+agent_relationship_family_relator,Agent Relationship Family Relator,is_related_with,Agent Relationship Related Relator,0,1
+agent_relationship_hierarchical_relator,Agent Relationship Hierarchical Relator,is_hierarchical_with,Agent Relationship Hierarchical Relator,0,1
+agent_relationship_identity_relator,Agent Relationship Identity Relator,is_identified_with,Agent Relationship Identified With Relator,0,1
+agent_relationship_parentchild_relator,Agent Relationship Parentchild Relator,is_child_of,Child of Related,0,1
+agent_relationship_parentchild_relator,Agent Relationship Parentchild Relator,is_parent_of,Parent of Related,1,1
+agent_relationship_subordinatesuperior_relator,Agent Relationship Subordinatesuperior Relator,is_subordinate_to,Is Subordinate to Related,0,1
+agent_relationship_subordinatesuperior_relator,Agent Relationship Subordinatesuperior Relator,is_superior_of,Is Superior of Related,1,1
+agent_relationship_temporal_relator,Agent Relationship Temporal Relator,is_temporal_with,Agent Relationship Temporal Relator,0,1
+archival_record_level,Archival Record Level,class,Class,0,0
+archival_record_level,Archival Record Level,collection,Collection,1,0
+archival_record_level,Archival Record Level,file,File,2,0
+archival_record_level,Archival Record Level,fonds,Fonds,3,0
+archival_record_level,Archival Record Level,item,Item,4,0
+archival_record_level,Archival Record Level,otherlevel,Other Level,5,0
+archival_record_level,Archival Record Level,recordgrp,Record Group,6,0
+archival_record_level,Archival Record Level,series,Series,7,0
+archival_record_level,Archival Record Level,subfonds,Sub-Fonds,8,0
+archival_record_level,Archival Record Level,subgrp,Sub-Group,9,0
+archival_record_level,Archival Record Level,subseries,Sub-Series,10,0
+archival_record_level,Archival Record Level,fiel,fiel,11,0
+begin_date_standardized_type,Begin Date Standardized Type,standard,Standard,0,0
+begin_date_standardized_type,Begin Date Standardized Type,not_before,Not Before,1,0
+begin_date_standardized_type,Begin Date Standardized Type,not_after,Not After,2,0
+cataloging_source,Record Control Cataloging Source,nat_bib_agency,National bibliographic agency,0,0
+cataloging_source,Record Control Cataloging Source,ccp,Cooperative cataloging program,1,0
+cataloging_source,Record Control Cataloging Source,other,Other,2,0
+cataloging_source,Record Control Cataloging Source,unknown,Unknown,3,0
+cataloging_source,Record Control Cataloging Source,natc,No attempt to code,4,0
+collection_management_processing_priority,Collection Management Processing Priority,high,High,0,0
+collection_management_processing_priority,Collection Management Processing Priority,low,Low,1,0
+collection_management_processing_priority,Collection Management Processing Priority,medium,Medium,2,0
+collection_management_processing_status,Collection Management Processing Status,completed,Completed,0,0
+collection_management_processing_status,Collection Management Processing Status,in_progress,In Progress,1,0
+collection_management_processing_status,Collection Management Processing Status,new,New,2,0
+collection_management_processing_status,Collection Management Processing Status,deaccessioned,deaccessioned,3,0
+collection_management_processing_status,Collection Management Processing Status,partially processed,partially processed,4,0
+collection_management_processing_status,Collection Management Processing Status,unprocessed,unprocessed,5,0
+container_location_status,Container Location Status,current,Current,0,0
+container_location_status,Container Location Status,previous,Previous,1,0
+container_type,Container Type,box,Box,0,0
+container_type,Container Type,folder,Folder,1,0
+container_type,Container Type,folio,folio,2,0
+container_type,Container Type,object,Object,3,0
+container_type,Container Type,reel,Reel,4,0
+container_type,Container Type,cassette,cassette,5,0
+container_type,Container Type,drawer,drawer,6,0
+container_type,Container Type,range,range,7,0
+container_type,Container Type,volume,Volume,8,0
+container_type,Container Type,album,album,9,0
+container_type,Container Type,map-case,map-case,10,0
+container_type,Container Type,item,item,11,0
+container_type,Container Type,MixedMaterials,MixedMaterials,12,0
+container_type,Container Type,Container,Container,13,0
+container_type,Container Type,Peabody Archives shelf,Peabody Archives shelf,14,0
+container_type,Container Type,Disk,Disk,15,0
+container_type,Container Type,Digital content,Digital content,16,0
+country_iso_3166,Country ISO 3166,AD,Andorra,0,0
+country_iso_3166,Country ISO 3166,AE,United Arab Emirates,1,0
+country_iso_3166,Country ISO 3166,AF,Afghanistan,2,0
+country_iso_3166,Country ISO 3166,AG,Antigua and Barbuda,3,0
+country_iso_3166,Country ISO 3166,AI,Anguilla,4,0
+country_iso_3166,Country ISO 3166,AL,Albania,5,0
+country_iso_3166,Country ISO 3166,AM,Armenia,6,0
+country_iso_3166,Country ISO 3166,AO,Angola,7,0
+country_iso_3166,Country ISO 3166,AQ,Antarctica,8,0
+country_iso_3166,Country ISO 3166,AR,Argentina,9,0
+country_iso_3166,Country ISO 3166,AS,American Samoa,10,0
+country_iso_3166,Country ISO 3166,AT,Austria,11,0
+country_iso_3166,Country ISO 3166,AU,Australia,12,0
+country_iso_3166,Country ISO 3166,AW,Aruba,13,0
+country_iso_3166,Country ISO 3166,AX,Åland Islands,14,0
+country_iso_3166,Country ISO 3166,AZ,Azerbaijan,15,0
+country_iso_3166,Country ISO 3166,BA,Bosnia and Herzegovina,16,0
+country_iso_3166,Country ISO 3166,BB,Barbados,17,0
+country_iso_3166,Country ISO 3166,BD,Bangladesh,18,0
+country_iso_3166,Country ISO 3166,BE,Belgium,19,0
+country_iso_3166,Country ISO 3166,BF,Burkina Faso,20,0
+country_iso_3166,Country ISO 3166,BG,Bulgaria,21,0
+country_iso_3166,Country ISO 3166,BH,Bahrain,22,0
+country_iso_3166,Country ISO 3166,BI,Burundi,23,0
+country_iso_3166,Country ISO 3166,BJ,Benin,24,0
+country_iso_3166,Country ISO 3166,BL,Saint Barthélemy,25,0
+country_iso_3166,Country ISO 3166,BM,Bermuda,26,0
+country_iso_3166,Country ISO 3166,BN,Brunei Darussalam,27,0
+country_iso_3166,Country ISO 3166,BO,Bolivia,28,0
+country_iso_3166,Country ISO 3166,BQ,"Bonaire, Sint Eustatius and Saba",29,0
+country_iso_3166,Country ISO 3166,BR,Brazil,30,0
+country_iso_3166,Country ISO 3166,BS,Bahamas,31,0
+country_iso_3166,Country ISO 3166,BT,Bhutan,32,0
+country_iso_3166,Country ISO 3166,BV,Bouvet Island,33,0
+country_iso_3166,Country ISO 3166,BW,Botswana,34,0
+country_iso_3166,Country ISO 3166,BY,Belarus,35,0
+country_iso_3166,Country ISO 3166,BZ,Belize,36,0
+country_iso_3166,Country ISO 3166,CA,Canada,37,0
+country_iso_3166,Country ISO 3166,CC,Cocos (Keeling) Islands,38,0
+country_iso_3166,Country ISO 3166,CD,Democratic Republic of the Congo,39,0
+country_iso_3166,Country ISO 3166,CF,Central African Republic,40,0
+country_iso_3166,Country ISO 3166,CG,Congo,41,0
+country_iso_3166,Country ISO 3166,CH,Switzerland,42,0
+country_iso_3166,Country ISO 3166,CI,Côte d'Ivoire,43,0
+country_iso_3166,Country ISO 3166,CK,Cook Islands,44,0
+country_iso_3166,Country ISO 3166,CL,Chile,45,0
+country_iso_3166,Country ISO 3166,CM,Cameroon,46,0
+country_iso_3166,Country ISO 3166,CN,China,47,0
+country_iso_3166,Country ISO 3166,CO,Colombia,48,0
+country_iso_3166,Country ISO 3166,CR,Costa Rica,49,0
+country_iso_3166,Country ISO 3166,CU,Cuba,50,0
+country_iso_3166,Country ISO 3166,CV,Cape Verde,51,0
+country_iso_3166,Country ISO 3166,CW,Curaçao,52,0
+country_iso_3166,Country ISO 3166,CX,Christmas island,53,0
+country_iso_3166,Country ISO 3166,CY,Cyprus,54,0
+country_iso_3166,Country ISO 3166,CZ,Czech Republic,55,0
+country_iso_3166,Country ISO 3166,DE,Germany,56,0
+country_iso_3166,Country ISO 3166,DJ,Djibouti,57,0
+country_iso_3166,Country ISO 3166,DK,Denmark,58,0
+country_iso_3166,Country ISO 3166,DM,Dominica,59,0
+country_iso_3166,Country ISO 3166,DO,Dominican Republic,60,0
+country_iso_3166,Country ISO 3166,DZ,Algeria,61,0
+country_iso_3166,Country ISO 3166,EC,Ecuador,62,0
+country_iso_3166,Country ISO 3166,EE,Estonia,63,0
+country_iso_3166,Country ISO 3166,EG,Egypt,64,0
+country_iso_3166,Country ISO 3166,EH,Western Sahara,65,0
+country_iso_3166,Country ISO 3166,ER,Eritrea,66,0
+country_iso_3166,Country ISO 3166,ES,Spain,67,0
+country_iso_3166,Country ISO 3166,ET,Ethiopia,68,0
+country_iso_3166,Country ISO 3166,FI,Finland,69,0
+country_iso_3166,Country ISO 3166,FJ,Fiji,70,0
+country_iso_3166,Country ISO 3166,FK,Falkland Islands (Malvinas),71,0
+country_iso_3166,Country ISO 3166,FM,"Micronesia, Federated States of",72,0
+country_iso_3166,Country ISO 3166,FO,Faroe Islands,73,0
+country_iso_3166,Country ISO 3166,FR,France,74,0
+country_iso_3166,Country ISO 3166,GA,Gabon,75,0
+country_iso_3166,Country ISO 3166,GB,United Kingdom,76,0
+country_iso_3166,Country ISO 3166,GD,Grenada,77,0
+country_iso_3166,Country ISO 3166,GE,Georgia,78,0
+country_iso_3166,Country ISO 3166,GF,French Guiana,79,0
+country_iso_3166,Country ISO 3166,GG,Guernsey,80,0
+country_iso_3166,Country ISO 3166,GH,Ghana,81,0
+country_iso_3166,Country ISO 3166,GI,Gibraltar,82,0
+country_iso_3166,Country ISO 3166,GL,Greenland,83,0
+country_iso_3166,Country ISO 3166,GM,Gambia,84,0
+country_iso_3166,Country ISO 3166,GN,Guinea,85,0
+country_iso_3166,Country ISO 3166,GP,Guadeloupe,86,0
+country_iso_3166,Country ISO 3166,GQ,Equatorial Guinea,87,0
+country_iso_3166,Country ISO 3166,GR,Greece,88,0
+country_iso_3166,Country ISO 3166,GS,South Georgia and the South Sandwich Islands,89,0
+country_iso_3166,Country ISO 3166,GT,Guatemala,90,0
+country_iso_3166,Country ISO 3166,GU,Guam,91,0
+country_iso_3166,Country ISO 3166,GW,Guinea-Bissau,92,0
+country_iso_3166,Country ISO 3166,GY,Guyana,93,0
+country_iso_3166,Country ISO 3166,HK,Hong Kong,94,0
+country_iso_3166,Country ISO 3166,HM,Heard Island and Mcdonald Islands,95,0
+country_iso_3166,Country ISO 3166,HN,Honduras,96,0
+country_iso_3166,Country ISO 3166,HR,Croatia,97,0
+country_iso_3166,Country ISO 3166,HT,Haiti,98,0
+country_iso_3166,Country ISO 3166,HU,Hungary,99,0
+country_iso_3166,Country ISO 3166,ID,Indonesia,100,0
+country_iso_3166,Country ISO 3166,IE,Ireland,101,0
+country_iso_3166,Country ISO 3166,IL,Israel,102,0
+country_iso_3166,Country ISO 3166,IM,Isle of Man,103,0
+country_iso_3166,Country ISO 3166,IN,India,104,0
+country_iso_3166,Country ISO 3166,IO,British Indian Ocean Territory,105,0
+country_iso_3166,Country ISO 3166,IQ,Iraq,106,0
+country_iso_3166,Country ISO 3166,IR,"Iran, Islamic Republic of",107,0
+country_iso_3166,Country ISO 3166,IS,Iceland,108,0
+country_iso_3166,Country ISO 3166,IT,Italy,109,0
+country_iso_3166,Country ISO 3166,JE,Jersey,110,0
+country_iso_3166,Country ISO 3166,JM,Jamaica,111,0
+country_iso_3166,Country ISO 3166,JO,Jordan,112,0
+country_iso_3166,Country ISO 3166,JP,Japan,113,0
+country_iso_3166,Country ISO 3166,KE,Kenya,114,0
+country_iso_3166,Country ISO 3166,KG,Kyrgyzstan,115,0
+country_iso_3166,Country ISO 3166,KH,Cambodia,116,0
+country_iso_3166,Country ISO 3166,KI,Kiribati,117,0
+country_iso_3166,Country ISO 3166,KM,Comoros,118,0
+country_iso_3166,Country ISO 3166,KN,Saint Kitts and Nevis,119,0
+country_iso_3166,Country ISO 3166,KP,"Korea, Democratic People's Republic of",120,0
+country_iso_3166,Country ISO 3166,KR,"Korea, Republic of",121,0
+country_iso_3166,Country ISO 3166,KW,Kuwait,122,0
+country_iso_3166,Country ISO 3166,KY,Cayman Islands,123,0
+country_iso_3166,Country ISO 3166,KZ,Kazakhstan,124,0
+country_iso_3166,Country ISO 3166,LA,Lao People's Democratic Republic,125,0
+country_iso_3166,Country ISO 3166,LB,Lebanon,126,0
+country_iso_3166,Country ISO 3166,LC,Saint Lucia,127,0
+country_iso_3166,Country ISO 3166,LI,Liechtenstein,128,0
+country_iso_3166,Country ISO 3166,LK,Sri Lanka,129,0
+country_iso_3166,Country ISO 3166,LR,Liberia,130,0
+country_iso_3166,Country ISO 3166,LS,Lesotho,131,0
+country_iso_3166,Country ISO 3166,LT,Lithuania,132,0
+country_iso_3166,Country ISO 3166,LU,Luxembourg,133,0
+country_iso_3166,Country ISO 3166,LV,Latvia,134,0
+country_iso_3166,Country ISO 3166,LY,Libya,135,0
+country_iso_3166,Country ISO 3166,MA,Morocco,136,0
+country_iso_3166,Country ISO 3166,MC,Monaco,137,0
+country_iso_3166,Country ISO 3166,MD,"Moldova, Republic of",138,0
+country_iso_3166,Country ISO 3166,ME,Montenegro,139,0
+country_iso_3166,Country ISO 3166,MF,Saint Martin (French Part),140,0
+country_iso_3166,Country ISO 3166,MG,Madagascar,141,0
+country_iso_3166,Country ISO 3166,MH,Marshall Islands,142,0
+country_iso_3166,Country ISO 3166,MK,"Macedonia, Former Yugoslav Republic of",143,0
+country_iso_3166,Country ISO 3166,ML,Mali,144,0
+country_iso_3166,Country ISO 3166,MM,Myanmar,145,0
+country_iso_3166,Country ISO 3166,MN,Mongolia,146,0
+country_iso_3166,Country ISO 3166,MO,Macao,147,0
+country_iso_3166,Country ISO 3166,MP,Northern Mariana Islands,148,0
+country_iso_3166,Country ISO 3166,MQ,Martinique,149,0
+country_iso_3166,Country ISO 3166,MR,Mauritania,150,0
+country_iso_3166,Country ISO 3166,MS,Montserrat,151,0
+country_iso_3166,Country ISO 3166,MT,Malta,152,0
+country_iso_3166,Country ISO 3166,MU,Mauritius,153,0
+country_iso_3166,Country ISO 3166,MV,Maldives,154,0
+country_iso_3166,Country ISO 3166,MW,Malawi,155,0
+country_iso_3166,Country ISO 3166,MX,Mexico,156,0
+country_iso_3166,Country ISO 3166,MY,Malaysia,157,0
+country_iso_3166,Country ISO 3166,MZ,Mozambique,158,0
+country_iso_3166,Country ISO 3166,NA,Namibia,159,0
+country_iso_3166,Country ISO 3166,NC,New Caledonia,160,0
+country_iso_3166,Country ISO 3166,NE,Niger,161,0
+country_iso_3166,Country ISO 3166,NF,Norfolk Island,162,0
+country_iso_3166,Country ISO 3166,NG,Nigeria,163,0
+country_iso_3166,Country ISO 3166,NI,Nicaragua,164,0
+country_iso_3166,Country ISO 3166,NL,Netherlands,165,0
+country_iso_3166,Country ISO 3166,NO,Norway,166,0
+country_iso_3166,Country ISO 3166,NP,Nepal,167,0
+country_iso_3166,Country ISO 3166,NR,Nauru,168,0
+country_iso_3166,Country ISO 3166,NU,Niue,169,0
+country_iso_3166,Country ISO 3166,NZ,New Zealand,170,0
+country_iso_3166,Country ISO 3166,OM,Oman,171,0
+country_iso_3166,Country ISO 3166,PA,Panama,172,0
+country_iso_3166,Country ISO 3166,PE,Peru,173,0
+country_iso_3166,Country ISO 3166,PF,French Polynesia,174,0
+country_iso_3166,Country ISO 3166,PG,Papua New Guinea,175,0
+country_iso_3166,Country ISO 3166,PH,Philippines,176,0
+country_iso_3166,Country ISO 3166,PK,Pakistan,177,0
+country_iso_3166,Country ISO 3166,PL,Poland,178,0
+country_iso_3166,Country ISO 3166,PM,Saint Pierre and Miquelon,179,0
+country_iso_3166,Country ISO 3166,PN,Pitcairn,180,0
+country_iso_3166,Country ISO 3166,PR,Puerto rico,181,0
+country_iso_3166,Country ISO 3166,PS,"Palestinian Territory, Occupied",182,0
+country_iso_3166,Country ISO 3166,PT,Portugal,183,0
+country_iso_3166,Country ISO 3166,PW,Palau,184,0
+country_iso_3166,Country ISO 3166,PY,Paraguay,185,0
+country_iso_3166,Country ISO 3166,QA,Qatar,186,0
+country_iso_3166,Country ISO 3166,RE,Réunion,187,0
+country_iso_3166,Country ISO 3166,RO,Romania,188,0
+country_iso_3166,Country ISO 3166,RS,Serbia,189,0
+country_iso_3166,Country ISO 3166,RU,Russian Federation,190,0
+country_iso_3166,Country ISO 3166,RW,Rwanda,191,0
+country_iso_3166,Country ISO 3166,SA,Saudi Arabia,192,0
+country_iso_3166,Country ISO 3166,SB,Solomon Islands,193,0
+country_iso_3166,Country ISO 3166,SC,Seychelles,194,0
+country_iso_3166,Country ISO 3166,SD,Sudan,195,0
+country_iso_3166,Country ISO 3166,SE,Sweden,196,0
+country_iso_3166,Country ISO 3166,SG,Singapore,197,0
+country_iso_3166,Country ISO 3166,SH,"Saint Helena, Ascension and Tristan da Cunha",198,0
+country_iso_3166,Country ISO 3166,SI,Slovenia,199,0
+country_iso_3166,Country ISO 3166,SJ,Svalbard and Jan Mayen,200,0
+country_iso_3166,Country ISO 3166,SK,Slovakia,201,0
+country_iso_3166,Country ISO 3166,SL,Sierra Leone,202,0
+country_iso_3166,Country ISO 3166,SM,San Marino,203,0
+country_iso_3166,Country ISO 3166,SN,Senegal,204,0
+country_iso_3166,Country ISO 3166,SO,Somalia,205,0
+country_iso_3166,Country ISO 3166,SR,Suriname,206,0
+country_iso_3166,Country ISO 3166,SS,South Sudan,207,0
+country_iso_3166,Country ISO 3166,ST,Sao Tome and Principe,208,0
+country_iso_3166,Country ISO 3166,SV,El Salvador,209,0
+country_iso_3166,Country ISO 3166,SX,Sint Maarten (Dutch Part),210,0
+country_iso_3166,Country ISO 3166,SY,Syrian Arab Republic,211,0
+country_iso_3166,Country ISO 3166,SZ,Swaziland,212,0
+country_iso_3166,Country ISO 3166,TC,Turks and Caicos Islands,213,0
+country_iso_3166,Country ISO 3166,TD,Chad,214,0
+country_iso_3166,Country ISO 3166,TF,French Southern Territories,215,0
+country_iso_3166,Country ISO 3166,TG,Togo,216,0
+country_iso_3166,Country ISO 3166,TH,Thailand,217,0
+country_iso_3166,Country ISO 3166,TJ,Tajikistan,218,0
+country_iso_3166,Country ISO 3166,TK,Tokelau,219,0
+country_iso_3166,Country ISO 3166,TL,Timor-Leste,220,0
+country_iso_3166,Country ISO 3166,TM,Turkmenistan,221,0
+country_iso_3166,Country ISO 3166,TN,Tunisia,222,0
+country_iso_3166,Country ISO 3166,TO,Tonga,223,0
+country_iso_3166,Country ISO 3166,TR,Turkey,224,0
+country_iso_3166,Country ISO 3166,TT,Trinidad and Tobago,225,0
+country_iso_3166,Country ISO 3166,TV,Tuvalu,226,0
+country_iso_3166,Country ISO 3166,TW,"Taiwan, Province of China",227,0
+country_iso_3166,Country ISO 3166,TZ,"Tanzania, United Republic of",228,0
+country_iso_3166,Country ISO 3166,UA,Ukraine,229,0
+country_iso_3166,Country ISO 3166,UG,Uganda,230,0
+country_iso_3166,Country ISO 3166,UM,United States Minor Outlying Islands,231,0
+country_iso_3166,Country ISO 3166,US,United States,232,0
+country_iso_3166,Country ISO 3166,UY,Uruguay,233,0
+country_iso_3166,Country ISO 3166,UZ,Uzbekistan,234,0
+country_iso_3166,Country ISO 3166,VA,Holy See (Vatican City State),235,0
+country_iso_3166,Country ISO 3166,VC,Saint Vincent and the Grenadines,236,0
+country_iso_3166,Country ISO 3166,VE,Venezuela,237,0
+country_iso_3166,Country ISO 3166,VG,"Virgin Islands, British",238,0
+country_iso_3166,Country ISO 3166,VI,"Virgin Islands, U.S.",239,0
+country_iso_3166,Country ISO 3166,VN,Viet Nam,240,0
+country_iso_3166,Country ISO 3166,VU,Vanuatu,241,0
+country_iso_3166,Country ISO 3166,WF,Wallis and Futuna,242,0
+country_iso_3166,Country ISO 3166,WS,Samoa,243,0
+country_iso_3166,Country ISO 3166,YE,Yemen,244,0
+country_iso_3166,Country ISO 3166,YT,Mayotte,245,0
+country_iso_3166,Country ISO 3166,ZA,South Africa,246,0
+country_iso_3166,Country ISO 3166,ZM,Zambia,247,0
+country_iso_3166,Country ISO 3166,ZW,Zimbabwe,248,0
+date_calendar,Date Calendar,gregorian,Gregorian,0,0
+date_certainty,Date Certainty,approximate,Approximate,0,0
+date_certainty,Date Certainty,inferred,Inferred,1,0
+date_certainty,Date Certainty,questionable,Questionable,2,0
+date_era,Date Era,ce,ce,0,0
+date_label,Date Label,agent_relation,Agent Relation,0,0
+date_label,Date Label,broadcast,Broadcast,1,0
+date_label,Date Label,copyright,Copyright,2,0
+date_label,Date Label,creation,Creation,3,0
+date_label,Date Label,deaccession,Deaccession,4,0
+date_label,Date Label,digitized,Digitized,5,0
+date_label,Date Label,event,Event,6,0
+date_label,Date Label,existence,Existence,7,0
+date_label,Date Label,issued,Issued,8,0
+date_label,Date Label,modified,Modified,9,0
+date_label,Date Label,other,Other,10,0
+date_label,Date Label,publication,Publication,11,0
+date_label,Date Label,record_keeping,Record Keeping,12,0
+date_label,Date Label,usage,Usage,13,0
+date_role,Date Role,begin,Begin,0,0
+date_role,Date Role,end,End,1,0
+date_standardized_type,Date Standardized Type,standard,Standard,0,0
+date_standardized_type,Date Standardized Type,not_before,Not Before,1,0
+date_standardized_type,Date Standardized Type,not_after,Not After,2,0
+date_type,Date Type,inclusive,Inclusive Dates,0,0
+date_type,Date Type,single,Single,1,0
+date_type,Date Type,range,Range,2,0
+date_type,Date Type,bulk,Bulk Dates,3,0
+date_type,Date Type,1884,1884,4,0
+date_type_structured,Date Type,single,Single,0,0
+date_type_structured,Date Type,range,Range,1,0
+deaccession_scope,Deaccession Scope,part,Part,0,0
+deaccession_scope,Deaccession Scope,whole,Whole,1,0
+digital_object_digital_object_type,Digital Object Digital Object Type,cartographic,Cartographic,0,0
+digital_object_digital_object_type,Digital Object Digital Object Type,mixed_materials,Mixed Materials,1,0
+digital_object_digital_object_type,Digital Object Digital Object Type,moving_image,Moving Image,2,0
+digital_object_digital_object_type,Digital Object Digital Object Type,notated_music,Notated Music,3,0
+digital_object_digital_object_type,Digital Object Digital Object Type,software_multimedia,"Software, Multimedia",4,0
+digital_object_digital_object_type,Digital Object Digital Object Type,sound_recording,Sound Recording,5,0
+digital_object_digital_object_type,Digital Object Digital Object Type,sound_recording_musical,Sound Recording (Musical),6,0
+digital_object_digital_object_type,Digital Object Digital Object Type,sound_recording_nonmusical,Sound Recording (Non-musical),7,0
+digital_object_digital_object_type,Digital Object Digital Object Type,still_image,Still Image,8,0
+digital_object_digital_object_type,Digital Object Digital Object Type,text,Text,9,0
+digital_object_digital_object_type,Digital Object Digital Object Type,three dimensional object,three dimensional object,10,0
+digital_object_digital_object_type,Digital Object Digital Object Type,Website,Website,11,0
+digital_object_level,Digital Object Level,collection,Collection,0,0
+digital_object_level,Digital Object Level,image,Image,1,0
+digital_object_level,Digital Object Level,work,Work,2,0
+dimension_units,Dimension Units,inches,Inches,0,0
+dimension_units,Dimension Units,feet,Feet,1,0
+dimension_units,Dimension Units,yards,Yards,2,0
+dimension_units,Dimension Units,millimeters,Millimeters,3,0
+dimension_units,Dimension Units,centimeters,Centimeters,4,0
+dimension_units,Dimension Units,meters,Meters,5,0
+end_date_standardized_type,End Date Standardized Type,standard,Standard,0,0
+end_date_standardized_type,End Date Standardized Type,not_before,Not Before,1,0
+end_date_standardized_type,End Date Standardized Type,not_after,Not After,2,0
+event_event_type,Event Event Type,accession,Accession,0,0
+event_event_type,Event Event Type,accumulation,Accumulation,1,0
+event_event_type,Event Event Type,acknowledgement_received,Acknowledgement Received,2,0
+event_event_type,Event Event Type,acknowledgement_sent,Acknowledgement Sent,3,0
+event_event_type,Event Event Type,agreement_received,Agreement Received,4,0
+event_event_type,Event Event Type,agreement_sent,Agreement Sent,5,0
+event_event_type,Event Event Type,agreement_signed,Agreement Signed,6,0
+event_event_type,Event Event Type,appraisal,Appraisal,7,0
+event_event_type,Event Event Type,assessment,Assessment,8,0
+event_event_type,Event Event Type,capture,Capture,9,0
+event_event_type,Event Event Type,cataloged,Cataloged,10,0
+event_event_type,Event Event Type,collection,Collection,11,0
+event_event_type,Event Event Type,component_transfer,Component Transfer,12,0
+event_event_type,Event Event Type,compression,Compression,13,0
+event_event_type,Event Event Type,contribution,Contribution,14,0
+event_event_type,Event Event Type,copyright_transfer,Copyright Transfer,15,0
+event_event_type,Event Event Type,custody_transfer,Custody Transfer,16,0
+event_event_type,Event Event Type,deaccession,Deaccession,17,0
+event_event_type,Event Event Type,decompression,Decompression,18,0
+event_event_type,Event Event Type,decryption,Decryption,19,0
+event_event_type,Event Event Type,deletion,Deletion,20,0
+event_event_type,Event Event Type,digital_signature_validation,Digital Signature Validation,21,0
+event_event_type,Event Event Type,fixity_check,Fixity Check,22,0
+event_event_type,Event Event Type,ingestion,Ingestion,23,0
+event_event_type,Event Event Type,message_digest_calculation,Message Digest Calculation,24,0
+event_event_type,Event Event Type,migration,Migration,25,0
+event_event_type,Event Event Type,normalization,Normalization,26,0
+event_event_type,Event Event Type,processed,Processed,27,0
+event_event_type,Event Event Type,publication,Publication,28,0
+event_event_type,Event Event Type,replication,Replication,29,0
+event_event_type,Event Event Type,validation,Validation,30,0
+event_event_type,Event Event Type,virus_check,Virus Check,31,0
+event_event_type,Event Event Type,processing_started,Processing Started,32,0
+event_event_type,Event Event Type,processing_completed,Processing Completed,33,0
+event_event_type,Event Event Type,processing_in_progress,Processing in Progress,34,0
+event_event_type,Event Event Type,processing_new,Processing New,35,0
+event_event_type,Event Event Type,rights_transferred,Rights Transferred,36,0
+event_event_type,Event Event Type,request,Request,37,1
+event_outcome,Event Outcome,fail,Fail,0,0
+event_outcome,Event Outcome,partial pass,Partial Pass,1,0
+event_outcome,Event Outcome,pass,Pass,2,0
+event_outcome,Event Outcome,cancelled,Cancelled,3,1
+event_outcome,Event Outcome,fulfilled,Fulfilled,4,1
+event_outcome,Event Outcome,pending,Pending,5,1
+extent_extent_type,Extent Extent Type,cubic_feet,Cubic Feet,0,0
+extent_extent_type,Extent Extent Type,gigabytes,Gigabytes,1,0
+extent_extent_type,Extent Extent Type,photographic_prints,Photographic Prints,2,0
+extent_extent_type,Extent Extent Type,Items,Items,3,0
+extent_extent_type,Extent Extent Type,Folders,Folders,4,0
+extent_extent_type,Extent Extent Type,volumes,Volumes,5,0
+extent_extent_type,Extent Extent Type,leaves,Leaves,6,0
+extent_extent_type,Extent Extent Type,megabytes,Megabytes,7,0
+extent_extent_type,Extent Extent Type,terabytes,Terabytes,8,0
+extent_extent_type,Extent Extent Type,reels,Reels,9,0
+extent_extent_type,Extent Extent Type,letter size document boxes,letter size document boxes,10,0
+extent_extent_type,Extent Extent Type,Cubic Feet,Cubic Feet,11,0
+extent_extent_type,Extent Extent Type,"record center cartons,","record center cartons,",12,0
+extent_extent_type,Extent Extent Type,Boxes,Boxes,13,0
+extent_extent_type,Extent Extent Type,Disks,Disks,14,0
+extent_extent_type,Extent Extent Type,Website(s),Website(s),15,0
+extent_portion,Extent Portion,whole,Whole,0,0
+extent_portion,Extent Portion,part,Part,1,0
+file_version_checksum_methods,File Version Checksum Methods,md5,MD5,0,0
+file_version_checksum_methods,File Version Checksum Methods,sha-1,SHA-1,1,0
+file_version_checksum_methods,File Version Checksum Methods,sha-256,SHA-256,2,0
+file_version_checksum_methods,File Version Checksum Methods,sha-384,SHA-384,3,0
+file_version_checksum_methods,File Version Checksum Methods,sha-512,SHA-512,4,0
+file_version_file_format_name,File Version File Format Name,aiff,Audio Interchange File Format,0,0
+file_version_file_format_name,File Version File Format Name,avi,Audio/Video Interleaved Format,1,0
+file_version_file_format_name,File Version File Format Name,gif,Graphics Interchange Format,2,0
+file_version_file_format_name,File Version File Format Name,jpeg,JPEG File Interchange Format,3,0
+file_version_file_format_name,File Version File Format Name,mp3,MPEG Audio Layer 3,4,0
+file_version_file_format_name,File Version File Format Name,pdf,Portable Document Format,5,0
+file_version_file_format_name,File Version File Format Name,tiff,Tagged Image File Format,6,0
+file_version_file_format_name,File Version File Format Name,txt,Plain Text File,7,0
+file_version_file_format_name,File Version File Format Name,dng,dng,8,0
+file_version_use_statement,File Version Use Statement,application,application,0,0
+file_version_use_statement,File Version Use Statement,application-pdf,application-pdf,1,0
+file_version_use_statement,File Version Use Statement,audio-clip,Audio-Clip,2,0
+file_version_use_statement,File Version Use Statement,audio-master,Audio-Master,3,0
+file_version_use_statement,File Version Use Statement,audio-master-edited,Audio-Master-Edited,4,0
+file_version_use_statement,File Version Use Statement,audio-service,Audio-Service,5,0
+file_version_use_statement,File Version Use Statement,image-master,Image-Master,6,0
+file_version_use_statement,File Version Use Statement,image-master-edited,Image-Master-Edited,7,0
+file_version_use_statement,File Version Use Statement,image-service,Image-Service,8,0
+file_version_use_statement,File Version Use Statement,image-service-edited,Image-Service-Edited,9,0
+file_version_use_statement,File Version Use Statement,image-thumbnail,Image-Thumbnail,10,0
+file_version_use_statement,File Version Use Statement,test-data,test-data,11,0
+file_version_use_statement,File Version Use Statement,text-codebook,Text-Codebook,12,0
+file_version_use_statement,File Version Use Statement,text-data_definition,Text-Data Definition,13,0
+file_version_use_statement,File Version Use Statement,text-georeference,Text-Georeference,14,0
+file_version_use_statement,File Version Use Statement,text-ocr-edited,Text-Ocr-Edited,15,0
+file_version_use_statement,File Version Use Statement,text-ocr-unedited,Text-Ocr-Unedited,16,0
+file_version_use_statement,File Version Use Statement,text-tei-transcripted,Text-Tei-Transcripted,17,0
+file_version_use_statement,File Version Use Statement,text-tei-translated,Text-Tei-Translated,18,0
+file_version_use_statement,File Version Use Statement,video-clip,Video-Clip,19,0
+file_version_use_statement,File Version Use Statement,video-master,Video-Master,20,0
+file_version_use_statement,File Version Use Statement,video-master-edited,Video-Master-Edited,21,0
+file_version_use_statement,File Version Use Statement,video-service,Video-Service,22,0
+file_version_use_statement,File Version Use Statement,video-streaming,Video-Streaming,23,0
+file_version_use_statement,File Version Use Statement,image-service-lowres,image-service-lowres,24,0
+file_version_use_statement,File Version Use Statement,image-service-medres,image-service-medres,25,0
+file_version_use_statement,File Version Use Statement,image-service-highres,image-service-highres,26,0
+file_version_use_statement,File Version Use Statement,text-data definition,text-data definition,27,0
+file_version_use_statement,File Version Use Statement,text-master,text-master,28,0
+file_version_use_statement,File Version Use Statement,text-service,text-service,29,0
+file_version_use_statement,File Version Use Statement,Digital Preservation Staff System,Digital Preservation Staff System,30,0
+file_version_use_statement,File Version Use Statement,Electronic Record Access System,Electronic Record Access System,31,0
+file_version_use_statement,File Version Use Statement,Digital Preservation Link,Digital Preservation Link,32,0
+file_version_xlink_actuate_attribute,File Version Xlink Actuate Attribute,none,none,0,0
+file_version_xlink_actuate_attribute,File Version Xlink Actuate Attribute,onLoad,onLoad,1,0
+file_version_xlink_actuate_attribute,File Version Xlink Actuate Attribute,onRequest,onRequest,2,0
+file_version_xlink_actuate_attribute,File Version Xlink Actuate Attribute,other,other,3,0
+file_version_xlink_show_attribute,File Version Xlink Show Attribute,embed,embed,0,0
+file_version_xlink_show_attribute,File Version Xlink Show Attribute,new,new,1,0
+file_version_xlink_show_attribute,File Version Xlink Show Attribute,none,none,2,0
+file_version_xlink_show_attribute,File Version Xlink Show Attribute,other,other,3,0
+file_version_xlink_show_attribute,File Version Xlink Show Attribute,replace,replace,4,0
+gender,Agent Gender,not_specified,Not Specified,0,0
+government_agency_type,Record Control Government Agency Type,ngo,Non-governmental organization,0,0
+government_agency_type,Record Control Government Agency Type,sac,Autonomous or semi-autonomous component,1,0
+government_agency_type,Record Control Government Agency Type,multilocal,Multilocal,2,0
+government_agency_type,Record Control Government Agency Type,fed,Federal/national,3,0
+government_agency_type,Record Control Government Agency Type,int_gov,International intergovernmental,4,0
+government_agency_type,Record Control Government Agency Type,local,Local,5,0
+government_agency_type,Record Control Government Agency Type,multistate,Multistate,6,0
+government_agency_type,Record Control Government Agency Type,undetermined,Government agency-type undetermined,7,0
+government_agency_type,Record Control Government Agency Type,provincial,"State, provincial, territorial, dependent, etc.",8,0
+government_agency_type,Record Control Government Agency Type,unknown,Unknown if heading is government agency,9,0
+government_agency_type,Record Control Government Agency Type,other,Other,10,0
+government_agency_type,Record Control Government Agency Type,natc,No attempt to code,11,0
+identifier_type,Record Control Identifier Type,loc,Library of Congress,0,0
+identifier_type,Record Control Identifier Type,lac,Library and Archives Canada,1,0
+identifier_type,Record Control Identifier Type,local,Local,2,0
+identifier_type,Record Control Identifier Type,other_unmapped,other_unmapped,3,0
+instance_instance_type,Instance Instance Type,accession,Accession,0,0
+instance_instance_type,Instance Instance Type,audio,Audio,1,0
+instance_instance_type,Instance Instance Type,books,Books,2,0
+instance_instance_type,Instance Instance Type,computer_disks,Computer Disks,3,0
+instance_instance_type,Instance Instance Type,digital_object,Digital Object,4,0
+instance_instance_type,Instance Instance Type,graphic_materials,Graphic Materials,5,0
+instance_instance_type,Instance Instance Type,mixed_materials,Mixed Materials,6,0
+instance_instance_type,Instance Instance Type,microform,Microform,7,0
+instance_instance_type,Instance Instance Type,moving_images,Moving Images,8,0
+instance_instance_type,Instance Instance Type,realia,Realia,9,0
+instance_instance_type,Instance Instance Type,text,Text,10,0
+instance_instance_type,Instance Instance Type,folder,folder,11,0
+instance_instance_type,Instance Instance Type,box,box,12,0
+instance_instance_type,Instance Instance Type,oversize,oversize,13,0
+instance_instance_type,Instance Instance Type,volume,volume,14,0
+instance_instance_type,Instance Instance Type,reel,reel,15,0
+instance_instance_type,Instance Instance Type,item,item,16,0
+instance_instance_type,Instance Instance Type,Album,Album,17,0
+language_iso639_2,Language ISO 639-2,eng,English,0,0
+language_iso639_2,Language ISO 639-2,abk,Abkhazian,1,0
+language_iso639_2,Language ISO 639-2,aar,Afar,2,0
+language_iso639_2,Language ISO 639-2,ace,Achinese,3,0
+language_iso639_2,Language ISO 639-2,ach,Acoli,4,0
+language_iso639_2,Language ISO 639-2,ada,Adangme,5,0
+language_iso639_2,Language ISO 639-2,ady,Adyghe; Adygei,6,0
+language_iso639_2,Language ISO 639-2,afa,Afro-Asiatic languages,7,0
+language_iso639_2,Language ISO 639-2,afh,Afrihili,8,0
+language_iso639_2,Language ISO 639-2,afr,Afrikaans,9,0
+language_iso639_2,Language ISO 639-2,ain,Ainu,10,0
+language_iso639_2,Language ISO 639-2,aka,Akan,11,0
+language_iso639_2,Language ISO 639-2,akk,Akkadian,12,0
+language_iso639_2,Language ISO 639-2,alb,Albanian,13,0
+language_iso639_2,Language ISO 639-2,ale,Aleut,14,0
+language_iso639_2,Language ISO 639-2,alg,Algonquian languages,15,0
+language_iso639_2,Language ISO 639-2,alt,Southern Altai,16,0
+language_iso639_2,Language ISO 639-2,amh,Amharic,17,0
+language_iso639_2,Language ISO 639-2,ang,"English, Old (ca.450-1100)",18,0
+language_iso639_2,Language ISO 639-2,anp,Angika,19,0
+language_iso639_2,Language ISO 639-2,apa,Apache languages,20,0
+language_iso639_2,Language ISO 639-2,ara,Arabic,21,0
+language_iso639_2,Language ISO 639-2,arc,Official Aramaic (700-300 BCE); Imperial Aramaic (700-300 BCE),22,0
+language_iso639_2,Language ISO 639-2,arg,Aragonese,23,0
+language_iso639_2,Language ISO 639-2,arm,Armenian,24,0
+language_iso639_2,Language ISO 639-2,arn,Mapudungun; Mapuche,25,0
+language_iso639_2,Language ISO 639-2,arp,Arapaho,26,0
+language_iso639_2,Language ISO 639-2,art,Artificial languages,27,0
+language_iso639_2,Language ISO 639-2,arw,Arawak,28,0
+language_iso639_2,Language ISO 639-2,asm,Assamese,29,0
+language_iso639_2,Language ISO 639-2,ast,Asturian; Bable; Leonese; Asturleonese,30,0
+language_iso639_2,Language ISO 639-2,ath,Athapascan languages,31,0
+language_iso639_2,Language ISO 639-2,aus,Australian languages,32,0
+language_iso639_2,Language ISO 639-2,ava,Avaric,33,0
+language_iso639_2,Language ISO 639-2,ave,Avestan,34,0
+language_iso639_2,Language ISO 639-2,awa,Awadhi,35,0
+language_iso639_2,Language ISO 639-2,aym,Aymara,36,0
+language_iso639_2,Language ISO 639-2,aze,Azerbaijani,37,0
+language_iso639_2,Language ISO 639-2,bad,Banda languages,38,0
+language_iso639_2,Language ISO 639-2,bai,Bamileke languages,39,0
+language_iso639_2,Language ISO 639-2,bak,Bashkir,40,0
+language_iso639_2,Language ISO 639-2,bal,Baluchi,41,0
+language_iso639_2,Language ISO 639-2,bam,Bambara,42,0
+language_iso639_2,Language ISO 639-2,ban,Balinese,43,0
+language_iso639_2,Language ISO 639-2,baq,Basque,44,0
+language_iso639_2,Language ISO 639-2,bas,Basa,45,0
+language_iso639_2,Language ISO 639-2,bat,Baltic languages,46,0
+language_iso639_2,Language ISO 639-2,bej,Beja; Bedawiyet,47,0
+language_iso639_2,Language ISO 639-2,bel,Belarusian,48,0
+language_iso639_2,Language ISO 639-2,bem,Bemba,49,0
+language_iso639_2,Language ISO 639-2,ben,Bengali,50,0
+language_iso639_2,Language ISO 639-2,ber,Berber languages,51,0
+language_iso639_2,Language ISO 639-2,bho,Bhojpuri,52,0
+language_iso639_2,Language ISO 639-2,bih,Bihari languages,53,0
+language_iso639_2,Language ISO 639-2,bik,Bikol,54,0
+language_iso639_2,Language ISO 639-2,bin,Bini; Edo,55,0
+language_iso639_2,Language ISO 639-2,bis,Bislama,56,0
+language_iso639_2,Language ISO 639-2,bla,Siksika,57,0
+language_iso639_2,Language ISO 639-2,bnt,Bantu (Other),58,0
+language_iso639_2,Language ISO 639-2,bos,Bosnian,59,0
+language_iso639_2,Language ISO 639-2,bra,Braj,60,0
+language_iso639_2,Language ISO 639-2,bre,Breton,61,0
+language_iso639_2,Language ISO 639-2,btk,Batak languages,62,0
+language_iso639_2,Language ISO 639-2,bua,Buriat,63,0
+language_iso639_2,Language ISO 639-2,bug,Buginese,64,0
+language_iso639_2,Language ISO 639-2,bul,Bulgarian,65,0
+language_iso639_2,Language ISO 639-2,bur,Burmese,66,0
+language_iso639_2,Language ISO 639-2,byn,Blin; Bilin,67,0
+language_iso639_2,Language ISO 639-2,cad,Caddo,68,0
+language_iso639_2,Language ISO 639-2,cai,Central American Indian languages,69,0
+language_iso639_2,Language ISO 639-2,car,Galibi Carib,70,0
+language_iso639_2,Language ISO 639-2,cat,Catalan; Valencian,71,0
+language_iso639_2,Language ISO 639-2,cau,Caucasian languages,72,0
+language_iso639_2,Language ISO 639-2,ceb,Cebuano,73,0
+language_iso639_2,Language ISO 639-2,cel,Celtic languages,74,0
+language_iso639_2,Language ISO 639-2,cha,Chamorro,75,0
+language_iso639_2,Language ISO 639-2,chb,Chibcha,76,0
+language_iso639_2,Language ISO 639-2,che,Chechen,77,0
+language_iso639_2,Language ISO 639-2,chg,Chagatai,78,0
+language_iso639_2,Language ISO 639-2,chi,Chinese,79,0
+language_iso639_2,Language ISO 639-2,chk,Chuukese,80,0
+language_iso639_2,Language ISO 639-2,chm,Mari,81,0
+language_iso639_2,Language ISO 639-2,chn,Chinook jargon,82,0
+language_iso639_2,Language ISO 639-2,cho,Choctaw,83,0
+language_iso639_2,Language ISO 639-2,chp,Chipewyan; Dene Suline,84,0
+language_iso639_2,Language ISO 639-2,chr,Cherokee,85,0
+language_iso639_2,Language ISO 639-2,chu,Church Slavic; Old Slavonic; Church Slavonic; Old Bulgarian; Old Church Slavonic,86,0
+language_iso639_2,Language ISO 639-2,chv,Chuvash,87,0
+language_iso639_2,Language ISO 639-2,chy,Cheyenne,88,0
+language_iso639_2,Language ISO 639-2,cmc,Chamic languages,89,0
+language_iso639_2,Language ISO 639-2,cop,Coptic,90,0
+language_iso639_2,Language ISO 639-2,cor,Cornish,91,0
+language_iso639_2,Language ISO 639-2,cos,Corsican,92,0
+language_iso639_2,Language ISO 639-2,cpe,"Creoles and pidgins, English-based",93,0
+language_iso639_2,Language ISO 639-2,cpf,"Creoles and pidgins, French-based",94,0
+language_iso639_2,Language ISO 639-2,cpp,"Creoles and pidgins, Portuguese-based",95,0
+language_iso639_2,Language ISO 639-2,cre,Cree,96,0
+language_iso639_2,Language ISO 639-2,crh,Crimean Tatar; Crimean Turkish,97,0
+language_iso639_2,Language ISO 639-2,crp,Creoles and pidgins,98,0
+language_iso639_2,Language ISO 639-2,csb,Kashubian,99,0
+language_iso639_2,Language ISO 639-2,cus,Cushitic languages,100,0
+language_iso639_2,Language ISO 639-2,cze,Czech,101,0
+language_iso639_2,Language ISO 639-2,dak,Dakota,102,0
+language_iso639_2,Language ISO 639-2,dan,Danish,103,0
+language_iso639_2,Language ISO 639-2,dar,Dargwa,104,0
+language_iso639_2,Language ISO 639-2,day,Land Dayak languages,105,0
+language_iso639_2,Language ISO 639-2,del,Delaware,106,0
+language_iso639_2,Language ISO 639-2,den,Slave (Athapascan),107,0
+language_iso639_2,Language ISO 639-2,dgr,Dogrib,108,0
+language_iso639_2,Language ISO 639-2,din,Dinka,109,0
+language_iso639_2,Language ISO 639-2,div,Divehi; Dhivehi; Maldivian,110,0
+language_iso639_2,Language ISO 639-2,doi,Dogri,111,0
+language_iso639_2,Language ISO 639-2,dra,Dravidian languages,112,0
+language_iso639_2,Language ISO 639-2,dsb,Lower Sorbian,113,0
+language_iso639_2,Language ISO 639-2,dua,Duala,114,0
+language_iso639_2,Language ISO 639-2,dum,"Dutch, Middle (ca.1050-1350)",115,0
+language_iso639_2,Language ISO 639-2,dut,Dutch; Flemish,116,0
+language_iso639_2,Language ISO 639-2,dyu,Dyula,117,0
+language_iso639_2,Language ISO 639-2,dzo,Dzongkha,118,0
+language_iso639_2,Language ISO 639-2,efi,Efik,119,0
+language_iso639_2,Language ISO 639-2,egy,Egyptian (Ancient),120,0
+language_iso639_2,Language ISO 639-2,eka,Ekajuk,121,0
+language_iso639_2,Language ISO 639-2,elx,Elamite,122,0
+language_iso639_2,Language ISO 639-2,enm,"English, Middle (1100-1500)",123,0
+language_iso639_2,Language ISO 639-2,epo,Esperanto,124,0
+language_iso639_2,Language ISO 639-2,est,Estonian,125,0
+language_iso639_2,Language ISO 639-2,ewe,Ewe,126,0
+language_iso639_2,Language ISO 639-2,ewo,Ewondo,127,0
+language_iso639_2,Language ISO 639-2,fan,Fang,128,0
+language_iso639_2,Language ISO 639-2,fao,Faroese,129,0
+language_iso639_2,Language ISO 639-2,fat,Fanti,130,0
+language_iso639_2,Language ISO 639-2,fij,Fijian,131,0
+language_iso639_2,Language ISO 639-2,fil,Filipino; Pilipino,132,0
+language_iso639_2,Language ISO 639-2,fin,Finnish,133,0
+language_iso639_2,Language ISO 639-2,fiu,Finno-Ugrian languages,134,0
+language_iso639_2,Language ISO 639-2,fon,Fon,135,0
+language_iso639_2,Language ISO 639-2,fre,French,136,0
+language_iso639_2,Language ISO 639-2,frm,"French, Middle (ca.1400-1600)",137,0
+language_iso639_2,Language ISO 639-2,fro,"French, Old (842-ca.1400)",138,0
+language_iso639_2,Language ISO 639-2,frr,Northern Frisian,139,0
+language_iso639_2,Language ISO 639-2,frs,Eastern Frisian,140,0
+language_iso639_2,Language ISO 639-2,fry,Western Frisian,141,0
+language_iso639_2,Language ISO 639-2,ful,Fulah,142,0
+language_iso639_2,Language ISO 639-2,fur,Friulian,143,0
+language_iso639_2,Language ISO 639-2,gaa,Ga,144,0
+language_iso639_2,Language ISO 639-2,gay,Gayo,145,0
+language_iso639_2,Language ISO 639-2,ger,German,146,0
+language_iso639_2,Language ISO 639-2,gba,Gbaya,147,0
+language_iso639_2,Language ISO 639-2,gem,Germanic languages,148,0
+language_iso639_2,Language ISO 639-2,geo,Georgian,149,0
+language_iso639_2,Language ISO 639-2,gez,Geez,150,0
+language_iso639_2,Language ISO 639-2,gil,Gilbertese,151,0
+language_iso639_2,Language ISO 639-2,gla,Gaelic; Scottish Gaelic,152,0
+language_iso639_2,Language ISO 639-2,gle,Irish,153,0
+language_iso639_2,Language ISO 639-2,glg,Galician,154,0
+language_iso639_2,Language ISO 639-2,glv,Manx,155,0
+language_iso639_2,Language ISO 639-2,gmh,"German, Middle High (ca.1050-1500)",156,0
+language_iso639_2,Language ISO 639-2,goh,"German, Old High (ca.750-1050)",157,0
+language_iso639_2,Language ISO 639-2,gon,Gondi,158,0
+language_iso639_2,Language ISO 639-2,gor,Gorontalo,159,0
+language_iso639_2,Language ISO 639-2,got,Gothic,160,0
+language_iso639_2,Language ISO 639-2,grb,Grebo,161,0
+language_iso639_2,Language ISO 639-2,grc,"Greek, Ancient (to 1453)",162,0
+language_iso639_2,Language ISO 639-2,gre,"Greek, Modern (1453-)",163,0
+language_iso639_2,Language ISO 639-2,grn,Guarani,164,0
+language_iso639_2,Language ISO 639-2,gsw,Swiss German; Alemannic; Alsatian,165,0
+language_iso639_2,Language ISO 639-2,guj,Gujarati,166,0
+language_iso639_2,Language ISO 639-2,gwi,Gwich'in,167,0
+language_iso639_2,Language ISO 639-2,hai,Haida,168,0
+language_iso639_2,Language ISO 639-2,hat,Haitian; Haitian Creole,169,0
+language_iso639_2,Language ISO 639-2,hau,Hausa,170,0
+language_iso639_2,Language ISO 639-2,haw,Hawaiian,171,0
+language_iso639_2,Language ISO 639-2,heb,Hebrew,172,0
+language_iso639_2,Language ISO 639-2,her,Herero,173,0
+language_iso639_2,Language ISO 639-2,hil,Hiligaynon,174,0
+language_iso639_2,Language ISO 639-2,him,Himachali languages; Western Pahari languages,175,0
+language_iso639_2,Language ISO 639-2,hin,Hindi,176,0
+language_iso639_2,Language ISO 639-2,hit,Hittite,177,0
+language_iso639_2,Language ISO 639-2,hmn,Hmong; Mong,178,0
+language_iso639_2,Language ISO 639-2,hmo,Hiri Motu,179,0
+language_iso639_2,Language ISO 639-2,hrv,Croatian,180,0
+language_iso639_2,Language ISO 639-2,hsb,Upper Sorbian,181,0
+language_iso639_2,Language ISO 639-2,hun,Hungarian,182,0
+language_iso639_2,Language ISO 639-2,hup,Hupa,183,0
+language_iso639_2,Language ISO 639-2,iba,Iban,184,0
+language_iso639_2,Language ISO 639-2,ibo,Igbo,185,0
+language_iso639_2,Language ISO 639-2,ice,Icelandic,186,0
+language_iso639_2,Language ISO 639-2,ido,Ido,187,0
+language_iso639_2,Language ISO 639-2,iii,Sichuan Yi; Nuosu,188,0
+language_iso639_2,Language ISO 639-2,ijo,Ijo languages,189,0
+language_iso639_2,Language ISO 639-2,iku,Inuktitut,190,0
+language_iso639_2,Language ISO 639-2,ile,Interlingue; Occidental,191,0
+language_iso639_2,Language ISO 639-2,ilo,Iloko,192,0
+language_iso639_2,Language ISO 639-2,ina,Interlingua (International Auxiliary Language Association),193,0
+language_iso639_2,Language ISO 639-2,inc,Indic languages,194,0
+language_iso639_2,Language ISO 639-2,ind,Indonesian,195,0
+language_iso639_2,Language ISO 639-2,ine,Indo-European languages,196,0
+language_iso639_2,Language ISO 639-2,inh,Ingush,197,0
+language_iso639_2,Language ISO 639-2,ipk,Inupiaq,198,0
+language_iso639_2,Language ISO 639-2,ira,Iranian languages,199,0
+language_iso639_2,Language ISO 639-2,iro,Iroquoian languages,200,0
+language_iso639_2,Language ISO 639-2,ita,Italian,201,0
+language_iso639_2,Language ISO 639-2,jav,Javanese,202,0
+language_iso639_2,Language ISO 639-2,jbo,Lojban,203,0
+language_iso639_2,Language ISO 639-2,jpn,Japanese,204,0
+language_iso639_2,Language ISO 639-2,jpr,Judeo-Persian,205,0
+language_iso639_2,Language ISO 639-2,jrb,Judeo-Arabic,206,0
+language_iso639_2,Language ISO 639-2,kaa,Kara-Kalpak,207,0
+language_iso639_2,Language ISO 639-2,kab,Kabyle,208,0
+language_iso639_2,Language ISO 639-2,kac,Kachin; Jingpho,209,0
+language_iso639_2,Language ISO 639-2,kal,Kalaallisut; Greenlandic,210,0
+language_iso639_2,Language ISO 639-2,kam,Kamba,211,0
+language_iso639_2,Language ISO 639-2,kan,Kannada,212,0
+language_iso639_2,Language ISO 639-2,kar,Karen languages,213,0
+language_iso639_2,Language ISO 639-2,kas,Kashmiri,214,0
+language_iso639_2,Language ISO 639-2,kau,Kanuri,215,0
+language_iso639_2,Language ISO 639-2,kaw,Kawi,216,0
+language_iso639_2,Language ISO 639-2,kaz,Kazakh,217,0
+language_iso639_2,Language ISO 639-2,kbd,Kabardian,218,0
+language_iso639_2,Language ISO 639-2,kha,Khasi,219,0
+language_iso639_2,Language ISO 639-2,khi,Khoisan languages,220,0
+language_iso639_2,Language ISO 639-2,khm,Central Khmer,221,0
+language_iso639_2,Language ISO 639-2,kho,Khotanese; Sakan,222,0
+language_iso639_2,Language ISO 639-2,kik,Kikuyu; Gikuyu,223,0
+language_iso639_2,Language ISO 639-2,kin,Kinyarwanda,224,0
+language_iso639_2,Language ISO 639-2,kir,Kirghiz; Kyrgyz,225,0
+language_iso639_2,Language ISO 639-2,kmb,Kimbundu,226,0
+language_iso639_2,Language ISO 639-2,kok,Konkani,227,0
+language_iso639_2,Language ISO 639-2,kom,Komi,228,0
+language_iso639_2,Language ISO 639-2,kon,Kongo,229,0
+language_iso639_2,Language ISO 639-2,kor,Korean,230,0
+language_iso639_2,Language ISO 639-2,kos,Kosraean,231,0
+language_iso639_2,Language ISO 639-2,kpe,Kpelle,232,0
+language_iso639_2,Language ISO 639-2,krc,Karachay-Balkar,233,0
+language_iso639_2,Language ISO 639-2,krl,Karelian,234,0
+language_iso639_2,Language ISO 639-2,kro,Kru languages,235,0
+language_iso639_2,Language ISO 639-2,kru,Kurukh,236,0
+language_iso639_2,Language ISO 639-2,kua,Kuanyama; Kwanyama,237,0
+language_iso639_2,Language ISO 639-2,kum,Kumyk,238,0
+language_iso639_2,Language ISO 639-2,kur,Kurdish,239,0
+language_iso639_2,Language ISO 639-2,kut,Kutenai,240,0
+language_iso639_2,Language ISO 639-2,lad,Ladino,241,0
+language_iso639_2,Language ISO 639-2,lah,Lahnda,242,0
+language_iso639_2,Language ISO 639-2,lam,Lamba,243,0
+language_iso639_2,Language ISO 639-2,lao,Lao,244,0
+language_iso639_2,Language ISO 639-2,lat,Latin,245,0
+language_iso639_2,Language ISO 639-2,lav,Latvian,246,0
+language_iso639_2,Language ISO 639-2,lez,Lezghian,247,0
+language_iso639_2,Language ISO 639-2,lim,Limburgan; Limburger; Limburgish,248,0
+language_iso639_2,Language ISO 639-2,lin,Lingala,249,0
+language_iso639_2,Language ISO 639-2,lit,Lithuanian,250,0
+language_iso639_2,Language ISO 639-2,lol,Mongo,251,0
+language_iso639_2,Language ISO 639-2,loz,Lozi,252,0
+language_iso639_2,Language ISO 639-2,ltz,Luxembourgish; Letzeburgesch,253,0
+language_iso639_2,Language ISO 639-2,lua,Luba-Lulua,254,0
+language_iso639_2,Language ISO 639-2,lub,Luba-Katanga,255,0
+language_iso639_2,Language ISO 639-2,lug,Ganda,256,0
+language_iso639_2,Language ISO 639-2,lui,Luiseno,257,0
+language_iso639_2,Language ISO 639-2,lun,Lunda,258,0
+language_iso639_2,Language ISO 639-2,luo,Luo (Kenya and Tanzania),259,0
+language_iso639_2,Language ISO 639-2,lus,Lushai,260,0
+language_iso639_2,Language ISO 639-2,mac,Macedonian,261,0
+language_iso639_2,Language ISO 639-2,mad,Madurese,262,0
+language_iso639_2,Language ISO 639-2,mag,Magahi,263,0
+language_iso639_2,Language ISO 639-2,mah,Marshallese,264,0
+language_iso639_2,Language ISO 639-2,mai,Maithili,265,0
+language_iso639_2,Language ISO 639-2,mak,Makasar,266,0
+language_iso639_2,Language ISO 639-2,mal,Malayalam,267,0
+language_iso639_2,Language ISO 639-2,man,Mandingo,268,0
+language_iso639_2,Language ISO 639-2,mao,Maori,269,0
+language_iso639_2,Language ISO 639-2,map,Austronesian languages,270,0
+language_iso639_2,Language ISO 639-2,mar,Marathi,271,0
+language_iso639_2,Language ISO 639-2,mas,Masai,272,0
+language_iso639_2,Language ISO 639-2,may,Malay,273,0
+language_iso639_2,Language ISO 639-2,mdf,Moksha,274,0
+language_iso639_2,Language ISO 639-2,mdr,Mandar,275,0
+language_iso639_2,Language ISO 639-2,men,Mende,276,0
+language_iso639_2,Language ISO 639-2,mga,"Irish, Middle (900-1200)",277,0
+language_iso639_2,Language ISO 639-2,mic,Mi'kmaq; Micmac,278,0
+language_iso639_2,Language ISO 639-2,min,Minangkabau,279,0
+language_iso639_2,Language ISO 639-2,mis,Uncoded languages,280,0
+language_iso639_2,Language ISO 639-2,mkh,Mon-Khmer languages,281,0
+language_iso639_2,Language ISO 639-2,mlg,Malagasy,282,0
+language_iso639_2,Language ISO 639-2,mlt,Maltese,283,0
+language_iso639_2,Language ISO 639-2,mnc,Manchu,284,0
+language_iso639_2,Language ISO 639-2,mni,Manipuri,285,0
+language_iso639_2,Language ISO 639-2,mno,Manobo languages,286,0
+language_iso639_2,Language ISO 639-2,moh,Mohawk,287,0
+language_iso639_2,Language ISO 639-2,mon,Mongolian,288,0
+language_iso639_2,Language ISO 639-2,mos,Mossi,289,0
+language_iso639_2,Language ISO 639-2,mul,Multiple languages,290,0
+language_iso639_2,Language ISO 639-2,mun,Munda languages,291,0
+language_iso639_2,Language ISO 639-2,mus,Creek,292,0
+language_iso639_2,Language ISO 639-2,mwl,Mirandese,293,0
+language_iso639_2,Language ISO 639-2,mwr,Marwari,294,0
+language_iso639_2,Language ISO 639-2,myn,Mayan languages,295,0
+language_iso639_2,Language ISO 639-2,myv,Erzya,296,0
+language_iso639_2,Language ISO 639-2,nah,Nahuatl languages,297,0
+language_iso639_2,Language ISO 639-2,nai,North American Indian languages,298,0
+language_iso639_2,Language ISO 639-2,nap,Neapolitan,299,0
+language_iso639_2,Language ISO 639-2,nau,Nauru,300,0
+language_iso639_2,Language ISO 639-2,nav,Navajo; Navaho,301,0
+language_iso639_2,Language ISO 639-2,nbl,"Ndebele, South; South Ndebele",302,0
+language_iso639_2,Language ISO 639-2,nde,"Ndebele, North; North Ndebele",303,0
+language_iso639_2,Language ISO 639-2,ndo,Ndonga,304,0
+language_iso639_2,Language ISO 639-2,nds,"Low German; Low Saxon; German, Low; Saxon, Low",305,0
+language_iso639_2,Language ISO 639-2,nep,Nepali,306,0
+language_iso639_2,Language ISO 639-2,new,Nepal Bhasa; Newari,307,0
+language_iso639_2,Language ISO 639-2,nia,Nias,308,0
+language_iso639_2,Language ISO 639-2,nic,Niger-Kordofanian languages,309,0
+language_iso639_2,Language ISO 639-2,niu,Niuean,310,0
+language_iso639_2,Language ISO 639-2,nno,"Norwegian Nynorsk; Nynorsk, Norwegian",311,0
+language_iso639_2,Language ISO 639-2,nob,"Norwegian Bokmål; Bokmål, Norwegian",312,0
+language_iso639_2,Language ISO 639-2,nog,Nogai,313,0
+language_iso639_2,Language ISO 639-2,non,"Norse, Old",314,0
+language_iso639_2,Language ISO 639-2,nor,Norwegian,315,0
+language_iso639_2,Language ISO 639-2,nqo,N'Ko,316,0
+language_iso639_2,Language ISO 639-2,nso,Pedi; Sepedi; Northern Sotho,317,0
+language_iso639_2,Language ISO 639-2,nub,Nubian languages,318,0
+language_iso639_2,Language ISO 639-2,nwc,Classical Newari; Old Newari; Classical Nepal Bhasa,319,0
+language_iso639_2,Language ISO 639-2,nya,Chichewa; Chewa; Nyanja,320,0
+language_iso639_2,Language ISO 639-2,nym,Nyamwezi,321,0
+language_iso639_2,Language ISO 639-2,nyn,Nyankole,322,0
+language_iso639_2,Language ISO 639-2,nyo,Nyoro,323,0
+language_iso639_2,Language ISO 639-2,nzi,Nzima,324,0
+language_iso639_2,Language ISO 639-2,oci,Occitan (post 1500); Provençal,325,0
+language_iso639_2,Language ISO 639-2,oji,Ojibwa,326,0
+language_iso639_2,Language ISO 639-2,ori,Oriya,327,0
+language_iso639_2,Language ISO 639-2,orm,Oromo,328,0
+language_iso639_2,Language ISO 639-2,osa,Osage,329,0
+language_iso639_2,Language ISO 639-2,oss,Ossetian; Ossetic,330,0
+language_iso639_2,Language ISO 639-2,ota,"Turkish, Ottoman (1500-1928)",331,0
+language_iso639_2,Language ISO 639-2,oto,Otomian languages,332,0
+language_iso639_2,Language ISO 639-2,paa,Papuan languages,333,0
+language_iso639_2,Language ISO 639-2,pag,Pangasinan,334,0
+language_iso639_2,Language ISO 639-2,pal,Pahlavi,335,0
+language_iso639_2,Language ISO 639-2,pam,Pampanga; Kapampangan,336,0
+language_iso639_2,Language ISO 639-2,pan,Panjabi; Punjabi,337,0
+language_iso639_2,Language ISO 639-2,pap,Papiamento,338,0
+language_iso639_2,Language ISO 639-2,pau,Palauan,339,0
+language_iso639_2,Language ISO 639-2,peo,"Persian, Old (ca.600-400 B.C.)",340,0
+language_iso639_2,Language ISO 639-2,per,Persian,341,0
+language_iso639_2,Language ISO 639-2,phi,Philippine languages,342,0
+language_iso639_2,Language ISO 639-2,phn,Phoenician,343,0
+language_iso639_2,Language ISO 639-2,pli,Pali,344,0
+language_iso639_2,Language ISO 639-2,pol,Polish,345,0
+language_iso639_2,Language ISO 639-2,pon,Pohnpeian,346,0
+language_iso639_2,Language ISO 639-2,por,Portuguese,347,0
+language_iso639_2,Language ISO 639-2,pra,Prakrit languages,348,0
+language_iso639_2,Language ISO 639-2,pro,"Provençal, Old (to 1500)",349,0
+language_iso639_2,Language ISO 639-2,pus,Pushto; Pashto,350,0
+language_iso639_2,Language ISO 639-2,que,Quechua,352,0
+language_iso639_2,Language ISO 639-2,raj,Rajasthani,353,0
+language_iso639_2,Language ISO 639-2,rap,Rapanui,354,0
+language_iso639_2,Language ISO 639-2,rar,Rarotongan; Cook Islands Maori,355,0
+language_iso639_2,Language ISO 639-2,roa,Romance languages,356,0
+language_iso639_2,Language ISO 639-2,roh,Romansh,357,0
+language_iso639_2,Language ISO 639-2,rom,Romany,358,0
+language_iso639_2,Language ISO 639-2,rum,Romanian; Moldavian; Moldovan,359,0
+language_iso639_2,Language ISO 639-2,run,Rundi,360,0
+language_iso639_2,Language ISO 639-2,rup,Aromanian; Arumanian; Macedo-Romanian,361,0
+language_iso639_2,Language ISO 639-2,rus,Russian,362,0
+language_iso639_2,Language ISO 639-2,sad,Sandawe,363,0
+language_iso639_2,Language ISO 639-2,sag,Sango,364,0
+language_iso639_2,Language ISO 639-2,sah,Yakut,365,0
+language_iso639_2,Language ISO 639-2,sai,South American Indian (Other),366,0
+language_iso639_2,Language ISO 639-2,sal,Salishan languages,367,0
+language_iso639_2,Language ISO 639-2,sam,Samaritan Aramaic,368,0
+language_iso639_2,Language ISO 639-2,san,Sanskrit,369,0
+language_iso639_2,Language ISO 639-2,sas,Sasak,370,0
+language_iso639_2,Language ISO 639-2,sat,Santali,371,0
+language_iso639_2,Language ISO 639-2,scn,Sicilian,372,0
+language_iso639_2,Language ISO 639-2,sco,Scots,373,0
+language_iso639_2,Language ISO 639-2,sel,Selkup,374,0
+language_iso639_2,Language ISO 639-2,sem,Semitic languages,375,0
+language_iso639_2,Language ISO 639-2,sga,"Irish, Old (to 900)",376,0
+language_iso639_2,Language ISO 639-2,sgn,Sign Languages,377,0
+language_iso639_2,Language ISO 639-2,shn,Shan,378,0
+language_iso639_2,Language ISO 639-2,sid,Sidamo,379,0
+language_iso639_2,Language ISO 639-2,sin,Sinhala; Sinhalese,380,0
+language_iso639_2,Language ISO 639-2,sio,Siouan languages,381,0
+language_iso639_2,Language ISO 639-2,sit,Sino-Tibetan languages,382,0
+language_iso639_2,Language ISO 639-2,sla,Slavic languages,383,0
+language_iso639_2,Language ISO 639-2,slo,Slovak,384,0
+language_iso639_2,Language ISO 639-2,slv,Slovenian,385,0
+language_iso639_2,Language ISO 639-2,sma,Southern Sami,386,0
+language_iso639_2,Language ISO 639-2,sme,Northern Sami,387,0
+language_iso639_2,Language ISO 639-2,smi,Sami languages,388,0
+language_iso639_2,Language ISO 639-2,smj,Lule Sami,389,0
+language_iso639_2,Language ISO 639-2,smn,Inari Sami,390,0
+language_iso639_2,Language ISO 639-2,smo,Samoan,391,0
+language_iso639_2,Language ISO 639-2,sms,Skolt Sami,392,0
+language_iso639_2,Language ISO 639-2,sna,Shona,393,0
+language_iso639_2,Language ISO 639-2,snd,Sindhi,394,0
+language_iso639_2,Language ISO 639-2,snk,Soninke,395,0
+language_iso639_2,Language ISO 639-2,sog,Sogdian,396,0
+language_iso639_2,Language ISO 639-2,som,Somali,397,0
+language_iso639_2,Language ISO 639-2,son,Songhai languages,398,0
+language_iso639_2,Language ISO 639-2,sot,"Sotho, Southern",399,0
+language_iso639_2,Language ISO 639-2,spa,Spanish; Castilian,400,0
+language_iso639_2,Language ISO 639-2,srd,Sardinian,401,0
+language_iso639_2,Language ISO 639-2,srn,Sranan Tongo,402,0
+language_iso639_2,Language ISO 639-2,srp,Serbian,403,0
+language_iso639_2,Language ISO 639-2,srr,Serer,404,0
+language_iso639_2,Language ISO 639-2,ssa,Nilo-Saharan languages,405,0
+language_iso639_2,Language ISO 639-2,ssw,Swati,406,0
+language_iso639_2,Language ISO 639-2,suk,Sukuma,407,0
+language_iso639_2,Language ISO 639-2,sun,Sundanese,408,0
+language_iso639_2,Language ISO 639-2,sus,Susu,409,0
+language_iso639_2,Language ISO 639-2,sux,Sumerian,410,0
+language_iso639_2,Language ISO 639-2,swa,Swahili,411,0
+language_iso639_2,Language ISO 639-2,swe,Swedish,412,0
+language_iso639_2,Language ISO 639-2,syc,Classical Syriac,413,0
+language_iso639_2,Language ISO 639-2,syr,Syriac,414,0
+language_iso639_2,Language ISO 639-2,tah,Tahitian,415,0
+language_iso639_2,Language ISO 639-2,tai,Tai languages,416,0
+language_iso639_2,Language ISO 639-2,tam,Tamil,417,0
+language_iso639_2,Language ISO 639-2,tat,Tatar,418,0
+language_iso639_2,Language ISO 639-2,tel,Telugu,419,0
+language_iso639_2,Language ISO 639-2,tem,Timne,420,0
+language_iso639_2,Language ISO 639-2,ter,Tereno,421,0
+language_iso639_2,Language ISO 639-2,tet,Tetum,422,0
+language_iso639_2,Language ISO 639-2,tgk,Tajik,423,0
+language_iso639_2,Language ISO 639-2,tgl,Tagalog,424,0
+language_iso639_2,Language ISO 639-2,tha,Thai,425,0
+language_iso639_2,Language ISO 639-2,tib,Tibetan,426,0
+language_iso639_2,Language ISO 639-2,tig,Tigre,427,0
+language_iso639_2,Language ISO 639-2,tir,Tigrinya,428,0
+language_iso639_2,Language ISO 639-2,tiv,Tiv,429,0
+language_iso639_2,Language ISO 639-2,tkl,Tokelau,430,0
+language_iso639_2,Language ISO 639-2,tlh,Klingon; tlhIngan-Hol,431,0
+language_iso639_2,Language ISO 639-2,tli,Tlingit,432,0
+language_iso639_2,Language ISO 639-2,tmh,Tamashek,433,0
+language_iso639_2,Language ISO 639-2,tog,Tonga (Nyasa),434,0
+language_iso639_2,Language ISO 639-2,ton,Tonga (Tonga Islands),435,0
+language_iso639_2,Language ISO 639-2,tpi,Tok Pisin,436,0
+language_iso639_2,Language ISO 639-2,tsi,Tsimshian,437,0
+language_iso639_2,Language ISO 639-2,tsn,Tswana,438,0
+language_iso639_2,Language ISO 639-2,tso,Tsonga,439,0
+language_iso639_2,Language ISO 639-2,tuk,Turkmen,440,0
+language_iso639_2,Language ISO 639-2,tum,Tumbuka,441,0
+language_iso639_2,Language ISO 639-2,tup,Tupi languages,442,0
+language_iso639_2,Language ISO 639-2,tur,Turkish,443,0
+language_iso639_2,Language ISO 639-2,tut,Altaic languages,444,0
+language_iso639_2,Language ISO 639-2,tvl,Tuvalu,445,0
+language_iso639_2,Language ISO 639-2,twi,Twi,446,0
+language_iso639_2,Language ISO 639-2,tyv,Tuvinian,447,0
+language_iso639_2,Language ISO 639-2,udm,Udmurt,448,0
+language_iso639_2,Language ISO 639-2,uga,Ugaritic,449,0
+language_iso639_2,Language ISO 639-2,uig,Uighur; Uyghur,450,0
+language_iso639_2,Language ISO 639-2,ukr,Ukrainian,451,0
+language_iso639_2,Language ISO 639-2,umb,Umbundu,452,0
+language_iso639_2,Language ISO 639-2,und,Undetermined,453,0
+language_iso639_2,Language ISO 639-2,urd,Urdu,454,0
+language_iso639_2,Language ISO 639-2,uzb,Uzbek,455,0
+language_iso639_2,Language ISO 639-2,vai,Vai,456,0
+language_iso639_2,Language ISO 639-2,ven,Venda,457,0
+language_iso639_2,Language ISO 639-2,vie,Vietnamese,458,0
+language_iso639_2,Language ISO 639-2,vol,Volapük,459,0
+language_iso639_2,Language ISO 639-2,vot,Votic,460,0
+language_iso639_2,Language ISO 639-2,wak,Wakashan languages,461,0
+language_iso639_2,Language ISO 639-2,wal,Walamo,462,0
+language_iso639_2,Language ISO 639-2,war,Waray,463,0
+language_iso639_2,Language ISO 639-2,was,Washo,464,0
+language_iso639_2,Language ISO 639-2,wel,Welsh,465,0
+language_iso639_2,Language ISO 639-2,wen,Sorbian languages,466,0
+language_iso639_2,Language ISO 639-2,wln,Walloon,467,0
+language_iso639_2,Language ISO 639-2,wol,Wolof,468,0
+language_iso639_2,Language ISO 639-2,xal,Kalmyk; Oirat,469,0
+language_iso639_2,Language ISO 639-2,xho,Xhosa,470,0
+language_iso639_2,Language ISO 639-2,yao,Yao,471,0
+language_iso639_2,Language ISO 639-2,yap,Yapese,472,0
+language_iso639_2,Language ISO 639-2,yid,Yiddish,473,0
+language_iso639_2,Language ISO 639-2,yor,Yoruba,474,0
+language_iso639_2,Language ISO 639-2,ypk,Yupik languages,475,0
+language_iso639_2,Language ISO 639-2,zap,Zapotec,476,0
+language_iso639_2,Language ISO 639-2,zbl,Blissymbols; Blissymbolics; Bliss,477,0
+language_iso639_2,Language ISO 639-2,zen,Zenaga,478,0
+language_iso639_2,Language ISO 639-2,zha,Zhuang; Chuang,479,0
+language_iso639_2,Language ISO 639-2,znd,Zande languages,480,0
+language_iso639_2,Language ISO 639-2,zul,Zulu,481,0
+language_iso639_2,Language ISO 639-2,zun,Zuni,482,0
+language_iso639_2,Language ISO 639-2,zxx,No linguistic content; Not applicable,483,0
+language_iso639_2,Language ISO 639-2,zza,Zaza; Dimili; Dimli; Kirdki; Kirmanjki; Zazaki,484,0
+language_iso639_2,Language ISO 639-2,cnr,Montenegrin,485,0
+language_iso639_2,Language ISO 639-2,zgh,Standard Moroccan Tamazight,486,0
+level_of_detail,Record Control Level of Detail,fully_established,Fully established,0,0
+level_of_detail,Record Control Level of Detail,memorandum,Memorandum,1,0
+level_of_detail,Record Control Level of Detail,provisional,Provisional,2,0
+level_of_detail,Record Control Level of Detail,preliminary,Preliminary,3,0
+level_of_detail,Record Control Level of Detail,not_applicable,Not applicable,4,0
+level_of_detail,Record Control Level of Detail,natc,No attempt to code,5,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,acp,Art copyist,0,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,act,Actor,1,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,adp,Adapter,2,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,aft,"Author of afterword, colophon, etc.",3,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,anl,Analyst,4,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,anm,Animator,5,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,ann,Annotator,6,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,ant,Bibliographic antecedent,7,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,app,Applicant,8,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,aqt,Author in quotations or text abstracts,9,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,arc,Architect,10,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,ard,Artistic director,11,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,arr,Arranger,12,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,art,Artist,13,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,asg,Assignee,14,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,asn,Associated name,15,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,att,Attributed name,16,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,auc,Auctioneer,17,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,aud,Author of dialog,18,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,aui,"Author of introduction, etc.",19,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,aus,"Author of screenplay, etc.",20,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,aut,Author,21,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,bdd,Binding designer,22,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,bjd,Bookjacket designer,23,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,bkd,Book designer,24,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,bkp,Book producer,25,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,blw,Blurb writer,26,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,bnd,Binder,27,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,bpd,Bookplate designer,28,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,bsl,Bookseller,29,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,ccp,Conceptor,30,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,chr,Choreographer,31,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,clb,Collaborator,32,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cli,Client,33,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cll,Calligrapher,34,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,clr,Colorist,35,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,clt,Collotyper,36,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cmm,Commentator,37,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cmp,Composer,38,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cmt,Compositor,39,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cnd,Conductor,40,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cng,Cinematographer,41,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cns,Censor,42,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,coe,Contestant-appellee,43,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,col,Collector,44,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,com,Compiler,45,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,con,Conservator,46,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cos,Contestant,47,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cot,Contestant-appellant,48,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cov,Cover designer,49,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cpc,Copyright claimant,50,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cpe,Complainant-appellee,51,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cph,Copyright holder,52,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cpl,Complainant,53,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cpt,Complainant-appellant,54,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cre,Creator,55,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,crp,Correspondent,56,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,crr,Corrector,57,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,csl,Consultant,58,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,csp,Consultant to a project,59,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cst,Costume designer,60,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,ctb,Contributor,61,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cte,Contestee-appellee,62,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,ctg,Cartographer,63,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,ctr,Contractor,64,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cts,Contestee,65,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,ctt,Contestee-appellant,66,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cur,Curator,67,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cwt,Commentator for written text,68,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,dbp,Distribution place,69,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,dfd,Defendant,70,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,dfe,Defendant-appellee,71,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,dft,Defendant-appellant,72,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,dgg,Degree grantor,73,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,dis,Dissertant,74,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,dln,Delineator,75,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,dnc,Dancer,76,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,dnr,Donor,77,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,dpc,Depicted,78,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,dpt,Depositor,79,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,drm,Draftsman,80,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,drt,Director,81,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,dsr,Designer,82,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,dst,Distributor,83,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,dtc,Data contributor,84,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,dte,Dedicatee,85,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,dtm,Data manager,86,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,dto,Dedicator,87,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,dub,Dubious author,88,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,edt,Editor,89,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,egr,Engraver,90,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,elg,Electrician,91,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,elt,Electrotyper,92,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,eng,Engineer,93,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,etr,Etcher,94,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,evp,Event place,95,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,exp,Appraiser,96,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,fac,Facsimilist,97,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,fld,Field director,98,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,flm,Film editor,99,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,fmo,Former owner,100,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,fnd,Funder,101,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,fpy,First party,102,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,frg,Forger,103,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,gis,Geographic information specialist,104,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,grt,Graphic technician,105,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,hnr,Honoree,106,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,hst,Host,107,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,ill,Illustrator,108,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,ilu,Illuminator,109,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,ins,Inscriber,110,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,inv,Inventor,111,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,itr,Instrumentalist,112,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,ive,Interviewee,113,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,ivr,Interviewer,114,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,lbr,Laboratory,115,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,lbt,Librettist,116,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,ldr,Laboratory director,117,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,led,Lead,118,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,lee,Libelee-appellee,119,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,lel,Libelee,120,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,len,Lender,121,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,let,Libelee-appellant,122,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,lgd,Lighting designer,123,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,lie,Libelant-appellee,124,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,lil,Libelant,125,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,lit,Libelant-appellant,126,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,lsa,Landscape architect,127,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,lse,Licensee,128,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,lso,Licensor,129,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,ltg,Lithographer,130,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,lyr,Lyricist,131,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,mcp,Music copyist,132,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,mdc,Metadata contact,133,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,mfp,Manufacture place,134,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,mfr,Manufacturer,135,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,mod,Moderator,136,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,mon,Monitor,137,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,mrb,Marbler,138,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,mrk,Markup editor,139,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,msd,Musical director,140,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,mte,Metal-engraver,141,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,mus,Musician,142,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,nrt,Narrator,143,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,opn,Opponent,144,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,org,Originator,145,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,orm,Organizer of meeting,146,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,oth,Other,147,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,own,Owner,148,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,pat,Patron,149,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,pbd,Publishing director,150,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,pbl,Publisher,151,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,pdr,Project director,152,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,pfr,Proofreader,153,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,pht,Photographer,154,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,plt,Platemaker,155,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,pma,Permitting agency,156,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,pmn,Production manager,157,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,pop,Printer of plates,158,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,ppm,Papermaker,159,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,ppt,Puppeteer,160,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,prc,Process contact,161,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,prd,Production personnel,162,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,prf,Performer,163,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,prg,Programmer,164,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,prm,Printmaker,165,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,pro,Producer,166,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,prp,Production place,167,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,prt,Printer,168,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,prv,Provider,169,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,pta,Patent applicant,170,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,pte,Plaintiff-appellee,171,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,ptf,Plaintiff,172,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,pth,Patentee,173,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,ptt,Plaintiff-appellant,174,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,pup,Publication place,175,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,rbr,Rubricator,176,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,rcd,Recordist,177,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,rce,Recording engineer,178,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,rcp,Recipient,179,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,red,Redaktor,180,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,ren,Renderer,181,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,res,Researcher,182,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,rev,Reviewer,183,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,rps,Repository,184,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,rpt,Reporter,185,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,rpy,Responsible party,186,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,rse,Respondent-appellee,187,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,rsg,Restager,188,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,rsp,Respondent,189,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,rst,Respondent-appellant,190,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,rth,Research team head,191,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,rtm,Research team member,192,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,sad,Scientific advisor,193,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,sce,Scenarist,194,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,scl,Sculptor,195,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,scr,Scribe,196,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,sds,Sound designer,197,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,sec,Secretary,198,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,sgn,Signer,199,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,sht,Supporting host,200,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,sng,Singer,201,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,spk,Speaker,202,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,spn,Sponsor,203,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,spy,Second party,204,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,srv,Surveyor,205,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,std,Set designer,206,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,stg,Setting,207,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,stl,Storyteller,208,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,stm,Stage manager,209,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,stn,Standards body,210,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,str,Stereotyper,211,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,tcd,Technical director,212,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,tch,Teacher,213,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,ths,Thesis advisor,214,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,trc,Transcriber,215,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,trl,Translator,216,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,tyd,Type designer,217,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,tyg,Typographer,218,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,uvp,University place,219,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,vdg,Videographer,220,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,voc,Vocalist,221,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,wam,Writer of accompanying material,222,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,wdc,Woodcutter,223,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,wde,Wood engraver,224,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,wit,Witness,225,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,abr,Abridger,226,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,adi,Art director,227,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,ape,Appellee,228,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,apl,Appellant,229,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,ato,Autographer,230,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,brd,Broadcaster,231,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,brl,Braille embosser,232,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cas,Caster,233,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cor,Collection registrar,234,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,cou,Court governed,235,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,crt,Court reporter,236,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,dgs,Degree supervisor,237,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,edc,Editor of compilation,238,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,edm,Editor of moving image work,239,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,enj,Enacting jurisdiction,240,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,fds,Film distributor,241,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,fmd,Film director,242,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,fmk,Filmmaker,243,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,fmp,Film producer,244,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,his,Host institution,245,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,isb,Issuing body,246,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,jud,Judge,247,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,jug,Jurisdiction governed,248,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,med,Medium,249,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,mtk,Minute taker,250,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,osp,Onscreen presenter,251,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,pan,Panelist,252,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,pra,Praeses,253,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,pre,Presenter,254,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,prn,Production company,255,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,prs,Production designer,256,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,rdd,Radio director,257,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,rpc,Radio producer,258,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,rsr,Restorationist,259,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,sgd,Stage director,260,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,sll,Seller,261,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,tld,Television director,262,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,tlp,Television producer,263,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,vac,Voice actor,264,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,wac,Writer of added commentary,265,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,wal,Writer of added lyrics,266,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,wat,Writer of added text,267,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,win,Writer of introduction,268,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,wpr,Writer of preface,269,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,Conductor,Conductor,270,0
+linked_agent_archival_record_relators,Linked Agent Archival Record Relators,wst,Writer of supplementary textual content,271,0
+linked_agent_event_roles,Linked Agent Event Roles,authorizer,Authorizer,0,0
+linked_agent_event_roles,Linked Agent Event Roles,executing_program,Executing Program,1,0
+linked_agent_event_roles,Linked Agent Event Roles,implementer,Implementer,2,0
+linked_agent_event_roles,Linked Agent Event Roles,recipient,Recipient,3,0
+linked_agent_event_roles,Linked Agent Event Roles,transmitter,Transmitter,4,0
+linked_agent_event_roles,Linked Agent Event Roles,validator,Validator,5,0
+linked_agent_event_roles,Linked Agent Event Roles,requester,Requester,6,1
+linked_agent_role,Linked Agent Role,creator,Creator,0,0
+linked_agent_role,Linked Agent Role,source,Source,1,0
+linked_agent_role,Linked Agent Role,subject,Subject,2,0
+linked_event_archival_record_roles,Linked Event Archival Record Roles,outcome,Outcome,0,0
+linked_event_archival_record_roles,Linked Event Archival Record Roles,source,Source,1,0
+linked_event_archival_record_roles,Linked Event Archival Record Roles,transfer,Transfer,2,0
+linked_event_archival_record_roles,Linked Event Archival Record Roles,context,Context,3,1
+linked_event_archival_record_roles,Linked Event Archival Record Roles,requested,Requested,4,1
+location_function_type,Location Function Type,av_materials,Audiovisual Materials,0,0
+location_function_type,Location Function Type,arrivals,Arrivals,1,0
+location_function_type,Location Function Type,shared,Shared,2,0
+location_temporary,Location Temporary,conservation,Conservation,0,0
+location_temporary,Location Temporary,exhibit,Exhibit,1,0
+location_temporary,Location Temporary,loan,Loan,2,0
+location_temporary,Location Temporary,reading_room,Reading Room,3,0
+maintenance_agent_type,Record Control Maintenance Agent Type,human,Human,0,0
+maintenance_agent_type,Record Control Maintenance Agent Type,machine,Machine,1,0
+maintenance_event_type,Record Control Maintenance Event Type,created,Created,0,0
+maintenance_event_type,Record Control Maintenance Event Type,cancelled,Cancelled,1,0
+maintenance_event_type,Record Control Maintenance Event Type,deleted,Deleted,2,0
+maintenance_event_type,Record Control Maintenance Event Type,derived,Derived,3,0
+maintenance_event_type,Record Control Maintenance Event Type,revised,Revised,4,0
+maintenance_event_type,Record Control Maintenance Event Type,updated,Updated,5,0
+maintenance_status,Record Control Maintenance Status,new,New,0,0
+maintenance_status,Record Control Maintenance Status,upgraded,Upgraded,1,0
+maintenance_status,Record Control Maintenance Status,revised_corrected,Revised/Corrected,2,0
+maintenance_status,Record Control Maintenance Status,derived,Derived,3,0
+maintenance_status,Record Control Maintenance Status,deleted,Deleted,4,0
+maintenance_status,Record Control Maintenance Status,cancelled_obsolete,Cancelled/Obsolete,5,0
+maintenance_status,Record Control Maintenance Status,deleted_split,Deleted-Split,6,0
+maintenance_status,Record Control Maintenance Status,deleted_replaced,Deleted-Replaced,7,0
+metadata_license,Metadata License,public_domain,This record is made available under an Universal 1.0 Public Domain Dedication Creative Commons license.,0,0
+metadata_license,Metadata License,non_commercial,This record is made available under an Attribution-NonCommercial 4.0 International Creative Commons license.,1,0
+metadata_license,Metadata License,non_commercial_no_derivatives,This record is made available under an Attribution-NonCommercial-NoDerivatives 4.0 International Creative Commons license.,2,0
+metadata_license,Metadata License,no_derivatives,This record is made available under an Attribution-NoDerivatives 4.0 International Creative Commons license.,3,0
+metadata_license,Metadata License,share_a_like,This record is made available under an Attribution-ShareAlike 4.0 International Creative Commons license.,4,0
+metadata_license,Metadata License,non_commercial_share_a_like,This record is made available under an Attribution-NonCommercial-ShareAlike 4.0 International Creative Commons license.,5,0
+modified_record,Record Control Modified Type,not_modified,Not modified,0,0
+modified_record,Record Control Modified Type,shortened,Shortened,1,0
+modified_record,Record Control Modified Type,missing_characters,Missing characters,2,0
+modified_record,Record Control Modified Type,natc,No attempt to code,3,0
+name_person_name_order,Name Person Name Order,direct,Direct,0,0
+name_person_name_order,Name Person Name Order,inverted,Indirect,1,0
+name_rule,Name Rule,aacr,Anglo-American Cataloging Rules,0,0
+name_rule,Name Rule,dacs,Describing Archives: A Content Standard,1,0
+name_rule,Name Rule,local,Local rules,2,0
+name_rule,Name Rule,rda,Resource Description and Access,3,0
+name_source,Name Source,viaf,viaf,0,0
+name_source,Name Source,naf,NACO Authority File,1,0
+name_source,Name Source,local,Local sources,2,0
+name_source,Name Source,ulan,Union List of Artist Names,3,0
+name_source,Name Source,anglo-american authority file,anglo-american authority file,4,0
+name_source,Name Source,ingest,Unspecified ingested source,5,0
+name_source,Name Source,University,University,6,0
+name_source,Name Source,snac,SNAC,7,0
+name_type,Record Control Name Type,differentiated,Differentiated,0,0
+name_type,Record Control Name Type,undifferentiated,Undifferentiated,1,0
+name_type,Record Control Name Type,not_applicable,Not applicable,2,0
+name_type,Record Control Name Type,natc,No attempt to code,3,0
+note_bibliography_type,Note Bibliography Type,bibliography,bibliography,0,0
+note_digital_object_type,Note Digital Object Type,accessrestrict,Conditions Governing Access,0,0
+note_digital_object_type,Note Digital Object Type,acqinfo,Immediate Source of Acquisition,1,0
+note_digital_object_type,Note Digital Object Type,altformavail,Existence and Location of Copies,2,0
+note_digital_object_type,Note Digital Object Type,bioghist,Biographical / Historical,3,0
+note_digital_object_type,Note Digital Object Type,custodhist,Custodial History,4,0
+note_digital_object_type,Note Digital Object Type,dimensions,Dimensions,5,0
+note_digital_object_type,Note Digital Object Type,edition,Edition,6,0
+note_digital_object_type,Note Digital Object Type,extent,Extent,7,0
+note_digital_object_type,Note Digital Object Type,inscription,Inscription,8,0
+note_digital_object_type,Note Digital Object Type,legalstatus,Legal Status,10,0
+note_digital_object_type,Note Digital Object Type,note,General Note,11,0
+note_digital_object_type,Note Digital Object Type,originalsloc,Existence and Location of Originals,12,0
+note_digital_object_type,Note Digital Object Type,physdesc,Physical Description,13,0
+note_digital_object_type,Note Digital Object Type,prefercite,Preferred Citation,14,0
+note_digital_object_type,Note Digital Object Type,processinfo,Processing Information,15,0
+note_digital_object_type,Note Digital Object Type,relatedmaterial,Related Materials,16,0
+note_digital_object_type,Note Digital Object Type,summary,Summary,17,0
+note_digital_object_type,Note Digital Object Type,userestrict,Conditions Governing Use,18,0
+note_index_item_type,Note Index Item Type,corporate_entity,Corporate Entity,0,0
+note_index_item_type,Note Index Item Type,family,Family,1,0
+note_index_item_type,Note Index Item Type,function,Function,2,0
+note_index_item_type,Note Index Item Type,genre_form,Genre / Form,3,0
+note_index_item_type,Note Index Item Type,geographic_name,Geographic Name,4,0
+note_index_item_type,Note Index Item Type,name,Name,5,0
+note_index_item_type,Note Index Item Type,occupation,Occupation,6,0
+note_index_item_type,Note Index Item Type,person,Person,7,0
+note_index_item_type,Note Index Item Type,subject,Subject,8,0
+note_index_item_type,Note Index Item Type,title,Title,9,0
+note_index_type,Note Index Type,index,index,0,0
+note_langmaterial_type,Note Language of Materials Type,langmaterial,Language of Materials,0,0
+note_multipart_type,Note Multipart Type,accessrestrict,Conditions Governing Access,0,0
+note_multipart_type,Note Multipart Type,accruals,Accruals,1,0
+note_multipart_type,Note Multipart Type,acqinfo,Immediate Source of Acquisition,2,0
+note_multipart_type,Note Multipart Type,altformavail,Existence and Location of Copies,3,0
+note_multipart_type,Note Multipart Type,appraisal,Appraisal,4,0
+note_multipart_type,Note Multipart Type,arrangement,Arrangement,5,0
+note_multipart_type,Note Multipart Type,bioghist,Biographical / Historical,6,0
+note_multipart_type,Note Multipart Type,custodhist,Custodial History,7,0
+note_multipart_type,Note Multipart Type,dimensions,Dimensions,8,0
+note_multipart_type,Note Multipart Type,fileplan,File Plan,9,0
+note_multipart_type,Note Multipart Type,legalstatus,Legal Status,10,0
+note_multipart_type,Note Multipart Type,odd,General,11,0
+note_multipart_type,Note Multipart Type,originalsloc,Existence and Location of Originals,12,0
+note_multipart_type,Note Multipart Type,otherfindaid,Other Finding Aids,13,0
+note_multipart_type,Note Multipart Type,phystech,Physical Characteristics and Technical Requirements,14,0
+note_multipart_type,Note Multipart Type,prefercite,Preferred Citation,15,0
+note_multipart_type,Note Multipart Type,processinfo,Processing Information,16,0
+note_multipart_type,Note Multipart Type,relatedmaterial,Related Materials,17,0
+note_multipart_type,Note Multipart Type,scopecontent,Scope and Contents,18,0
+note_multipart_type,Note Multipart Type,separatedmaterial,Separated Materials,19,0
+note_multipart_type,Note Multipart Type,userestrict,Conditions Governing Use,20,0
+note_orderedlist_enumeration,Note Orderedlist Enumeration,arabic,arabic,0,0
+note_orderedlist_enumeration,Note Orderedlist Enumeration,loweralpha,loweralpha,1,0
+note_orderedlist_enumeration,Note Orderedlist Enumeration,lowerroman,lowerroman,2,0
+note_orderedlist_enumeration,Note Orderedlist Enumeration,upperalpha,upperalpha,3,0
+note_orderedlist_enumeration,Note Orderedlist Enumeration,upperroman,upperroman,4,0
+note_orderedlist_enumeration,Note Orderedlist Enumeration,null,null,5,0
+note_rights_statement_act_type,Note Rights Statement Act Type,permissions,Permissions,0,0
+note_rights_statement_act_type,Note Rights Statement Act Type,restrictions,Restrictions,1,0
+note_rights_statement_act_type,Note Rights Statement Act Type,extension,Extension,2,0
+note_rights_statement_act_type,Note Rights Statement Act Type,expiration,Expiration,3,0
+note_rights_statement_act_type,Note Rights Statement Act Type,additional_information,Additional Information,4,0
+note_rights_statement_type,Note Rights Statement Type,materials,Materials,0,0
+note_rights_statement_type,Note Rights Statement Type,type_note,Type Note,1,0
+note_rights_statement_type,Note Rights Statement Type,additional_information,Additional Information,2,0
+note_singlepart_type,Note Singlepart Type,abstract,Abstract,0,0
+note_singlepart_type,Note Singlepart Type,materialspec,Materials Specific Details,2,0
+note_singlepart_type,Note Singlepart Type,physdesc,Physical Description,3,0
+note_singlepart_type,Note Singlepart Type,physfacet,Physical Facet,4,0
+note_singlepart_type,Note Singlepart Type,physloc,Physical Location,5,0
+place_role,Agent Place Role,assoc_country,Associated Country,0,0
+place_role,Agent Place Role,residence,Residence,1,0
+place_role,Agent Place Role,other_assoc,Other,2,0
+place_role,Agent Place Role,place_of_birth,Place of Birth,3,0
+place_role,Agent Place Role,place_of_death,Place of Death,4,0
+publication_status,Record Control Publication Status,in_process,In-process,0,0
+publication_status,Record Control Publication Status,approved,Approved,1,0
+reference_evaluation,Record Control Reference Evaluation,tr_consistent,Tracings consistent with headings,0,0
+reference_evaluation,Record Control Reference Evaluation,tr_inconsistent,Tracings inconsistent with headings,1,0
+reference_evaluation,Record Control Reference Evaluation,not_applicable,Not applicable,2,0
+reference_evaluation,Record Control Reference Evaluation,natc,No attempt to code,3,0
+resource_finding_aid_description_rules,Resource Finding Aid Description Rules,aacr,Anglo-American Cataloguing Rules,0,0
+resource_finding_aid_description_rules,Resource Finding Aid Description Rules,cco,Cataloging Cultural Objects,1,0
+resource_finding_aid_description_rules,Resource Finding Aid Description Rules,dacs,Describing Archives: A Content Standard,2,0
+resource_finding_aid_description_rules,Resource Finding Aid Description Rules,isadg,International Standard for Archival Description - General,3,0
+resource_finding_aid_description_rules,Resource Finding Aid Description Rules,rad,Rules for Archival Description,4,0
+resource_finding_aid_description_rules,Resource Finding Aid Description Rules,Describing Archives: A Content Standard,Describing Archives: A Content Standard,5,0
+resource_finding_aid_status,Resource Finding Aid Status,completed,Completed,0,0
+resource_finding_aid_status,Resource Finding Aid Status,in_progress,In Progress,1,0
+resource_finding_aid_status,Resource Finding Aid Status,under_revision,Under Revision,2,0
+resource_finding_aid_status,Resource Finding Aid Status,unprocessed,Unprocessed,3,0
+resource_finding_aid_status,Resource Finding Aid Status,under_review,under_review,4,0
+resource_resource_type,Resource Resource Type,collection,Collection,0,0
+resource_resource_type,Resource Resource Type,papers,Papers,1,0
+resource_resource_type,Resource Resource Type,publications,Publications,2,0
+resource_resource_type,Resource Resource Type,records,Records,3,0
+restriction_type,Local Access Restriction Type,Deed of gift imposed,Deed of gift imposed,0,0
+restriction_type,Local Access Restriction Type,Institutional policy imposed,Institutional policy imposed,1,0
+restriction_type,Local Access Restriction Type,RestrictedSpecColl,1 - Donor/university imposed access restriction,2,0
+restriction_type,Local Access Restriction Type,RestrictedCurApprSpecColl,2 - Repository imposed access restriction,3,0
+restriction_type,Local Access Restriction Type,RestrictedFragileSpecColl,3 - Restricted fragile,4,0
+restriction_type,Local Access Restriction Type,InProcessSpecColl,Restricted in-process,5,0
+restriction_type,Local Access Restriction Type,ColdStorageBrbl,Other,6,0
+rights_statement_act_restriction,Rights Statement Act Restriction,allow,Allow,0,0
+rights_statement_act_restriction,Rights Statement Act Restriction,disallow,Disallow,1,0
+rights_statement_act_restriction,Rights Statement Act Restriction,conditional,Conditional,2,0
+rights_statement_act_type,Rights Statement Act Type,delete,Delete,0,0
+rights_statement_act_type,Rights Statement Act Type,disseminate,Disseminate,1,0
+rights_statement_act_type,Rights Statement Act Type,migrate,Migrate,2,0
+rights_statement_act_type,Rights Statement Act Type,modify,Modify,3,0
+rights_statement_act_type,Rights Statement Act Type,replicate,Replicate,4,0
+rights_statement_act_type,Rights Statement Act Type,use,Use,5,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,agrovoc,AGROVOC multilingual agricultural thesaurus. (Rome: APIMONDIA),0,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,allmovie,AllMovie,1,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,allmusic,AllMusic,2,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,allocine,AlloCiné,3,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,amnbo,American National Biography Online,4,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,ansi,American National Standards Institute and National Information Standards Organisation number for an ANSI or ANSI/NISO standard,5,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,artsy,Artsy,6,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,bdusc,Biographical Directory of the United States Congress (United States Congress),7,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,bfi,BFI - British Film Institute,8,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,bnfcg,BnF catalogue général (Paris: Bibliothèque nationale de France),9,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,cantic,CANTIC (Catàleg d'autoritats de noms i títols de Catalunya) (Biblioteca de Catalunya),10,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,cgndb,Canadian Geographical Names Database (Natural Resources Canada),11,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,danacode,"Danacode (Bnei Brak, Israel: D.A.N.A. Systems)",12,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,datoses,datos.bne.es (Biblioteca Nacional de España),13,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,discogs,Discogs,14,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,dkfilm,Det Danske Filminstitut Filmdatabasen,15,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,doi,Digital Object Identifier,16,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,ean,International Article Number,17,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,eidr,EIDR: Entertainment Identifier Registry,18,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,fast,"Faceted Application of Subject Terminology (Dublin, Ohio: OCLC)",19,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,filmport,filmportal.de,20,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,findagr,Find a Grave,21,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,freebase,Freebase,22,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,gec,Gran enciclopèdia catalana,23,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,geogndb,Geographic Names Database,24,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,geonames,GeoNames,25,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,gettytgn,Getty Thesaurus of Geographic Names Online (J. Paul Getty Trust),26,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,gettyulan,Union List of Artist Names Online (J. Paul Getty Trust),27,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,gnd,"Gemeinsame Normdatei (Leipzig, Frankfurt: Deutsche Nationalbibliothek)",28,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,gnis,"Geographic Names Information System (GNIS) (United States Geological Survey, Board on Geographic Names)",29,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,gtin-14,Global Trade Identification Number 14 (EAN/UCC-128 or ITF-14),30,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,hdl,Handle,31,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,ibdb,IBDB - Internet Broadway Database,32,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,idref,IdRef: le referentiel des autorites Sudoc (L'agence bibliographique de l'enseignement superieur (ABES)),33,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,imdb,IMDb - Internet Movie Database,34,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,isan,International Standard Audiovisual Number,35,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,isbn,International Standard Book Number,36,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,isbn-a,International Standard Book Number (the actionable ISBN) (International DOI Foundation (IDF)),37,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,isbnre,ISBN (International Standard Book Number) registrant element,38,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,isil,ISIL (International Standard Identifier for Libraries and Related Organizations),39,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,ismn,International Standard Music Number,40,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,isni,International Standard Name Identifier,41,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,iso,International Organization for Standardization number for an ISO standard,42,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,isrc,International Standard Recording Code,43,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,issn,International Standard Serial Number,44,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,issn-l,Linking International Standard Serial Number,45,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,issue-number,Sound recording issue number,46,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,istc,International Standard Text Code,47,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,iswc,International Standard Musical Work Code,48,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,itar,ITAR (Importtjeneste og autoritetsregistre),49,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,kinopo,КиноПоиск = KinoPoisk,50,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,lccn,Library of Congress Control Number,51,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,lcmd,"Library of Congress Manuscript Division (Washington, DC: Library of Congress)",52,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,lcmpt,"Library of Congress Medium of Performance Thesaurus for Music (LCMPT) (Washington, DC:Library of Congress)",53,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,libaus,Libraries Australia (National Library of Australia),54,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,local,Locally defined identifier,55,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,matrix-number,Sound recording matrix number,56,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,moma,Museum of Modern Art (New York: Museum of Modern Art),57,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,munzing,Munzinger (Munzinger Archiv),58,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,music-plate,Publisher's music plate number,59,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,music-publisher,Publisher-assigned music number,60,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,musicb,MusicBrainz,61,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,natgazfid,U.S. National Gazetteer Feature Name Identifier,62,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,nga,National Gallery of Art (Washington DC: National Gallery of Art),63,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,nipo,Número de Identificación de las Publicaciones Oficiales,64,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,nndb,NNDB (Notable Names Database),65,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,npg,National Portrait Gallery (London: National Portrait Gallery),66,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,odnb,Oxford Dictionary of National Biography (Oxford University Press),67,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,opensm,OpenStreetMap,68,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,orcid,Open Researcher and Contributor IDentifier,69,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,oxforddnb,Oxford Biography Index,70,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,porthu,PORT.hu,71,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,rbmsbt,"RBMS Controlled Vocabularies: Binding Terms (Rare Books and Manuscripts Section, Association of College & Research Libraries)",72,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,rbmsgt,"RBMS Controlled Vocabularies: Genre Terms (Rare Books and Manuscripts Section, Association of College & Research Libraries)",73,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,rbmspe,"RBMS Controlled Vocabularies: Provenance Evidence (Rare Books and Manuscripts Section, Association of College & Research Libraries)",74,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,rbmsppe,"RBMS Controlled Vocabularies: Printing and Publishing Evidence (Rare Books and Manuscripts Section, Association of College & Research Libraries)",75,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,rbmspt,RBMS Controlled Vocabularies: Paper Terms (Rare Books and Manuscripts Section Association of College & Research Libraries),76,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,rbmsrd,"RBMS Controlled Vocabularies: Relationship Designators (Rare Books and Manuscripts Section, Association of College & Research Libraries)",77,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,rbmste,"RBMS Controlled Vocabularies: Type Evidence (Rare Books and Manuscripts Section, Association of College & Research Libraries)",78,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,rid,ResearcherID (Thomson Reuters),79,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,rkda,RKDartists& (Den Haag: Rijksbureau voor Kunsthistorische Documentatie),80,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,saam,Smithsonian American Art Museum (Washington DC: Smithsonian Institution),81,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,scholaru,Scholar Universe,82,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,scope,Scope,83,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,scopus,Scopus Author Identifier,84,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,sici,Serial Item and Contribution Identifier,85,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,spotify,Spotify,86,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,sprfbsb,Sports Reference: Baseball,87,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,sprfbsk,Sports Reference: Basketball,88,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,sprfcbb,Sports Reference: College Basketball,89,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,sprfcfb,Sports Reference: College Football,90,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,sprfhoc,Sports Reference: Hockey,91,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,sprfoly,Sports Reference: Olympic Sports,92,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,sprfpfb,Sports Reference: Pro Football,93,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,stock-number,"Publisher, distributor, or vendor stock number",94,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,strn,Standard Technical Report Number,95,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,svfilm,Svensk Filmdatabas,96,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,tatearid,Tate Artist Identifier,97,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,theatr,Theatricalia,98,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,trove,Trove (National Library of Australia),99,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,upc,Universal Product Code,100,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,uri,Uniform Resource Identifier,101,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,urn,Uniform Resource Name,102,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,viaf,Virtual International Authority File number,103,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,videorecording-identifier,Publisher-assigned videorecording number,104,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,wikidata,Wikidata (Wikimedia Foundation),105,0
+rights_statement_external_document_identifier_type,Rights Statement External Document Identifier Type,wndla,Web NDL Authorities (Tokyo: National Diet Library (NDL)),106,0
+rights_statement_ip_status,Rights Statement IP Status,copyrighted,Copyrighted,0,0
+rights_statement_ip_status,Rights Statement IP Status,public_domain,Public Domain,1,0
+rights_statement_ip_status,Rights Statement IP Status,unknown,Unknown,2,0
+rights_statement_other_rights_basis,Rights Statement Other Rights Basis,donor,Donor,0,0
+rights_statement_other_rights_basis,Rights Statement Other Rights Basis,policy,Policy,1,0
+rights_statement_rights_type,Rights Statement Rights Type,copyright,Copyright,0,0
+rights_statement_rights_type,Rights Statement Rights Type,license,License,1,0
+rights_statement_rights_type,Rights Statement Rights Type,statute,Statute,2,0
+rights_statement_rights_type,Rights Statement Rights Type,other,Other,3,0
+romanization,Romanization,int_std,International standard,0,0
+romanization,Romanization,nat_std,National standard,1,0
+romanization,Romanization,nl_assoc_std,National library association standard,2,0
+romanization,Romanization,nl_bib_agency_std,National library or bibliographic agency standard,3,0
+romanization,Romanization,local_standard,Local standard,4,0
+romanization,Romanization,unknown_standard,Standard of unknown origin,5,0
+romanization,Romanization,conv_rom_cat_agency,Conventional romanization or conventional form of name in language of\ \ cataloging agency,6,0
+romanization,Romanization,not_applicable,Not applicable,7,0
+script_iso15924,Language Script ISO 15924,Adlm,Adlam,0,0
+script_iso15924,Language Script ISO 15924,Afak,Afaka,1,0
+script_iso15924,Language Script ISO 15924,Aghb,Caucasian Albanian,2,0
+script_iso15924,Language Script ISO 15924,Ahom,"Ahom, Tai Ahom",3,0
+script_iso15924,Language Script ISO 15924,Arab,Arabic,4,0
+script_iso15924,Language Script ISO 15924,Aran,Arabic (Nastaliq variant),5,0
+script_iso15924,Language Script ISO 15924,Armi,Imperial Aramaic,6,0
+script_iso15924,Language Script ISO 15924,Armn,Armenian,7,0
+script_iso15924,Language Script ISO 15924,Avst,Avestan,8,0
+script_iso15924,Language Script ISO 15924,Bali,Balinese,9,0
+script_iso15924,Language Script ISO 15924,Bamu,Bamum,10,0
+script_iso15924,Language Script ISO 15924,Bass,Bassa Vah,11,0
+script_iso15924,Language Script ISO 15924,Batk,Batak,12,0
+script_iso15924,Language Script ISO 15924,Beng,Bengali (Bangla),13,0
+script_iso15924,Language Script ISO 15924,Bhks,Bhaiksuki,14,0
+script_iso15924,Language Script ISO 15924,Blis,Blissymbols,15,0
+script_iso15924,Language Script ISO 15924,Bopo,Bopomofo,16,0
+script_iso15924,Language Script ISO 15924,Brah,Brahmi,17,0
+script_iso15924,Language Script ISO 15924,Brai,Braille,18,0
+script_iso15924,Language Script ISO 15924,Bugi,Buginese,19,0
+script_iso15924,Language Script ISO 15924,Buhd,Buhid,20,0
+script_iso15924,Language Script ISO 15924,Cakm,Chakma,21,0
+script_iso15924,Language Script ISO 15924,Cans,Unified Canadian Aboriginal Syllabics,22,0
+script_iso15924,Language Script ISO 15924,Cari,Carian,23,0
+script_iso15924,Language Script ISO 15924,Cham,Cham,24,0
+script_iso15924,Language Script ISO 15924,Cher,Cherokee,25,0
+script_iso15924,Language Script ISO 15924,Cirt,Cirth,26,0
+script_iso15924,Language Script ISO 15924,Copt,Coptic,27,0
+script_iso15924,Language Script ISO 15924,Cpmn,Cypro-Minoan,28,0
+script_iso15924,Language Script ISO 15924,Cprt,Cypriot syllabary,29,0
+script_iso15924,Language Script ISO 15924,Cyrl,Cyrillic,30,0
+script_iso15924,Language Script ISO 15924,Cyrs,Cyrillic (Old Church Slavonic variant),31,0
+script_iso15924,Language Script ISO 15924,Deva,Devanagari (Nagari),32,0
+script_iso15924,Language Script ISO 15924,Dogr,Dogra,33,0
+script_iso15924,Language Script ISO 15924,Dsrt,Deseret (Mormon),34,0
+script_iso15924,Language Script ISO 15924,Dupl,"Duployan shorthand, Duployan stenography",35,0
+script_iso15924,Language Script ISO 15924,Egyd,Egyptian demotic,36,0
+script_iso15924,Language Script ISO 15924,Egyh,Egyptian hieratic,37,0
+script_iso15924,Language Script ISO 15924,Egyp,Egyptian hieroglyphs,38,0
+script_iso15924,Language Script ISO 15924,Elba,Elbasan,39,0
+script_iso15924,Language Script ISO 15924,Elym,Elymaic,40,0
+script_iso15924,Language Script ISO 15924,Ethi,Ethiopic (Geʻez),41,0
+script_iso15924,Language Script ISO 15924,Geok,Khutsuri (Asomtavruli and Nuskhuri),42,0
+script_iso15924,Language Script ISO 15924,Geor,Georgian (Mkhedruli and Mtavruli),43,0
+script_iso15924,Language Script ISO 15924,Glag,Glagolitic,44,0
+script_iso15924,Language Script ISO 15924,Gong,Gunjala Gondi,45,0
+script_iso15924,Language Script ISO 15924,Gonm,Masaram Gondi,46,0
+script_iso15924,Language Script ISO 15924,Goth,Gothic,47,0
+script_iso15924,Language Script ISO 15924,Gran,Grantha,48,0
+script_iso15924,Language Script ISO 15924,Grek,Greek,49,0
+script_iso15924,Language Script ISO 15924,Gujr,Gujarati,50,0
+script_iso15924,Language Script ISO 15924,Guru,Gurmukhi,51,0
+script_iso15924,Language Script ISO 15924,Hanb,Han with Bopomofo (alias for Han + Bopomofo),52,0
+script_iso15924,Language Script ISO 15924,Hang,"Hangul (Hangŭl, Hangeul)",53,0
+script_iso15924,Language Script ISO 15924,Hani,"Han (Hanzi, Kanji, Hanja)",54,0
+script_iso15924,Language Script ISO 15924,Hano,Hanunoo (Hanunóo),55,0
+script_iso15924,Language Script ISO 15924,Hans,Han (Simplified variant),56,0
+script_iso15924,Language Script ISO 15924,Hant,Han (Traditional variant),57,0
+script_iso15924,Language Script ISO 15924,Hatr,Hatran,58,0
+script_iso15924,Language Script ISO 15924,Hebr,Hebrew,59,0
+script_iso15924,Language Script ISO 15924,Hira,Hiragana,60,0
+script_iso15924,Language Script ISO 15924,Hluw,"Anatolian Hieroglyphs (Luwian Hieroglyphs, Hittite Hieroglyphs)",61,0
+script_iso15924,Language Script ISO 15924,Hmng,Pahawh Hmong,62,0
+script_iso15924,Language Script ISO 15924,Hmnp,Nyiakeng Puachue Hmong,63,0
+script_iso15924,Language Script ISO 15924,Hrkt,Japanese syllabaries (alias for Hiragana + Katakana),64,0
+script_iso15924,Language Script ISO 15924,Hung,Old Hungarian (Hungarian Runic),65,0
+script_iso15924,Language Script ISO 15924,Inds,Indus (Harappan),66,0
+script_iso15924,Language Script ISO 15924,Ital,"Old Italic (Etruscan, Oscan, etc.)",67,0
+script_iso15924,Language Script ISO 15924,Jamo,Jamo (alias for Jamo subset of Hangul),68,0
+script_iso15924,Language Script ISO 15924,Java,Javanese,69,0
+script_iso15924,Language Script ISO 15924,Jpan,Japanese (alias for Han + Hiragana + Katakana),70,0
+script_iso15924,Language Script ISO 15924,Jurc,Jurchen,71,0
+script_iso15924,Language Script ISO 15924,Kali,Kayah Li,72,0
+script_iso15924,Language Script ISO 15924,Kana,Katakana,73,0
+script_iso15924,Language Script ISO 15924,Khar,Kharoshthi,74,0
+script_iso15924,Language Script ISO 15924,Khmr,Khmer,75,0
+script_iso15924,Language Script ISO 15924,Khoj,Khojki,76,0
+script_iso15924,Language Script ISO 15924,Kitl,Khitan large script,77,0
+script_iso15924,Language Script ISO 15924,Kits,Khitan small script,78,0
+script_iso15924,Language Script ISO 15924,Knda,Kannada,79,0
+script_iso15924,Language Script ISO 15924,Kore,Korean (alias for Hangul + Han),80,0
+script_iso15924,Language Script ISO 15924,Kpel,Kpelle,81,0
+script_iso15924,Language Script ISO 15924,Kthi,Kaithi,82,0
+script_iso15924,Language Script ISO 15924,Lana,Tai Tham (Lanna),83,0
+script_iso15924,Language Script ISO 15924,Laoo,Lao,84,0
+script_iso15924,Language Script ISO 15924,Latf,Latin (Fraktur variant),85,0
+script_iso15924,Language Script ISO 15924,Latg,Latin (Gaelic variant),86,0
+script_iso15924,Language Script ISO 15924,Latn,Latin,87,0
+script_iso15924,Language Script ISO 15924,Leke,Leke,88,0
+script_iso15924,Language Script ISO 15924,Lepc,Lepcha (Róng),89,0
+script_iso15924,Language Script ISO 15924,Limb,Limbu,90,0
+script_iso15924,Language Script ISO 15924,Lina,Linear A,91,0
+script_iso15924,Language Script ISO 15924,Linb,Linear B,92,0
+script_iso15924,Language Script ISO 15924,Lisu,Lisu (Fraser),93,0
+script_iso15924,Language Script ISO 15924,Loma,Loma,94,0
+script_iso15924,Language Script ISO 15924,Lyci,Lycian,95,0
+script_iso15924,Language Script ISO 15924,Lydi,Lydian,96,0
+script_iso15924,Language Script ISO 15924,Mahj,Mahajani,97,0
+script_iso15924,Language Script ISO 15924,Maka,Makasar,98,0
+script_iso15924,Language Script ISO 15924,Mand,"Mandaic, Mandaean",99,0
+script_iso15924,Language Script ISO 15924,Mani,Manichaean,100,0
+script_iso15924,Language Script ISO 15924,Marc,Marchen,101,0
+script_iso15924,Language Script ISO 15924,Maya,Mayan hieroglyphs,102,0
+script_iso15924,Language Script ISO 15924,Medf,"Medefaidrin (Oberi Okaime, Oberi Ɔkaimɛ)",103,0
+script_iso15924,Language Script ISO 15924,Mend,Mende Kikakui,104,0
+script_iso15924,Language Script ISO 15924,Merc,Meroitic Cursive,105,0
+script_iso15924,Language Script ISO 15924,Mero,Meroitic Hieroglyphs,106,0
+script_iso15924,Language Script ISO 15924,Mlym,Malayalam,107,0
+script_iso15924,Language Script ISO 15924,Modi,"Modi, Moḍī",108,0
+script_iso15924,Language Script ISO 15924,Mong,Mongolian,109,0
+script_iso15924,Language Script ISO 15924,Moon,"Moon (Moon code, Moon script, Moon type)",110,0
+script_iso15924,Language Script ISO 15924,Mroo,"Mro, Mru",111,0
+script_iso15924,Language Script ISO 15924,Mtei,"Meitei Mayek (Meithei, Meetei)",112,0
+script_iso15924,Language Script ISO 15924,Mult,Multani,113,0
+script_iso15924,Language Script ISO 15924,Mymr,Myanmar (Burmese),114,0
+script_iso15924,Language Script ISO 15924,Nand,Nandinagari,115,0
+script_iso15924,Language Script ISO 15924,Narb,Old North Arabian (Ancient North Arabian),116,0
+script_iso15924,Language Script ISO 15924,Nbat,Nabataean,117,0
+script_iso15924,Language Script ISO 15924,Newa,"Newa, Newar, Newari, Nepāla lipi",118,0
+script_iso15924,Language Script ISO 15924,Nkdb,"Naxi Dongba (na²¹ɕi³³ to³³ba²¹, Nakhi Tomba)",119,0
+script_iso15924,Language Script ISO 15924,Nkgb,"Naxi Geba (na²¹ɕi³³ gʌ²¹ba²¹, 'Na-'Khi ²Ggŏ-¹baw, Nakhi Geba)",120,0
+script_iso15924,Language Script ISO 15924,Nkoo,N’Ko,121,0
+script_iso15924,Language Script ISO 15924,Nshu,Nüshu,122,0
+script_iso15924,Language Script ISO 15924,Ogam,Ogham,123,0
+script_iso15924,Language Script ISO 15924,Olck,"Ol Chiki (Ol Cemet’, Ol, Santali)",124,0
+script_iso15924,Language Script ISO 15924,Orkh,"Old Turkic, Orkhon Runic",125,0
+script_iso15924,Language Script ISO 15924,Orya,Oriya (Odia),126,0
+script_iso15924,Language Script ISO 15924,Osge,Osage,127,0
+script_iso15924,Language Script ISO 15924,Osma,Osmanya,128,0
+script_iso15924,Language Script ISO 15924,Palm,Palmyrene,129,0
+script_iso15924,Language Script ISO 15924,Pauc,Pau Cin Hau,130,0
+script_iso15924,Language Script ISO 15924,Perm,Old Permic,131,0
+script_iso15924,Language Script ISO 15924,Phag,Phags-pa,132,0
+script_iso15924,Language Script ISO 15924,Phli,Inscriptional Pahlavi,133,0
+script_iso15924,Language Script ISO 15924,Phlp,Psalter Pahlavi,134,0
+script_iso15924,Language Script ISO 15924,Phlv,Book Pahlavi,135,0
+script_iso15924,Language Script ISO 15924,Phnx,Phoenician,136,0
+script_iso15924,Language Script ISO 15924,Plrd,Miao (Pollard),137,0
+script_iso15924,Language Script ISO 15924,Piqd,Klingon (KLI pIqaD),138,0
+script_iso15924,Language Script ISO 15924,Prti,Inscriptional Parthian,139,0
+script_iso15924,Language Script ISO 15924,Qaaa,Reserved for private use (start),140,0
+script_iso15924,Language Script ISO 15924,Qabx,Reserved for private use (end),141,0
+script_iso15924,Language Script ISO 15924,Rjng,"Rejang (Redjang, Kaganga)",142,0
+script_iso15924,Language Script ISO 15924,Rohg,Hanifi Rohingya,143,0
+script_iso15924,Language Script ISO 15924,Roro,Rongorongo,144,0
+script_iso15924,Language Script ISO 15924,Runr,Runic,145,0
+script_iso15924,Language Script ISO 15924,Samr,Samaritan,146,0
+script_iso15924,Language Script ISO 15924,Sara,Sarati,147,0
+script_iso15924,Language Script ISO 15924,Sarb,Old South Arabian,148,0
+script_iso15924,Language Script ISO 15924,Saur,Saurashtra,149,0
+script_iso15924,Language Script ISO 15924,Sgnw,SignWriting,150,0
+script_iso15924,Language Script ISO 15924,Shaw,Shavian (Shaw),151,0
+script_iso15924,Language Script ISO 15924,Shrd,"Sharada, Śāradā",152,0
+script_iso15924,Language Script ISO 15924,Shui,Shuishu,153,0
+script_iso15924,Language Script ISO 15924,Sidd,"Siddham, Siddhaṃ, Siddhamātṛkā",154,0
+script_iso15924,Language Script ISO 15924,Sind,"Khudawadi, Sindhi",155,0
+script_iso15924,Language Script ISO 15924,Sinh,Sinhala,156,0
+script_iso15924,Language Script ISO 15924,Sogd,Sogdian,157,0
+script_iso15924,Language Script ISO 15924,Sogo,Old Sogdian,158,0
+script_iso15924,Language Script ISO 15924,Sora,Sora Sompeng,159,0
+script_iso15924,Language Script ISO 15924,Soyo,Soyombo,160,0
+script_iso15924,Language Script ISO 15924,Sund,Sundanese,161,0
+script_iso15924,Language Script ISO 15924,Sylo,Syloti Nagri,162,0
+script_iso15924,Language Script ISO 15924,Syrc,Syriac,163,0
+script_iso15924,Language Script ISO 15924,Syre,Syriac (Estrangelo variant),164,0
+script_iso15924,Language Script ISO 15924,Syrj,Syriac (Western variant),165,0
+script_iso15924,Language Script ISO 15924,Syrn,Syriac (Eastern variant),166,0
+script_iso15924,Language Script ISO 15924,Tagb,Tagbanwa,167,0
+script_iso15924,Language Script ISO 15924,Takr,"Takri, Ṭākrī, Ṭāṅkrī",168,0
+script_iso15924,Language Script ISO 15924,Tale,Tai Le,169,0
+script_iso15924,Language Script ISO 15924,Talu,New Tai Lue,170,0
+script_iso15924,Language Script ISO 15924,Taml,Tamil,171,0
+script_iso15924,Language Script ISO 15924,Tang,Tangut,172,0
+script_iso15924,Language Script ISO 15924,Tavt,Tai Viet,173,0
+script_iso15924,Language Script ISO 15924,Telu,Telugu,174,0
+script_iso15924,Language Script ISO 15924,Teng,Tengwar,175,0
+script_iso15924,Language Script ISO 15924,Tfng,Tifinagh (Berber),176,0
+script_iso15924,Language Script ISO 15924,Tglg,"Tagalog (Baybayin, Alibata)",177,0
+script_iso15924,Language Script ISO 15924,Thaa,Thaana,178,0
+script_iso15924,Language Script ISO 15924,Thai,Thai,179,0
+script_iso15924,Language Script ISO 15924,Tibt,Tibetan,180,0
+script_iso15924,Language Script ISO 15924,Tirh,Tirhuta,181,0
+script_iso15924,Language Script ISO 15924,Ugar,Ugaritic,182,0
+script_iso15924,Language Script ISO 15924,Vaii,Vai,183,0
+script_iso15924,Language Script ISO 15924,Visp,Visible Speech,184,0
+script_iso15924,Language Script ISO 15924,Wara,Warang Citi (Varang Kshiti),185,0
+script_iso15924,Language Script ISO 15924,Wcho,Wancho,186,0
+script_iso15924,Language Script ISO 15924,Wole,Woleai,187,0
+script_iso15924,Language Script ISO 15924,Xpeo,Old Persian,188,0
+script_iso15924,Language Script ISO 15924,Xsux,"Cuneiform, Sumero-Akkadian",189,0
+script_iso15924,Language Script ISO 15924,Yiii,Yi,190,0
+script_iso15924,Language Script ISO 15924,Zanb,"Zanabazar Square (Zanabazarin Dörböljin Useg, Xewtee Dörböljin Bicig, Horizontal Square\ \ Script)",191,0
+script_iso15924,Language Script ISO 15924,Zinh,Code for inherited script,192,0
+script_iso15924,Language Script ISO 15924,Zmth,Mathematical notation,193,0
+script_iso15924,Language Script ISO 15924,Zsye,Symbols (Emoji variant),194,0
+script_iso15924,Language Script ISO 15924,Zsym,Symbols,195,0
+script_iso15924,Language Script ISO 15924,Zxxx,Code for unwritten documents,196,0
+script_iso15924,Language Script ISO 15924,Zyyy,Code for undetermined script,197,0
+script_iso15924,Language Script ISO 15924,Zzzz,Code for uncoded script,198,0
+subject_source,Subject Source,aat,Art & Architecture Thesaurus,0,0
+subject_source,Subject Source,fast,fast,1,0
+subject_source,Subject Source,gmgpc,"TGM II, Genre and physical characteristic terms",2,0
+subject_source,Subject Source,lcsh,Library of Congress Subject Headings,3,0
+subject_source,Subject Source,local,Local sources,4,0
+subject_source,Subject Source,mesh,Medical Subject Headings,5,0
+subject_source,Subject Source,rbgenr,Genre Terms: A Thesaurus for Use in Rare Book and Special Collections Cataloguing,6,0
+subject_source,Subject Source,tgn,Getty Thesaurus of Geographic Names,7,0
+subject_source,Subject Source,tuca,tuca,8,0
+subject_source,Subject Source,wik,wik,9,0
+subject_source,Subject Source,ftamc,ftamc,10,0
+subject_source,Subject Source,viaf,viaf,11,0
+subject_source,Subject Source,lcgft,Library of Congress Genre/Form Terms,12,0
+subject_source,Subject Source,lctgm,lctgm,13,0
+subject_source,Subject Source,lcmpt,lcmpt,14,0
+subject_source,Subject Source,ingest,Unspecified ingested source,15,0
+subject_term_type,Subject Term Type,cultural_context,Cultural context,0,0
+subject_term_type,Subject Term Type,function,Function,1,0
+subject_term_type,Subject Term Type,genre_form,Genre / Form,2,0
+subject_term_type,Subject Term Type,geographic,Geographic,3,0
+subject_term_type,Subject Term Type,occupation,Occupation,4,0
+subject_term_type,Subject Term Type,style_period,Style / Period,5,0
+subject_term_type,Subject Term Type,technique,Technique,6,0
+subject_term_type,Subject Term Type,temporal,Temporal,7,0
+subject_term_type,Subject Term Type,topical,Topical,8,0
+subject_term_type,Subject Term Type,uniform_title,Uniform Title,9,0
+telephone_number_type,Telephone Number Type,business,business,0,0
+telephone_number_type,Telephone Number Type,home,home,1,0
+telephone_number_type,Telephone Number Type,cell,cell,2,0
+telephone_number_type,Telephone Number Type,fax,fax,3,0
+transliteration,Transliteration,ala-lc,ALA-LC Romanization Tables,0,0
+user_defined_enum_1,Accession Status,novalue,No value defined,0,0
+user_defined_enum_1,Accession Status,Complete,Complete,1,0
+user_defined_enum_2,User Defined Enum 2,novalue,No value defined,0,0
+user_defined_enum_3,User Defined Enum 3,novalue,No value defined,0,0
+user_defined_enum_4,User Defined Enum 4,novalue,No value defined,0,0
