@@ -54,6 +54,7 @@ for index, row in df.iterrows():
     # Get top container information from CSV.
     barcode = row['barcode']
     indicator = row['indicator']
+    type = row['type']
     print('Gathering top container #{}: {}.'.format(index, barcode))
 
     # Build JSON record for top container.
@@ -61,6 +62,7 @@ for index, row in df.iterrows():
                        'repository': {'ref': '/repositories/3'}}
     containerRecord['barcode'] = str(barcode)
     containerRecord['indicator'] = str(indicator)
+    containerRecord['type'] = str(type)
 
     locations = []
     location = {}
