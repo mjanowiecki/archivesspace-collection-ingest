@@ -193,7 +193,6 @@ def check_for_values(row_name, value_from_csv):
         value_from_csv = row_name[value_from_csv]
         list_of_values = split_pattern(value_from_csv)
         return list_of_values
-
     except KeyError:
         pass
 

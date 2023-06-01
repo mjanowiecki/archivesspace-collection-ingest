@@ -62,11 +62,8 @@ for index, row in df.iterrows():
             'sort_name_auto_generate': True,
             'authorized': True,
             'is_display_name': True}
-    ev.add_to_dict(row, name, 'primary_name', 'primary_name')
     ev.add_to_dict(row, name, 'subordinate_name_1', 'subordinate_name_1')
     ev.add_to_dict(row, name, 'subordinate_name_2', 'subordinate_name_2')
-    ev.add_to_dict(row, name, 'subordinate_name_3', 'subordinate_name_3')
-    ev.add_to_dict(row, name, 'subordinate_name_4', 'subordinate_name_4')
     ev.add_to_dict(row, name, 'qualifier', 'qualifier')
     ev.add_to_dict(row, name, 'authority_id', 'authority_id')
     ev.add_to_dict(row, name, 'source', 'source')

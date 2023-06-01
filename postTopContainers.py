@@ -96,6 +96,7 @@ for index, row in df.iterrows():
             itemLog = {'uri': uri, 'barcode': barcode, 'indicator': indicator}
             # Add item log to list of logs
             logForAllItems.append(itemLog)
+            
 
         except requests.exceptions.JSONDecodeError:
             # If POST to ArchivesSpace fails, break loop.

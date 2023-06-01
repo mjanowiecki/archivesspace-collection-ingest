@@ -65,7 +65,6 @@ for index, row in df.iterrows():
     ev.add_to_dict(row, archivalObjectRecord, 'position', 'position')
     ev.add_to_dict(row, archivalObjectRecord, 'component_id', 'component_id')
     ev.add_to_dict(row, archivalObjectRecord, 'other_level', 'other_level')
-    ev.add_to_dict(row, archivalObjectRecord, 'component_id', 'component_id')
     ev.add_to_dict(row, archivalObjectRecord, 'has_unpublished_ancestor', 'has_unpublished_ancestor')
     ev.add_to_dict(row, archivalObjectRecord, 'is_slug_auto', 'is_slug_auto')
 
