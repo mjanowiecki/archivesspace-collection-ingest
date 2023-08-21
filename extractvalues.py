@@ -1,10 +1,10 @@
 import pandas as pd
-
+import ast
 
 df = pd.read_csv('enumerations.csv', index_col='Enumeration code')
 df = df.drop(columns=['Enumeration', 'Value', 'Position', 'Read-only'])
 ser = df['Value code']
-boolean_values = ['True', 'False']
+boolean_values = [True, False]
 
 # dates (repeatable, separate by ||)
 # example: label==creation;;date_type==single;;expression==2007 April 30;;begin==2007-04-30
@@ -36,8 +36,9 @@ instance_type_values = list(ser.get('instance_instance_type'))
 instance_fields = {'instance_type': instance_type_values,
                    'is_representative': boolean_values}
 sub_container_fields = {'indicator_2': 'Not controlled',
-                        'ref': 'Not controlled',
                         'type_2': instance_type_values}
+instance_keys = list(instance_fields.keys())
+sub_container_keys = list(sub_container_fields.keys())
 
 # lang_materials (repeatable, separate by ||)
 # example: language==fre;;publish==True;;script==Latn;;content==French
@@ -59,54 +60,22 @@ linked_agents_fields = {'ref': 'Not controlled',
                         'role': role_values}
 
 # note_multipart (repeatable, separate by ||)
-# example: type==accessrestrict;;publish==True;;content==This digital content is available offline. Contact Special Collections for more information.
+# example: type==accessrestrict;;publish==True;;content==Digital content is available offline.
 note_type_values = list(ser.get('note_multipart_type'))
+local_access_restrict_values = list(ser.get('restriction_type'))
 note_fields = {'content': 'Not controlled',
                'publish': boolean_values,
                'type': note_type_values}
+rights_restriction_fields = {'local_access_restriction_type': local_access_restrict_values,
+                             'end': 'Not controlled'}
+rights_keys = list(rights_restriction_fields.keys())
 
 # note_singlepart (not repeatable)
-# example: type==physdesc;;publish==True;;content==The handwritten letter in this collection is fragile and should be handled with care.
+# example: type==physdesc;;publish==True;;content==The handwritten letter is fragile and should be handled with care.
 subnote_type_values = list(ser.get('note_singlepart_type'))
 subnote_fields = {'content': 'Not controlled',
                   'publish': boolean_values,
                   'type': note_type_values}
-
-# note_index
-
-# note_bibliography
-
-# rights_statements
-rights_type_values = list(ser.get('rights_statement_rights_type'))
-status_values = list(ser.get('rights_statement_ip_status'))
-jurisdiction_values = list(ser.get('country_iso_3166'))
-other_rights_basis_values = list(ser.get('rights_statement_other_rights_basis'))
-right_statement_fields = {'rights_type': rights_type_values,
-                          'identifier': 'Not controlled',
-                          'status': status_values,
-                          'determination_date': 'Not controlled',
-                          'start_date': 'Not controlled',
-                          'end_date': 'Not controlled',
-                          'license_terms': 'Not controlled',
-                          'statue_citation': 'Not controlled',
-                          'jurisdiction': jurisdiction_values,
-                          'other_rights_basis': other_rights_basis_values,
-                          'external_documents': 'Not controlled',
-                          'acts': 'Not controlled',
-                          'linked_agents': 'Not controlled',
-                          'notes': 'Not controlled'}
-
-act_values = list(ser.get('rights_statement_act_type'))
-restriction_values = list(ser.get('rights_statement_act_restriction'))
-acts_fields = {'act_type': act_values,
-               'restriction': restriction_values,
-               'start_date': 'Not controlled',
-               'end_date': 'Not controlled',
-               'notes': 'Not controlled'}
-
-note_rights_statement_values = list(ser.get('note_rights_statement_type'))
-notes_rights_statement_fields = {'content': 'Not controlled',
-                                 'type': note_rights_statement_values}
 
 
 # This function grabs a value from your spreadsheet and adds it to the JSON record you are building.
@@ -157,6 +126,9 @@ def add_with_ref(row_name, dict_name, json_field, value_from_csv, repeat):
 
 # This function validates certain values for specified JSON fields.
 def validate_field_values(container, field_key, field_value, valid_field_dict):
+    string_boolean = ['True', 'False']
+    if field_value in string_boolean:
+        field_value = ast.literal_eval(field_value)
     retrieved_field_value = valid_field_dict.get(field_key)
     if retrieved_field_value is None:
         print('{} field is not in {}.'.format(field_key, valid_field_dict))
@@ -206,8 +178,8 @@ def build_json(row_name, value_from_csv, jsonmodel_type, field_dictionary):
             for key, value in entry.items():
                 validate_field_values(json_object, key, value, field_dictionary)
             container_for_objects.append(json_object)
-        if container_for_objects:
-            return container_for_objects
+    if container_for_objects:
+        return container_for_objects
     else:
         pass
 
@@ -220,15 +192,22 @@ def add_multipart_note(row_name, value_from_csv):
         if list_of_values:
             note = {'jsonmodel_type': 'note_multipart', 'publish': True}
             subnotes = []
+            rights_restriction = {}
             for entry in list_of_values:
-                subnote = {}
+                subnote = {'jsonmodel_type': 'note_text'}
                 for key, value in entry.items():
                     if key == 'type':
                         validate_field_values(note, key, value, note_fields)
+                    elif key in rights_keys:
+                        validate_field_values(rights_restriction, key, value, rights_restriction_fields)
                     else:
                         validate_field_values(subnote, key, value, note_fields)
                 subnotes.append(subnote)
             note['subnotes'] = subnotes
+            if rights_restriction:
+                value_1 = rights_restriction['local_access_restriction_type']
+                rights_restriction['local_access_restriction_type'] = [value_1]
+                note['rights_restriction'] = rights_restriction
             notes_multipart.append(note)
         if notes_multipart:
             return notes_multipart
@@ -237,15 +216,18 @@ def add_multipart_note(row_name, value_from_csv):
 
 
 def add_singlepart_note(row_name, value_from_csv):
-    build_json(row_name, value_from_csv, 'note_singlepart', note_fields)
+    note_singlepart = build_json(row_name, value_from_csv, 'note_singlepart', note_fields)
+    return note_singlepart
 
 
 def add_extents(row_name, value_from_csv):
-    build_json(row_name, value_from_csv, 'extent', extent_fields)
+    extents = build_json(row_name, value_from_csv, 'extent', extent_fields)
+    return extents
 
 
 def add_dates(row_name, value_from_csv):
-    build_json(row_name, value_from_csv, 'date', date_fields)
+    dates = build_json(row_name, value_from_csv, 'date', date_fields)
+    return dates
 
 
 def add_linked_agents(row_name, value_from_csv):
@@ -271,13 +253,14 @@ def add_instances(row_name, value_from_csv):
             instance = {'jsonmodel_type': 'instance'}
             sub_container = {'jsonmodel_type': 'sub_container'}
             for key, value in entry.items():
-                list_valid_fields = list(instance_fields.keys())
-                if key in list_valid_fields:
+                if key in instance_keys:
                     validate_field_values(instance, key, value, instance_fields)
                 elif key == 'ref':
                     sub_container['top_container'] = {'ref': value}
-                else:
+                elif key in sub_container_keys:
                     validate_field_values(sub_container, key, value, sub_container_fields)
+                else:
+                    print('Error!')
             instance['sub_container'] = sub_container
             instances.append(instance)
         if instances:
