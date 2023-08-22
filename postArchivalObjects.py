@@ -92,9 +92,11 @@ for index, row in df.iterrows():
         notes_singlepart = ev.add_singlepart_note(row, 'singlepart_note')
         notes = []
         if notes_singlepart:
-            notes.append(notes_singlepart)
+            for single_note in notes_singlepart:
+                notes.append(single_note)
         if notes_multipart:
-            notes.append(notes_multipart)
+            for multipart_note in notes_multipart:
+                notes.append(multipart_note)
         if notes:
             archivalObjectRecord['notes'] = notes
 
