@@ -156,6 +156,8 @@ cython_debug/
 
 */.json
 *.csv
-!enumerations.csv
-secret.py
-secretProd.py
+!create-entities/enumerations.csv
+create-entities/secret.py
+create-entities/secretProd.py
+get-existing-entities/secret.py
+get-existing-entities/secretProd.py

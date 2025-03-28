@@ -9,21 +9,21 @@ import extractvalues as ev
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--file')
-parser.add_argument('-p', '--postRecord')
+parser.add_argument('-p', '--post_record')
 args = parser.parse_args()
 
 if args.file:
     filename = args.file
 else:
     filename = input('Enter filename (including \'.csv\'): ')
-if args.postRecord:
-    postRecord = args.postRecord
+if args.post_record:
+    post_record = args.post_record
 else:
-    postRecord = input('Enter True to post records to AS.')
+    post_record = input('Enter True to post records to AS.')
 
-startTime = time.time()
+start_time = time.time()
 
-if postRecord == 'True':
+if post_record == 'True':
     # Log into ArchivesSpace and start session on selected server.
     secretVersion = input('To edit production server, enter secret filename: ')
     if secretVersion != '':
@@ -35,12 +35,12 @@ if postRecord == 'True':
     else:
         print('Editing Development')
 
-    baseURL = secret.baseURL
+    base_url = secret.base_url
     user = secret.user
     password = secret.password
     repository = secret.repository
 
-    auth = requests.post(baseURL+'/users/'+user+'/login?password='+password).json()
+    auth = requests.post(base_url+'/users/'+user+'/login?password='+password).json()
     session = auth['session']
     headers = {'X-ArchivesSpace-Session': session, 'Content_Type': 'application/json'}
 else:
@@ -49,12 +49,12 @@ else:
 # Convert CSV with top container information into DataFrame.
 df = pd.read_csv(filename)
 
-logForAllItems = []
+all_items = []
 for index, row in df.iterrows():
     # Get top container information from CSV.
     barcode = row['barcode']
     indicator = row['indicator']
-    type = row['type']
+    container_type = row['type']
     print('Gathering top container #{}: {}.'.format(index, barcode))
 
     # Build JSON record for top container.
@@ -62,7 +62,7 @@ for index, row in df.iterrows():
                        'repository': {'ref': '/repositories/3'}}
     containerRecord['barcode'] = str(barcode)
     containerRecord['indicator'] = str(indicator)
-    containerRecord['type'] = str(type)
+    containerRecord['type'] = str(container_type)
 
     locations = []
     location = {}
@@ -80,55 +80,55 @@ for index, row in df.iterrows():
     ev.add_with_ref(row, containerRecord, 'container_profile', 'container_profile', 'single')
 
     # Create dictionary for item log.
-    itemLog = {}
+    item_log = {}
 
-    if postRecord == 'True':
+    if post_record == 'True':
         # Create JSON record for top container.
         containerRecord = json.dumps(containerRecord)
         print('JSON created for {}.'.format(barcode))
 
         try:
             # Try to POST JSON to ArchivesSpace API top container endpoint.
-            post = requests.post(baseURL+'/repositories/'+repository+'/top_containers', headers=headers, data=containerRecord).json()
+            post = requests.post(base_url+'/repositories/'+repository+'/top_containers', headers=headers, data=containerRecord).json()
             print(json.dumps(post))
             uri = post['uri']
             print('Top container successfully created with URI: {}'.format(uri))
-            itemLog = {'uri': uri, 'barcode': barcode, 'indicator': indicator}
+            item_log = {'uri': uri, 'barcode': barcode, 'indicator': indicator}
             # Add item log to list of logs
-            logForAllItems.append(itemLog)
+            all_items.append(item_log)
             
 
         except requests.exceptions.JSONDecodeError:
             # If POST to ArchivesSpace fails, break loop.
-            itemLog = {'uri': 'error', 'barcode': barcode}
+            item_log = {'uri': 'error', 'barcode': barcode}
             # Add item log to list of logs
-            logForAllItems.append(itemLog)
+            all_items.append(item_log)
             print('POST to AS failed, breaking loop.')
             break
     else:
         # Create JSON records on your computer to review. Does not post to AS.
         dt = datetime.now().strftime('%Y-%m-%d')
-        index = str(index+1)
-        identifier = 'topContainer_'+index.zfill(3)
+        index += 1
+        identifier = 'topContainer_'+str(index).zfill(3)
         tc_filename = identifier+'_'+dt+'.json'
         directory = ''
         with open(directory+tc_filename, 'w') as fp:
             json.dump(containerRecord, fp)
         print('Top container JSON successfully created with filename {}'.format(tc_filename))
-        itemLog = {'filename': tc_filename, 'barcode': barcode}
-        logForAllItems.append(itemLog)
+        item_log = {'filename': tc_filename, 'barcode': barcode}
+        all_items.append(item_log)
     print('')
 
-# Convert logForAllItems to DataFrame.
-log = pd.DataFrame.from_dict(logForAllItems)
+# Convert all_items to DataFrame.
+log = pd.DataFrame.from_records(all_items)
 
 # Create CSV of all item logs.
-dt = datetime.now().strftime('%Y-%m-%d %H.%M.%S')
-topContainerCSV = 'postNewTopContainers_'+dt+'.csv'
-log.to_csv(topContainerCSV)
-print('{} created.'.format(topContainerCSV))
+dt = datetime.now().strftime('%Y-%m-%d%H.%M.%S')
+top_container_csv = 'postNewTopContainers_'+dt+'.csv'
+log.to_csv(top_container_csv)
+print('{} created.'.format(top_container_csv))
 
-elapsedTime = time.time() - startTime
-m, s = divmod(elapsedTime, 60)
+elapsed_time = time.time() - start_time
+m, s = divmod(elapsed_time, 60)
 h, m = divmod(m, 60)
 print('Total script run time: ', '%d:%02d:%02d' % (h, m, s))
