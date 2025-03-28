@@ -25,8 +25,8 @@ for count, filename in enumerate(os.listdir(directory)):
     filename = directory + "/" + filename
     print(filename)
     if filename.endswith('.csv'):
-        newDF = pd.read_csv(filename)
-        dataframes.append(newDF)
+        new_df = pd.read_csv(filename)
+        dataframes.append(new_df)
 
 find_replace = pd.concat(dataframes)
 
