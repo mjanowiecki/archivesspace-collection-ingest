@@ -8,21 +8,21 @@ from datetime import datetime
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--file')
-parser.add_argument('-p', '--post_record')
+parser.add_argument('-p', '--postRecord')
 args = parser.parse_args()
 
 if args.file:
     filename = args.file
 else:
     filename = input('Enter filename (including \'.csv\'): ')
-if args.post_record:
-    post_record = args.post_record
+if args.postRecord:
+    postRecord = args.postRecord
 else:
-    post_record = input('Enter True to post records to AS.')
+    postRecord = input('Enter True to post records to AS.')
 
-start_time = time.time()
+startTime = time.time()
 
-if post_record == 'True':
+if postRecord == 'True':
     # Log into ArchivesSpace and start session on selected server.
     secretVersion = input('To edit production server, enter secret filename: ')
     if secretVersion != '':
@@ -34,12 +34,12 @@ if post_record == 'True':
     else:
         print('Editing Development')
 
-    base_url = secret.base_url
+    baseURL = secret.baseURL
     user = secret.user
     password = secret.password
     repository = secret.repository
 
-    auth = requests.post(base_url+'/users/'+user+'/login?password='+password).json()
+    auth = requests.post(baseURL+'/users/'+user+'/login?password='+password).json()
     session = auth['session']
     headers = {'X-ArchivesSpace-Session': session, 'Content_Type': 'application/json'}
 else:
@@ -48,7 +48,7 @@ else:
 # Convert CSV with subject information into DataFrame.
 df = pd.read_csv(filename)
 
-all_items = []
+logForAllItems = []
 for index, row in df.iterrows():
     # Get subject information from CSV.
     term = row['term']
@@ -70,9 +70,9 @@ for index, row in df.iterrows():
     subjectRecord['authority_id'] = authority_id
 
     # Create dictionary for item log.
-    item_log = {}
+    itemLog = {}
 
-    if post_record == 'True':
+    if postRecord == 'True':
         # Create JSON record for subject.
         subjectRecord = json.dumps(subjectRecord)
         print(subjectRecord)
@@ -80,53 +80,53 @@ for index, row in df.iterrows():
 
         try:
             # Try to POST JSON to ArchivesSpace API subject endpoint.
-            post = requests.post(base_url+'/subjects', headers=headers, data=subjectRecord).json()
+            post = requests.post(baseURL+'/subjects', headers=headers, data=subjectRecord).json()
             # Get URI and add to item log
             uri = post['uri']
             print('Subject successfully created with URI: {}'.format(uri))
-            item_log = {'uri': uri, 'subject_name': term}
+            itemLog = {'uri': uri, 'subject_name': term}
             # Add item log to list of logs
-            all_items.append(item_log)
+            logForAllItems.append(itemLog)
 
         except requests.exceptions.JSONDecodeError:
             # If POST to ArchivesSpace fails, break loop.
-            item_log = {'uri': 'error', 'subject_name': term}
+            itemLog = {'uri': 'error', 'subject_name': term}
             # Add item log to list of logs
-            all_items.append(item_log)
+            logForAllItems.append(itemLog)
             print('POST to AS failed.')
 
         except KeyError:
             # If JSON error occurs, record here.
             error = post['error']
-            item_log = {'error': error, 'subject_name': term}
+            itemLog = {'error': error, 'subject_name': term}
             # Add item log to list of logs
-            all_items.append(item_log)
+            logForAllItems.append(itemLog)
             print('POST to AS failed.')
 
     else:
         # Create JSON records on your computer to review. Does not post to AS.
         dt = datetime.now().strftime('%Y-%m-%d')
-        index += 1
-        identifier = 'subject_'+str(index).zfill(3)
+        index = str(index+1)
+        identifier = 'subject_'+index.zfill(3)
         s_filename = identifier+'_'+dt+'.json'
         directory = ''
         with open(directory+s_filename, 'w') as fp:
             json.dump(subjectRecord, fp)
         print('Subject record JSON successfully created with filename {}'.format(s_filename))
-        item_log = {'filename': s_filename, 'term': term}
-        all_items.append(item_log)
+        itemLog = {'filename': s_filename, 'term': term}
+        logForAllItems.append(itemLog)
     print('')
 
-# Convert all_items to DataFrame.
-log = pd.DataFrame.from_records(all_items)
+# Convert logForAllItems to DataFrame.
+log = pd.DataFrame.from_dict(logForAllItems)
 
 # Create CSV of all item logs.
-dt = datetime.now().strftime('%Y-%m-%d%H.%M.%S')
-subject_csv = 'postNewSubjects_'+dt+'.csv'
-log.to_csv(subject_csv)
-print('{} created.'.format(subject_csv))
+dt = datetime.now().strftime('%Y-%m-%d %H.%M.%S')
+subjectCSV = 'postNewSubjects_'+dt+'.csv'
+log.to_csv(subjectCSV)
+print('{} created.'.format(subjectCSV))
 
-elapsed_time = time.time() - start_time
-m, s = divmod(elapsed_time, 60)
+elapsedTime = time.time() - startTime
+m, s = divmod(elapsedTime, 60)
 h, m = divmod(m, 60)
 print('Total script run time: ', '%d:%02d:%02d' % (h, m, s))
