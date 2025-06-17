@@ -125,7 +125,7 @@ for index, row in df.iterrows():
 
         try:
             # Try to POST JSON to ArchivesSpace API archival object endpoint.
-            post = requests.post(base_url+'/agents/people', headers=headers, data=archivalObjectRecord).json()
+            post = requests.post(base_url+'/repositories/'+repository+'/archival_objects', headers=headers, data=archivalObjectRecord).json()
             print(json.dumps(post))
             uri = post['uri']
             print('Archival object successfully created with URI: {}'.format(uri))

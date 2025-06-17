@@ -55,21 +55,22 @@ for index, row in df.iterrows():
     print('Gathering family #{}: {}.'.format(index, sort_name))
 
     # Get agent information from CSV.
-    agentRecord = {'agent_type': 'agent_family', 'publish': True}
+    publish_family = row.get('publish_family')
+    agentRecord = {'agent_type': 'agent_family', 'publish': publish_family}
     names = []
     name = {'jsonmodel_type': 'name_family',
             'sort_name_auto_generate': True,
             'authorized': True,
             'is_display_name': True}
-    ev.add_to_dict(row, name, 'family_name', 'family_name')
-    ev.add_to_dict(row, name, 'sort_name', 'sort_name')
-    ev.add_to_dict(row, name, 'rules', 'rules')
-    ev.add_to_dict(row, name, 'dates', 'dates')
-    ev.add_to_dict(row, name, 'qualifier', 'qualifier')
+
+    ev.add_to_dict(row, name, 'authority_id', 'authority_id')
     ev.add_to_dict(row, name, 'source', 'source')
     ev.add_to_dict(row, name, 'rules', 'rules')
-    ev.add_to_dict(row, name, 'authority_id', 'authority_id')
-    ev.add_to_dict(row, name, 'use_dates', 'use_dates')
+    ev.add_to_dict(row, name, 'prefix', 'prefix')
+    ev.add_to_dict(row, name, 'family_name', 'family_name')
+    ev.add_to_dict(row, name, 'dates', 'dates')
+    ev.add_to_dict(row, name, 'family_type', 'family_type')
+    ev.add_to_dict(row, name, 'qualifier', 'qualifier')
     names.append(name)
     agentRecord['names'] = names
 

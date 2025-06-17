@@ -18,6 +18,32 @@ date_fields = {'begin': 'Not controlled',
                'expression': 'Not controlled',
                'label': label_values}
 
+# dates_of_existence (repeatable, separate by ||)
+date_role = list(ser.get('date_role'))
+date_type_structured = list(ser.get('date_type_structured'))
+date_standardized_type = list(ser.get('date_standardized_type'))
+end_date_standardized_type = list(ser.get('end_date_standardized_type'))
+begin_date_standardized_type = list(ser.get('begin_date_standardized_type'))
+dates_of_existence_fields = {'date_type_structured': date_type_structured,
+                             'date_certainty': certainty_values}
+
+date_range_fields = {'begin_date_expression': 'Not controlled',
+                     'begin_date_standardized': 'Not controlled',
+                     'begin_date_standardized_type': begin_date_standardized_type,
+                     'end_date_expression': 'Not controlled',
+                     'end_date_standardized': 'Not controlled',
+                     'end_date_standardized_type': end_date_standardized_type}
+
+date_single_fields = {'date_expression': 'Not controlled',
+                      'date_standardized': 'Not controlled',
+                      'date_role': date_role,
+                      'date_standardization_type': date_standardized_type}
+
+dates_of_existence_keys = list(dates_of_existence_fields.keys())
+date_range_keys = list(date_range_fields.keys())
+date_single_keys = list(date_single_fields.keys())
+
+
 # extents (repeatable, separate by ||)
 # example: portion==whole;;extent_type==cubic_feet;;number==.167;;container_summary==1 legal size folder
 portion_values = list(ser.get('extent_portion'))
@@ -141,7 +167,7 @@ def validate_field_values(container, field_key, field_value, valid_field_dict):
             print('{} field has bad {} field_value.'.format(field_key, field_value))
 
 
-# This function splits up field components based on specified patterns.
+# This function splits up a list into sub-fields and values based on specified patterns.
 def split_pattern(value_from_csv):
     list_of_values = []
     if pd.notna(value_from_csv):
@@ -159,7 +185,7 @@ def split_pattern(value_from_csv):
         pass
     return list_of_values
 
-
+# This function splits up a cell value into a list if there is a delimiter.
 def check_for_values(row_name, value_from_csv):
     try:
         value_from_csv = row_name[value_from_csv]
@@ -228,6 +254,39 @@ def add_extents(row_name, value_from_csv):
 def add_dates(row_name, value_from_csv):
     dates = build_json(row_name, value_from_csv, 'date', date_fields)
     return dates
+
+
+def add_dates_of_existence(row_name, value_from_csv):
+    list_of_values = check_for_values(row_name, value_from_csv)
+    dates_of_existence = []
+    if list_of_values:
+        date_of_existence = {'date_label': 'existence',
+                             'jsonmodel_type': 'structured_date_label'}
+        for entry in list_of_values:
+                structured_date_range = {}
+                structured_date_single = {}
+                for key, value in entry.items():
+                    if key in dates_of_existence_keys:
+                        validate_field_values(date_of_existence, key, value, dates_of_existence_fields)
+                    elif key in date_range_keys:
+                        validate_field_values(structured_date_range, key, value, date_range_fields)
+                    elif key in date_single_keys:
+                        validate_field_values(structured_date_single, key, value, date_single_fields)
+                    else:
+                        pass
+                if structured_date_range:
+                    structured_date_range['jsonmodel_type'] = 'structured_date_range'
+                    date_of_existence['structured_date_range'] = structured_date_range
+                if structured_date_single:
+                    structured_date_single['jsonmodel_type'] = 'structured_date_single'
+                    date_of_existence['structured_date_single'] = structured_date_single
+                dates_of_existence.append(date_of_existence)
+    if dates_of_existence:
+        return dates_of_existence
+    else:
+        pass
+
+
 
 
 def add_linked_agents(row_name, value_from_csv):

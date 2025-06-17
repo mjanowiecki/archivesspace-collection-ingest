@@ -41,7 +41,7 @@ def collect_property(dictionary, do_property, name=None):
                 digital_dict[do_property] = value
 
 
-auth = requests.post(base_url + '/users/' + user + '/login?password=' + password).json()
+auth = requests.post(base_url+'/users/'+ user+'/login?password='+ password).json()
 session = auth['session']
 print(auth)
 print(session)

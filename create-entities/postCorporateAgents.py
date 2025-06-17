@@ -62,14 +62,17 @@ for index, row in df.iterrows():
             'sort_name_auto_generate': True,
             'authorized': True,
             'is_display_name': True}
-    ev.add_to_dict(row, name, 'subordinate_name_1', 'subordinate_name_1')
-    ev.add_to_dict(row, name, 'subordinate_name_2', 'subordinate_name_2')
-    ev.add_to_dict(row, name, 'qualifier', 'qualifier')
     ev.add_to_dict(row, name, 'authority_id', 'authority_id')
     ev.add_to_dict(row, name, 'source', 'source')
     ev.add_to_dict(row, name, 'rules', 'rules')
-    ev.add_to_dict(row, name, 'name_order', 'name_order')
-    ev.add_to_dict(row, name, 'use_dates', 'use_dates')
+    ev.add_to_dict(row, name, 'subordinate_name_1', 'subordinate_name_1')
+    ev.add_to_dict(row, name, 'subordinate_name_2', 'subordinate_name_2')
+    ev.add_to_dict(row, name, 'number', 'number')
+    ev.add_to_dict(row, name, 'dates', 'dates')
+    ev.add_to_dict(row, name, 'location', 'location')
+    ev.add_to_dict(row, name, 'conference_meeting', 'conference_meeting')
+    ev.add_to_dict(row, name, 'jurisdiction', 'jurisdiction')
+    ev.add_to_dict(row, name, 'qualifier', 'qualifier')
     names.append(name)
     agentRecord['names'] = names
 

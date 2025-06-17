@@ -47,7 +47,7 @@ else:
     pass
 
 # Convert CSV with people information into DataFrame.
-df = pd.read_csv(filename)
+df = pd.read_csv(filename, dtype={'dates': 'string'})
 
 all_items = []
 for index, row in df.iterrows():
@@ -66,7 +66,6 @@ for index, row in df.iterrows():
     ev.add_to_dict(row, name, 'primary_name', 'primary_name')
     ev.add_to_dict(row, name, 'rest_of_name', 'rest_of_name')
     ev.add_to_dict(row, name, 'name_order', 'name_order')
-    ev.add_to_dict(row, name, 'sort_name', 'sort_name')
     ev.add_to_dict(row, name, 'authority_id', 'authority_id')
     ev.add_to_dict(row, name, 'rules', 'rules')
     ev.add_to_dict(row, name, 'source', 'source')
