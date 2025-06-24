@@ -1,0 +1,99 @@
+{
+  "lock_version": 6,
+  "digital_object_id": "https://wayback.archive-it.org/5126/*/http://jhuallnighters.org/",
+  "title": "AllNighters website: jhuallnighters.org",
+  "publish": true,
+  "restrictions": false,
+  "created_by": "kdiehl2",
+  "last_modified_by": "kdiehl2",
+  "create_time": "2023-03-16T20:16:01Z",
+  "system_mtime": "2023-03-16T20:24:01Z",
+  "user_mtime": "2023-03-16T20:24:01Z",
+  "suppressed": false,
+  "is_slug_auto": false,
+  "digital_object_type": "Website",
+  "jsonmodel_type": "digital_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "lang_materials": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "begin": "2015",
+      "created_by": "kdiehl2",
+      "last_modified_by": "kdiehl2",
+      "create_time": "2023-03-16T20:24:01Z",
+      "system_mtime": "2023-03-16T20:24:01Z",
+      "user_mtime": "2023-03-16T20:24:01Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "file_versions": [
+    {
+      "lock_version": 0,
+      "file_uri": "https://wayback.archive-it.org/5126/*/http://jhuallnighters.org/",
+      "publish": true,
+      "created_by": "kdiehl2",
+      "last_modified_by": "kdiehl2",
+      "create_time": "2023-03-16T20:24:01Z",
+      "system_mtime": "2023-03-16T20:24:01Z",
+      "user_mtime": "2023-03-16T20:24:01Z",
+      "caption": "Click here to view the AllNighters website: jhuallnighters.org (2015)",
+      "jsonmodel_type": "file_version",
+      "is_representative": false,
+      "identifier": "30104"
+    }
+  ],
+  "classifications": [],
+  "notes": [
+    {
+      "jsonmodel_type": "note_digital_object",
+      "persistent_id": "8c111c192a2c6765270647a4fd74bfde",
+      "type": "summary",
+      "content": [
+        "This digital material is part of the AllNighters a cappella group records, collection ID RG-14-420."
+      ],
+      "publish": true
+    }
+  ],
+  "collection": [
+    {
+      "ref": "/repositories/3/resources/1549"
+    }
+  ],
+  "linked_instances": [
+    {
+      "ref": "/repositories/3/archival_objects/248847"
+    }
+  ],
+  "metadata_rights_declarations": [],
+  "uri": "/repositories/3/digital_objects/11854",
+  "repository": {
+    "ref": "/repositories/3"
+  },
+  "user_defined": {
+    "lock_version": 0,
+    "boolean_1": false,
+    "boolean_2": false,
+    "boolean_3": false,
+    "created_by": "kdiehl2",
+    "last_modified_by": "kdiehl2",
+    "create_time": "2023-03-16T20:24:01Z",
+    "system_mtime": "2023-03-16T20:24:01Z",
+    "user_mtime": "2023-03-16T20:24:01Z",
+    "jsonmodel_type": "user_defined",
+    "repository": {
+      "ref": "/repositories/3"
+    }
+  },
+  "tree": {
+    "ref": "/repositories/3/digital_objects/11854/tree"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "lock_version": 35,
+  "digital_object_id": "RG-14-360_001-006-bag.tar",
+  "title": "RG-14-360_001-006-Preservation",
+  "publish": false,
+  "restrictions": false,
+  "created_by": "rgattermeyer",
+  "last_modified_by": "rgatter3",
+  "create_time": "2023-02-09T21:45:16Z",
+  "system_mtime": "2025-05-13T14:45:33Z",
+  "user_mtime": "2025-05-13T14:45:33Z",
+  "suppressed": false,
+  "is_slug_auto": false,
+  "digital_object_type": "still_image",
+  "jsonmodel_type": "digital_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [
+    {
+      "ref": "/repositories/3/events/12326"
+    },
+    {
+      "ref": "/repositories/3/events/12327"
+    },
+    {
+      "ref": "/repositories/3/events/12328"
+    },
+    {
+      "ref": "/repositories/3/events/12367"
+    }
+  ],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "23.7",
+      "container_summary": "Disks RG-14-360_001-006",
+      "physical_details": "Still images",
+      "created_by": "rgatter3",
+      "last_modified_by": "rgatter3",
+      "create_time": "2025-05-13T14:45:33Z",
+      "system_mtime": "2025-05-13T14:45:33Z",
+      "user_mtime": "2025-05-13T14:45:33Z",
+      "portion": "whole",
+      "extent_type": "gigabytes",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "lang_materials": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "2010",
+      "begin": "2010",
+      "created_by": "rgatter3",
+      "last_modified_by": "rgatter3",
+      "create_time": "2025-05-13T14:45:33Z",
+      "system_mtime": "2025-05-13T14:45:33Z",
+      "user_mtime": "2025-05-13T14:45:33Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "file_versions": [
+    {
+      "lock_version": 0,
+      "file_uri": "sam5/archiveimages/electronic-records/RG-14-360_001-006-bag.tar",
+      "publish": false,
+      "created_by": "rgatter3",
+      "last_modified_by": "rgatter3",
+      "create_time": "2025-05-13T14:45:33Z",
+      "system_mtime": "2025-05-13T14:45:33Z",
+      "user_mtime": "2025-05-13T14:45:33Z",
+      "jsonmodel_type": "file_version",
+      "is_representative": false,
+      "identifier": "38911"
+    }
+  ],
+  "classifications": [],
+  "notes": [
+    {
+      "jsonmodel_type": "note_digital_object",
+      "persistent_id": "79a68f6576993ae6780bf2e00b820099",
+      "type": "summary",
+      "content": [
+        "The digital material is part of the Foreign Affairs Symposium records, collection RG-14-360 and accession 2021-22.RG-14-360_001."
+      ],
+      "publish": false
+    }
+  ],
+  "collection": [
+    {
+      "ref": "/repositories/3/accessions/2890"
+    },
+    {
+      "ref": "/repositories/3/resources/1544"
+    }
+  ],
+  "linked_instances": [
+    {
+      "ref": "/repositories/3/accessions/2890"
+    },
+    {
+      "ref": "/repositories/3/resources/1544"
+    }
+  ],
+  "metadata_rights_declarations": [],
+  "uri": "/repositories/3/digital_objects/11808",
+  "repository": {
+    "ref": "/repositories/3"
+  },
+  "user_defined": {
+    "lock_version": 0,
+    "boolean_1": false,
+    "boolean_2": false,
+    "boolean_3": false,
+    "created_by": "rgatter3",
+    "last_modified_by": "rgatter3",
+    "create_time": "2025-05-13T14:45:33Z",
+    "system_mtime": "2025-05-13T14:45:33Z",
+    "user_mtime": "2025-05-13T14:45:33Z",
+    "jsonmodel_type": "user_defined",
+    "repository": {
+      "ref": "/repositories/3"
+    }
+  },
+  "tree": {
+    "ref": "/repositories/3/digital_objects/11808/tree"
+  }
+}

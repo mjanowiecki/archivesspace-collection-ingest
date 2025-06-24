@@ -1,0 +1,89 @@
+{
+  "lock_version": 1,
+  "digital_object_id": "MS-0953_001-do011",
+  "title": "Oral History of LeRoy Walters",
+  "publish": true,
+  "restrictions": false,
+  "created_by": "kcarey",
+  "last_modified_by": "kcarey",
+  "create_time": "2023-09-01T16:18:37Z",
+  "system_mtime": "2023-09-01T16:35:21Z",
+  "user_mtime": "2023-09-01T16:18:37Z",
+  "suppressed": false,
+  "is_slug_auto": false,
+  "digital_object_type": "mixed_materials",
+  "jsonmodel_type": "digital_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "lang_materials": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "file_versions": [
+    {
+      "lock_version": 0,
+      "file_uri": "https://jscholarship.library.jhu.edu/handle/1774.2/68775",
+      "publish": true,
+      "created_by": "kcarey",
+      "last_modified_by": "kcarey",
+      "create_time": "2023-09-01T16:18:37Z",
+      "system_mtime": "2023-09-01T16:18:37Z",
+      "user_mtime": "2023-09-01T16:18:37Z",
+      "caption": "This digital material is online. Click here to access it",
+      "jsonmodel_type": "file_version",
+      "is_representative": false,
+      "identifier": "32195"
+    },
+    {
+      "lock_version": 0,
+      "file_uri": "U:\\collections\\ms-0953_moralhistories\\MS-0953_001\\LEROY_WALTERS",
+      "publish": false,
+      "created_by": "kcarey",
+      "last_modified_by": "kcarey",
+      "create_time": "2023-09-01T16:18:37Z",
+      "system_mtime": "2023-09-01T16:18:37Z",
+      "user_mtime": "2023-09-01T16:18:37Z",
+      "jsonmodel_type": "file_version",
+      "is_representative": false,
+      "identifier": "32196"
+    }
+  ],
+  "classifications": [],
+  "notes": [],
+  "collection": [
+    {
+      "ref": "/repositories/3/resources/1616"
+    }
+  ],
+  "linked_instances": [
+    {
+      "ref": "/repositories/3/archival_objects/310766"
+    }
+  ],
+  "metadata_rights_declarations": [],
+  "uri": "/repositories/3/digital_objects/12681",
+  "repository": {
+    "ref": "/repositories/3"
+  },
+  "user_defined": {
+    "lock_version": 0,
+    "boolean_1": false,
+    "boolean_2": false,
+    "boolean_3": false,
+    "created_by": "kcarey",
+    "last_modified_by": "kcarey",
+    "create_time": "2023-09-01T16:18:37Z",
+    "system_mtime": "2023-09-01T16:18:37Z",
+    "user_mtime": "2023-09-01T16:18:37Z",
+    "jsonmodel_type": "user_defined",
+    "repository": {
+      "ref": "/repositories/3"
+    }
+  },
+  "tree": {
+    "ref": "/repositories/3/digital_objects/12681/tree"
+  }
+}
