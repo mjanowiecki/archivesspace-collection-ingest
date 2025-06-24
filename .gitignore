@@ -156,6 +156,12 @@ cython_debug/
 
 */.json
 *.csv
+!csv-templates/blank-templates/*
+csv-templates/blank-templates/.DS_Store
+!csv-templates/example-templates/*
+csv-templates/example-templates/.DS_Store
 !enumerations.csv
 secret.py
 secretProd.py
+
+

@@ -1,0 +1,2 @@
+"req;str","req;bool","opt;uri","opt;crtl list","opt;ctrl list","req;string","opt;str","opt;str","opt;str","opt;str","opt;sub type","opt;sub type","← delete this row before ingest"
+"sort_name","publish_family","authority_id","source","rules","family_name","dates","family_type","location","qualifier","dates_of_existence","notes",

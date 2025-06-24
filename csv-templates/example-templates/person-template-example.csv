@@ -1,0 +1,4 @@
+"publish_person","authority_id","source","rules","name_order","prefix","title","primary_name","rest_of_name","suffix","fuller_form","number","sort_name","dates","dates_of_existence","notes"
+"TRUE","http://viaf.org/viaf/example001","viaf","rda","inverted",,"Sir","Azul","Jay","Jr.",,"II","Azul, Sir Jay Jr. II",,,"note_type==bioghist;;publish_note==TRUE;;subnote_type==text;;content==Sir Jay Azul Jr. II was born in Portland, Maine. He worked on ornithology projects at seven universities throughout his career.;;publish_subnote==TRUE`"
+"TRUE",,"local","rda","inverted",,,"Bleue","K.C.",,"(Krista Clara)",,"Bleue, K.C. (Krista Clara), 1973-","1973-",,
+"TRUE","http://viaf.org/viaf/example002","viaf","rda","inverted","Mx.",,"Hayashi","Asuka",,,,"Hayashi, Mx. Asuka, 1945-2007","1945-2007","date_type_structured==range;;begin_date_expression==1945;;end_date_expression==2007",

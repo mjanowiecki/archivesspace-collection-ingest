@@ -1,0 +1,2 @@
+"req;str","req;bool","opt;ctrl list","opt;ctrl list","opt;uri","req;str","opt;str","opt;str","opt;str","opt;str","opt;str","opt;bool","opt;bool","opt;str","opt;sub type","opt;sub type","← delete this row before ingest"
+"sort_name","publish_corporate_body","source","rules","authority_id","primary_name","subordinate_name_1","subordinate_name_2","number","dates","location","conference_meeting","jurisdiction","qualifier","dates_of_existence","notes",

@@ -1,0 +1,3 @@
+"sort_name","publish_family","authority_id","source","rules","family_name","dates","family_type","location","qualifier","dates_of_existence","notes"
+"Ptak family, 1992- (Maryland)","TRUE","http://viaf.org/viaf/example00402","viaf","rda","Ptak family","1992-",,"Maryland",,"date_type_structured==range;;begin_date_expression==1992","notes_type==bioghist;;publish_note==True;;subnote_Type==text;;content==The Ptak family are known regionally for their donations to conservations and climate efforts."
+"Fugl family","TRUE","https://viaf.org/en/viaf/example01065","viaf","aacr","Fugl family",,,,,,
