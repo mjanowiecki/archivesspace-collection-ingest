@@ -56,55 +56,42 @@ for index, row in df.iterrows():
 
     # Get agent information from CSV.
     publish_family = row.get('publish_family')
-    agentRecord = {'agent_type': 'agent_family', 'publish': publish_family}
+    family_record = {'agent_type': 'agent_family', 'publish': publish_family}
     names = []
     name = {'jsonmodel_type': 'name_family',
             'sort_name_auto_generate': True,
             'authorized': True,
             'is_display_name': True}
 
-    ev.add_to_dict(row, name, 'authority_id', 'authority_id')
-    ev.add_to_dict(row, name, 'source', 'source')
-    ev.add_to_dict(row, name, 'rules', 'rules')
-    ev.add_to_dict(row, name, 'prefix', 'prefix')
-    ev.add_to_dict(row, name, 'family_name', 'family_name')
-    ev.add_to_dict(row, name, 'dates', 'dates')
-    ev.add_to_dict(row, name, 'family_type', 'family_type')
-    ev.add_to_dict(row, name, 'qualifier', 'qualifier')
+    ev.add_single_string_value(row, name, 'authority_id', 'authority_id')
+    ev.add_controlled_term(row, name, 'source', 'source', ev.name_source_values)
+    ev.add_controlled_term(row, name, 'rules', 'rules', ev.name_rule_values)
+    ev.add_single_string_value(row, name, 'family_name', 'family_name')
+    ev.add_single_string_value(row, name, 'dates', 'dates')
+    ev.add_single_string_value(row, name, 'family_type', 'family_type')
+    ev.add_single_string_value(row, name, 'qualifier', 'qualifier')
     names.append(name)
-    agentRecord['names'] = names
+    family_record['names'] = names
 
-    dates = ev.add_dates(row, 'dates_of_existence')
+    dates = ev.add_dates_of_existence(row, 'dates_of_existence')
     if dates:
-        agentRecord['dates_of_existence'] = dates
+        family_record['dates_of_existence'] = dates
 
-    notes = []
-    note = {}
-    subnotes = []
-    subnote = {}
-    ev.add_to_dict(row, note, 'jsonmodel_type', 'note_jsonmodel_type')
-    ev.add_to_dict(row, note, 'publish', 'publish_note')
-    ev.add_to_dict(row, subnote, 'content', 'content')
-    ev.add_to_dict(row, subnote, 'jsonmodel_type', 'subnote_jsonmodel_type')
-    ev.add_to_dict(row, subnote, 'publish', 'publish_subnote')
-    if subnote:
-        subnotes.append(subnote)
-        note['subnotes'] = subnotes
-    if note:
-        notes.append(note)
-        agentRecord['notes'] = notes
+    notes = ev.add_agent_notes(row, 'notes')
+    if notes:
+        family_record['notes'] = notes
 
     # Create dictionary for item log.
     item_log = {}
 
     if post_record == 'True':
         # Create JSON record for family.
-        agentRecord = json.dumps(agentRecord)
+        family_record = json.dumps(family_record)
         print('JSON created for {}.'.format(sort_name))
 
         try:
             # Try to POST JSON to ArchivesSpace API families endpoint.
-            post = requests.post(base_url+'/agents/families', headers=headers, data=agentRecord).json()
+            post = requests.post(base_url+'/agents/families', headers=headers, data=family_record).json()
             print(json.dumps(post))
             uri = post['uri']
             print('Family successfully created with URI: {}'.format(uri))
@@ -134,7 +121,7 @@ for index, row in df.iterrows():
         fa_filename = identifier+'_'+dt+'.json'
         directory = ''
         with open(directory+fa_filename, 'w') as fp:
-            json.dump(agentRecord, fp)
+            json.dump(family_record, fp)
         print('Agent record JSON successfully created with filename {}'.format(fa_filename))
         item_log = {'filename': fa_filename, 'sort_name': sort_name}
         all_items.append(item_log)

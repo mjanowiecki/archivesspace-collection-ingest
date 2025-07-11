@@ -5,6 +5,7 @@ import secret
 import pandas as pd
 import argparse
 from datetime import datetime
+import extractvalues as ev
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--file')
@@ -53,28 +54,24 @@ for index, row in df.iterrows():
     # Get subject information from CSV.
     term = row['term']
     print('Gathering subject #{}: {}.'.format(index,  term))
-    subject_type = row['term_type']
-    source = row['source']
-    authority_id = row['authority_id']
 
     # Build JSON record for subject.
-    subjectRecord = {'jsonmodel_type': 'subject'}
-    terms = []
-    term_dict = {'jsonmodel_type': 'term', 'term':  term, 'term_type': subject_type, 'vocabulary': '/vocabularies/1'}
-    terms.append(term_dict)
-    subjectRecord['terms'] = terms
-    subjectRecord['title'] = term
-    subjectRecord['publish'] = True
-    subjectRecord['source'] = source
-    subjectRecord['vocabulary'] = '/vocabularies/1'
-    subjectRecord['authority_id'] = authority_id
+    subject_record = {'jsonmodel_type': 'subject', 'vocabulary': '/vocabularies/1',
+                      'publish': True, 'title': term}
+
+    ev.add_controlled_term(row, subject_record,'source', 'source', ev.subject_source_values)
+    ev.add_single_string_value(row, subject_record, 'authority_id', 'authority_id')
+
+    term_dict = {'jsonmodel_type': 'term', 'vocabulary': '/vocabularies/1'}
+    ev.add_controlled_term(row, term_dict, 'term_type', 'term_type', ev.subject_type_values)
+    subject_record['terms'] = [term_dict]
 
     # Create dictionary for item log.
     item_log = {}
 
     if post_record == 'True':
         # Create JSON record for subject.
-        subjectRecord = json.dumps(subjectRecord)
+        subjectRecord = json.dumps(subject_record)
         print(subjectRecord)
         print('JSON created for {}.'.format(term))
 
@@ -111,7 +108,7 @@ for index, row in df.iterrows():
         s_filename = identifier+'_'+dt+'.json'
         directory = ''
         with open(directory+s_filename, 'w') as fp:
-            json.dump(subjectRecord, fp)
+            json.dump(subject_record, fp)
         print('Subject record JSON successfully created with filename {}'.format(s_filename))
         item_log = {'filename': s_filename, 'term': term}
         all_items.append(item_log)
@@ -122,7 +119,7 @@ log = pd.DataFrame.from_records(all_items)
 
 # Create CSV of all item logs.
 dt = datetime.now().strftime('%Y-%m-%d%H.%M.%S')
-subject_csv = 'postNewSubjects_'+dt+'.csv'
+subject_csv = 'postNewSubjectsLog_'+dt+'.csv'
 log.to_csv(subject_csv)
 print('{} created.'.format(subject_csv))
 

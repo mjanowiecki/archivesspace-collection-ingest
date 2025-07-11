@@ -51,7 +51,7 @@ df = pd.read_csv(filename)
 
 all_items = []
 for index, row in df.iterrows():
-    # Create dictionary to store data.
+    # Build JSON record to store data.
     archivalObjectRecord = {'jsonmodel_type': 'archival_object'}
 
     # For required fields, add directly to archivalObjectRecord.
@@ -64,18 +64,18 @@ for index, row in df.iterrows():
     archivalObjectRecord['restrictions_apply'] = row['restrictions_apply']
 
     # For optional fields, try to find value and add to archivalObjectRecord if found.
-    ev.add_to_dict(row, archivalObjectRecord, 'repository_processing_note', 'repository_processing_note')
-    ev.add_to_dict(row, archivalObjectRecord, 'position', 'position')
-    ev.add_to_dict(row, archivalObjectRecord, 'component_id', 'component_id')
-    ev.add_to_dict(row, archivalObjectRecord, 'other_level', 'other_level')
+    ev.add_single_string_value(row, archivalObjectRecord, 'repository_processing_note', 'repository_processing_note')
+    ev.add_single_string_value(row, archivalObjectRecord, 'position', 'position')
+    ev.add_single_string_value(row, archivalObjectRecord, 'component_id', 'component_id')
+    ev.add_single_string_value(row, archivalObjectRecord, 'other_level', 'other_level')
 
     # For optional fields with 'ref' key, use function to add.
-    ev.add_with_ref(row, archivalObjectRecord, 'parent', 'parent', 'single')
-    ev.add_with_ref(row, archivalObjectRecord, 'repository', 'repository', 'single')
-    ev.add_with_ref(row, archivalObjectRecord, 'series', 'series', 'single')
-    ev.add_with_ref(row, archivalObjectRecord, 'accession_links', 'accession_links', 'multi')
-    ev.add_with_ref(row, archivalObjectRecord, 'subjects', 'subjects', 'multi')
-    ev.add_with_ref(row, archivalObjectRecord, 'linked_events', 'linked_events', 'multi')
+    ev.add_ref_value(row, archivalObjectRecord, 'parent', 'parent', 'single')
+    ev.add_ref_value(row, archivalObjectRecord, 'repository', 'repository', 'single')
+    ev.add_ref_value(row, archivalObjectRecord, 'series', 'series', 'single')
+    ev.add_ref_value(row, archivalObjectRecord, 'accession_links', 'accession_links', 'multi')
+    ev.add_ref_value(row, archivalObjectRecord, 'subjects', 'subjects', 'multi')
+    ev.add_ref_value(row, archivalObjectRecord, 'linked_events', 'linked_events', 'multi')
 
     # Add dates.
     dates = ev.add_dates(row, 'dates')
@@ -168,7 +168,7 @@ log = pd.DataFrame.from_records(all_items)
 
 # Create CSV of all item logs.
 dt = datetime.now().strftime('%Y-%m-%d%H.%M.%S')
-archival_object_csv = 'postNewArchivalObjects_'+dt+'.csv'
+archival_object_csv = 'postNewArchivalObjectsLog_'+dt+'.csv'
 log.to_csv(archival_object_csv)
 print('{} created.'.format(archival_object_csv))
 

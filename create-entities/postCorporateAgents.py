@@ -55,58 +55,46 @@ for index, row in df.iterrows():
     primary_name = row['primary_name']
     print('Gathering corporate entity #{}: {}.'.format(index, primary_name))
 
-    agentRecord = {'jsonmodel_type': 'agent_corporate_entity'}
-    ev.add_to_dict(row, agentRecord, 'publish', 'publish_corporate_body')
+    corporate_record = {'jsonmodel_type': 'agent_corporate_entity'}
+    ev.add_single_string_value(row, corporate_record, 'publish', 'publish_corporate_body')
     names = []
     name = {'jsonmodel_type': 'name_corporate_entity',
             'sort_name_auto_generate': True,
             'authorized': True,
             'is_display_name': True}
-    ev.add_to_dict(row, name, 'authority_id', 'authority_id')
-    ev.add_to_dict(row, name, 'source', 'source')
-    ev.add_to_dict(row, name, 'rules', 'rules')
-    ev.add_to_dict(row, name, 'subordinate_name_1', 'subordinate_name_1')
-    ev.add_to_dict(row, name, 'subordinate_name_2', 'subordinate_name_2')
-    ev.add_to_dict(row, name, 'number', 'number')
-    ev.add_to_dict(row, name, 'dates', 'dates')
-    ev.add_to_dict(row, name, 'location', 'location')
-    ev.add_to_dict(row, name, 'conference_meeting', 'conference_meeting')
-    ev.add_to_dict(row, name, 'jurisdiction', 'jurisdiction')
-    ev.add_to_dict(row, name, 'qualifier', 'qualifier')
+    ev.add_single_string_value(row, name, 'authority_id', 'authority_id')
+    ev.add_single_string_value(row, name, 'source', 'source')
+    ev.add_single_string_value(row, name, 'rules', 'rules')
+    ev.add_single_string_value(row, name, 'subordinate_name_1', 'subordinate_name_1')
+    ev.add_single_string_value(row, name, 'subordinate_name_2', 'subordinate_name_2')
+    ev.add_single_string_value(row, name, 'number', 'number')
+    ev.add_single_string_value(row, name, 'dates', 'dates')
+    ev.add_single_string_value(row, name, 'location', 'location')
+    ev.add_single_string_value(row, name, 'conference_meeting', 'conference_meeting')
+    ev.add_single_string_value(row, name, 'jurisdiction', 'jurisdiction')
+    ev.add_single_string_value(row, name, 'qualifier', 'qualifier')
     names.append(name)
-    agentRecord['names'] = names
+    corporate_record['names'] = names
 
-    dates = ev.add_dates(row, 'dates_of_existence')
+    dates = ev.add_dates_of_existence(row, 'dates_of_existence')
     if dates:
-        agentRecord['dates_of_existence'] = dates
+        corporate_record['dates_of_existence'] = dates
 
-    notes = []
-    note = {}
-    subnotes = []
-    subnote = {}
-    ev.add_to_dict(row, note, 'jsonmodel_type', 'note_jsonmodel_type')
-    ev.add_to_dict(row, note, 'publish', 'publish_note')
-    ev.add_to_dict(row, subnote, 'content', 'content')
-    ev.add_to_dict(row, subnote, 'jsonmodel_type', 'subnote_jsonmodel_type')
-    ev.add_to_dict(row, subnote, 'publish', 'publish_subnote')
-    if subnote:
-        subnotes.append(subnote)
-        note['subnotes'] = subnotes
-    if note:
-        notes.append(note)
-        agentRecord['notes'] = notes
-
+    notes = ev.add_agent_notes(row, 'notes')
+    if notes:
+        corporate_record['notes'] = notes
+        
     # Create dictionary for item log.
     item_log = {}
 
     if post_record == 'True':
         # Create JSON record for corporate entity.
-        agentRecord = json.dumps(agentRecord)
+        corporate_record = json.dumps(corporate_record)
         print('JSON created for {}.'.format(primary_name))
 
         try:
             # Try to POST JSON to ArchivesSpace API corporate entities' endpoint.
-            post = requests.post(base_url+'/agents/corporate_entities', headers=headers, data=agentRecord).json()
+            post = requests.post(base_url+'/agents/corporate_entities', headers=headers, data=corporate_record).json()
             print(json.dumps(post))
             uri = post['uri']
             title = post['title']
@@ -138,7 +126,7 @@ for index, row in df.iterrows():
         ca_filename = identifier+'_'+dt+'.json'
         directory = ''
         with open(directory+ca_filename, 'w') as fp:
-            json.dump(agentRecord, fp)
+            json.dump(corporate_record, fp)
         print('Agent record JSON successfully created with filename {}'.format(ca_filename))
         item_log = {'filename': ca_filename, 'primary_name': primary_name}
         all_items.append(item_log)
@@ -146,7 +134,7 @@ for index, row in df.iterrows():
 
 
 # Convert all_items to DataFrame.
-log = pd.DataFrame.from_reccords(all_items)
+log = pd.DataFrame.from_records(all_items)
 
 # Create CSV of all item logs.
 dt = datetime.now().strftime('%Y-%m-%d%H.%M.%S')

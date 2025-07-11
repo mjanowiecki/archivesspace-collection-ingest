@@ -1,4 +1,3 @@
-"required; string","required; external uri","required; controlled list - subject source","required; controlled list - subject term type","← delete this row before ingest"
 "term","authority_id","source","term_type",
 "Blue jay","http://id.worldcat.org/fast/834963","fast","topical",
 "Ornithology","http://id.worldcat.org/fast/1048358","fast","topical",

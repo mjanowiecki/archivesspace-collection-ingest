@@ -57,47 +57,35 @@ for index, row in df.iterrows():
 
     # Build JSON record for person.
     person_record = {'agent_type': 'agent_person'}
-    ev.add_to_dict(row, person_record, 'publish', 'publish_person')
+    ev.add_controlled_term(row, person_record, 'publish', 'publish_person', ev.boolean_values)
     names = []
     name = {'jsonmodel_type': 'name_person',
             'sort_name_auto_generate': True,
             'authorized': True,
             'is_display_name': True}
-    ev.add_to_dict(row, name, 'primary_name', 'primary_name')
-    ev.add_to_dict(row, name, 'rest_of_name', 'rest_of_name')
-    ev.add_to_dict(row, name, 'name_order', 'name_order')
-    ev.add_to_dict(row, name, 'authority_id', 'authority_id')
-    ev.add_to_dict(row, name, 'rules', 'rules')
-    ev.add_to_dict(row, name, 'source', 'source')
-    ev.add_to_dict(row, name, 'fuller_form', 'fuller_form')
-    ev.add_to_dict(row, name, 'title', 'title')
-    ev.add_to_dict(row, name, 'prefix', 'prefix')
-    ev.add_to_dict(row, name, 'suffix', 'suffix')
-    ev.add_to_dict(row, name, 'dates', 'dates')
+    ev.add_single_string_value(row, name, 'primary_name', 'primary_name')
+    ev.add_single_string_value(row, name, 'rest_of_name', 'rest_of_name')
+    ev.add_single_string_value(row, name, 'authority_id', 'authority_id')
+
+    ev.add_controlled_term(row, name, 'name_order', 'name_order', ev.name_order_values)
+    ev.add_controlled_term(row, name, 'rules', 'rules', ev.name_rule_values)
+    ev.add_controlled_term(row, name, 'source', 'source', ev.name_source_values)
+
+    ev.add_single_string_value(row, name, 'fuller_form', 'fuller_form')
+    ev.add_single_string_value(row, name, 'title', 'title')
+    ev.add_single_string_value(row, name, 'prefix', 'prefix')
+    ev.add_single_string_value(row, name, 'suffix', 'suffix')
+    ev.add_single_string_value(row, name, 'dates', 'dates')
     names.append(name)
     person_record['names'] = names
 
-    dates = ev.add_dates(row, 'dates_of_existence')
+    dates = ev.add_dates_of_existence(row, 'dates_of_existence')
     if dates:
-        person_record['dates_of_existence'] = 'dates_of_existence'
+        person_record['dates_of_existence'] = dates
 
-    notes = []
-    note = {}
-    subnotes = []
-    subnote = {}
-    ev.add_to_dict(row, note, 'jsonmodel_type', 'note_jsonmodel_type')
-    ev.add_to_dict(row, note, 'publish', 'publish_note')
-    ev.add_to_dict(row, note, 'label', 'label')
-    ev.add_to_dict(row, subnote, 'content', 'content')
-    ev.add_to_dict(row, subnote, 'jsonmodel_type', 'subnote_jsonmodel_type')
-    ev.add_to_dict(row, subnote, 'publish', 'publish_subnote')
-    if subnote:
-        subnotes.append(subnote)
-        note['subnotes'] = subnotes
-    if note:
-        notes.append(note)
+    notes = ev.add_agent_notes(row, 'notes')
+    if notes:
         person_record['notes'] = notes
-
     # Create dictionary for item log.
     item_log = {}
 
@@ -149,7 +137,7 @@ log = pd.DataFrame.from_records(all_items)
 
 # Create CSV of all item logs.
 dt = datetime.now().strftime('%Y-%m-%d%H.%M.%S')
-person_csv = 'postNewPersonalAgents_'+dt+'.csv'
+person_csv = 'postNewPersonalAgentsLog_'+dt+'.csv'
 log.to_csv(person_csv)
 print('{} created.'.format(person_csv))
 

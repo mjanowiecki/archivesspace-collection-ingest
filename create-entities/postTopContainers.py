@@ -58,38 +58,28 @@ for index, row in df.iterrows():
     print('Gathering top container #{}: {}.'.format(index, barcode))
 
     # Build JSON record for top container.
-    containerRecord = {'jsonmodel_type': 'top_container', 'publish': True, 'restricted': False,
-                       'repository': {'ref': '/repositories/3'}}
-    containerRecord['barcode'] = str(barcode)
-    containerRecord['indicator'] = str(indicator)
-    containerRecord['type'] = str(container_type)
+    container_record = {'jsonmodel_type': 'top_container', 'publish': True, 'restricted': False,
+                       'repository': {'ref': '/repositories/3'}, 'barcode': str(barcode), 'indicator': str(indicator),
+                       'type': str(container_type)}
 
-    locations = []
-    location = {}
-    ev.add_to_dict(row, location, 'ref', 'location_ref')
-    ev.add_to_dict(row, location, 'status', 'status')
-    ev.add_to_dict(row, location, 'start_date', 'start_date')
-    ev.add_to_dict(row, location, 'end_date', 'end_date')
-    ev.add_to_dict(row, location, 'note', 'note')
-    if location:
-        location['jsonmodel_type'] = 'container_location'
-        locations.append(location)
-        containerRecord['container_locations'] = locations
 
-    ev.add_with_ref(row, containerRecord, 'collection', 'collection_ref', 'multiple')
-    ev.add_with_ref(row, containerRecord, 'container_profile', 'container_profile', 'single')
 
+    ev.add_ref_value(row, container_record, 'collection', 'collection_ref', 'multiple')
+    ev.add_ref_value(row, container_record, 'container_profile', 'container_profile', 'single')
+    container_locations = ev.add_locations(row, 'container_location' )
+    if container_locations:
+        container_record['container_locations'] = container_locations
     # Create dictionary for item log.
     item_log = {}
 
     if post_record == 'True':
         # Create JSON record for top container.
-        containerRecord = json.dumps(containerRecord)
+        container_record = json.dumps(container_record)
         print('JSON created for {}.'.format(barcode))
 
         try:
             # Try to POST JSON to ArchivesSpace API top container endpoint.
-            post = requests.post(base_url+'/repositories/'+repository+'/top_containers', headers=headers, data=containerRecord).json()
+            post = requests.post(base_url+'/repositories/'+repository+'/top_containers', headers=headers, data=container_record).json()
             print(json.dumps(post))
             uri = post['uri']
             print('Top container successfully created with URI: {}'.format(uri))
@@ -113,7 +103,7 @@ for index, row in df.iterrows():
         tc_filename = identifier+'_'+dt+'.json'
         directory = ''
         with open(directory+tc_filename, 'w') as fp:
-            json.dump(containerRecord, fp)
+            json.dump(container_record, fp)
         print('Top container JSON successfully created with filename {}'.format(tc_filename))
         item_log = {'filename': tc_filename, 'barcode': barcode}
         all_items.append(item_log)
@@ -124,7 +114,7 @@ log = pd.DataFrame.from_records(all_items)
 
 # Create CSV of all item logs.
 dt = datetime.now().strftime('%Y-%m-%d%H.%M.%S')
-top_container_csv = 'postNewTopContainers_'+dt+'.csv'
+top_container_csv = 'postNewTopContainersLog_'+dt+'.csv'
 log.to_csv(top_container_csv)
 print('{} created.'.format(top_container_csv))
 
