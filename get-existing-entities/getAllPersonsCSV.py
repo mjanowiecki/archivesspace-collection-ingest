@@ -22,7 +22,6 @@ user = secret.user
 password = secret.password
 
 auth = requests.post(base_url+'/users/'+user+'/login?password='+password).json()
-print(auth)
 session = auth["session"]
 headers = {'X-ArchivesSpace-Session': session, 'Content_Type': 'application/json'}
 print('authenticated')
@@ -31,13 +30,13 @@ print('authenticated')
 endpoint = '/agents/people?all_ids=true'
 person_ids = requests.get(base_url+endpoint, headers=headers).json()
 total_persons = len(person_ids)
-print('Total of {} persons.'.format(person_ids))
+print('Total of {} persons.'.format(total_persons))
 
 # Get properties from each person agent and put in all_items.
 all_items = []
 for count, person_id in enumerate(person_ids):
-    print(count, person_id)
     endpoint = '/agents/people/'+str(person_id)
+    print(count, endpoint)
     output = requests.get(base_url+endpoint, headers=headers).json()
     person_dict = {}
     uri = output['uri']

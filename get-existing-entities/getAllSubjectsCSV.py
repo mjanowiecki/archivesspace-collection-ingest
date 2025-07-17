@@ -35,9 +35,9 @@ print('Total of {} subjects.'.format(total_subjects))
 # Get properties from each subject and put in all_items.
 all_items = []
 for count, subject_id in enumerate(subject_ids):
-    print(count, subject_id)
     subject_dict = {}
     endpoint = '/subjects/'+str(subject_id)
+    print(count, endpoint)
     output = requests.get(base_url+endpoint, headers=headers).json()
     uri = output['uri']
     title = output['title']

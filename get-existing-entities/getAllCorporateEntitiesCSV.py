@@ -1,4 +1,6 @@
 import requests
+from pandas.conftest import datetime_series
+
 import secret
 import pandas as pd
 from datetime import datetime
@@ -35,15 +37,31 @@ print('Total of {} corporate_entities.'.format(total_corporate_entities))
 # Get properties from each corporate entity and put in all_items.
 all_items = []
 for count, corporate_id in enumerate(corporate_ids):
-    print(count, corporate_id)
     endpoint = '/agents/corporate_entities/'+str(corporate_id)
+    print(count, endpoint)
     output = requests.get(base_url+endpoint, headers=headers).json()
     corporate_dict = {}
     uri = output['uri']
-    names = output['names'][0]
-    for key, value in names.items():
-        corporate_dict[key] = value
     corporate_dict['uri'] = uri
+    name = output['names'][0]
+    primary_name = name['primary_name']
+    corporate_dict['primary_name'] = primary_name
+    sort_name = name['sort_name']
+    corporate_dict['sort_name'] = sort_name
+    subordinate_name_1 = name.get('subordinate_name_1')
+    corporate_dict['subordinate_name_1'] = subordinate_name_1
+    subordinate_name_2 = name.get('subordinate_name_2')
+    corporate_dict['subordinate_name_2'] = subordinate_name_2
+    authority_id = name.get('authority_id')
+    corporate_dict['authority_id'] = authority_id
+    qualifier = name.get('qualifier')
+    corporate_dict['qualifier'] = qualifier
+    dates = name.get('dates')
+    corporate_dict['dates'] = dates
+    number = name.get('number')
+    corporate_dict['number'] = number
+    location = name.get('location')
+    corporate_dict['location'] = location
     all_items.append(corporate_dict)
 
 # Convert all_items to CSV and save.
