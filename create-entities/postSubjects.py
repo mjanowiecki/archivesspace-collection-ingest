@@ -71,13 +71,13 @@ for index, row in df.iterrows():
 
     if post_record == 'True':
         # Create JSON record for subject.
-        subjectRecord = json.dumps(subject_record)
-        print(subjectRecord)
+        subject_record = json.dumps(subject_record)
+        print(subject_record)
         print('JSON created for {}.'.format(term))
 
         try:
             # Try to POST JSON to ArchivesSpace API subject endpoint.
-            post = requests.post(base_url+'/subjects', headers=headers, data=subjectRecord).json()
+            post = requests.post(base_url+'/subjects', headers=headers, data=subject_record).json()
             # Get URI and add to item log
             uri = post['uri']
             print('Subject successfully created with URI: {}'.format(uri))

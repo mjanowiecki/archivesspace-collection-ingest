@@ -1,10 +1,9 @@
 import requests
-from pandas.conftest import datetime_series
-
 import secret
 import pandas as pd
 from datetime import datetime
 import time
+
 
 start_time = time.time()
 
