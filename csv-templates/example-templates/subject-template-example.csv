@@ -1,8 +1,12 @@
-"term","authority_id","source","term_type",
-"Blue jay","http://id.worldcat.org/fast/834963","fast","topical",
-"Ornithology","http://id.worldcat.org/fast/1048358","fast","topical",
-"Oak","http://id.worldcat.org/fast/1042610","fast","topical",
-"Maryland--Baltimore County","http://id.worldcat.org/fast/1204502","fast","geographic",
-"feathers (animal components)","http://vocab.getty.edu/page/aat/300400474","aat","genre_form",
-"microcassettes","http://vocab.getty.edu/page/aat/300310080","aat","genre_form",
-"Hurricane Isabel (2003)","http://id.worldcat.org/fast/1755024","fast","temporal",
+"term","authority_id","source","term_type"
+"Blue jay","http://id.worldcat.org/fast/834963","fast","topical"
+"Ornithology","http://id.worldcat.org/fast/1048358","fast","topical"
+"Oak","http://id.worldcat.org/fast/1042610","fast","topical"
+"Maryland--Baltimore County","http://id.worldcat.org/fast/1204502","fast","geographic"
+"feathers (animal components)","http://vocab.getty.edu/page/aat/300400474","aat","genre_form"
+"microcassettes","http://vocab.getty.edu/page/aat/300310080","aat","genre_form"
+"Hurricane Isabel (2003)","http://id.worldcat.org/fast/1755024","fast","temporal"
+"Research grants","http://id.worldcat.org/fast/1095281","fast","topical"
+"Awards","http://id.worldcat.org/fast/824442","fast","topical"
+"photographs","http://vocab.getty.edu/page/aat/300046300","aat","genre_form"
+
