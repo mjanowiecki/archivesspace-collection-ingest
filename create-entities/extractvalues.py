@@ -19,7 +19,7 @@ date_role_values = list(ser.get('date_role'))
 date_type_struct_values = list(ser.get('date_type_structured'))
 date_standard_values = list(ser.get('date_standardized_type'))
 
-# Extent-related lists
+# Extentrelated lists
 portion_values = list(ser.get('extent_portion'))
 instance_type_values = list(ser.get('instance_instance_type'))
 
@@ -27,14 +27,20 @@ instance_type_values = list(ser.get('instance_instance_type'))
 language_values = list(ser.get('language_iso639_2'))
 script_values = list(ser.get('script_iso15924'))
 
+# Linked agent related lists
+role_values = list(ser.get('linked_agent_role'))
+relator_values = list(ser.get('linked_agent_archival_record_relators'))
+
+# Name-related lists
+name_source_values = list(ser.get('name_source'))
+name_rule_values = list(ser.get('name_rule'))
+name_order_values = list(ser.get('name_person_name_order'))
+
 # Note-related lists
 note_type_values = list(ser.get('note_multipart_type'))
 subnote_type_values = list(ser.get('note_singlepart_type'))
 local_access_restrict_values = list(ser.get('restriction_type'))
-
-# Linked agent related lists
-role_values = list(ser.get('linked_agent_role'))
-relator_values = list(ser.get('linked_agent_archival_record_relators'))
+digital_object_note_values = list(ser.get('note_digital_object_type'))
 
 # Subject-related lists
 subject_source_values = list(ser.get('subject_source'))
@@ -44,13 +50,11 @@ subject_type_values = list(ser.get('subject_term_type'))
 container_type_values = list(ser.get('container_type'))
 location_status_values = list(ser.get('container_location_status'))
 
-# Name related lists
-name_source_values = list(ser.get('name_source'))
-name_rule_values = list(ser.get('name_rule'))
-name_order_values = list(ser.get('name_person_name_order'))
+
+# Dictionaries of subfields for main field with accepted values.
 
 # container_location (repeatable, separate by ||)
-#
+# example: status==current;;start_date==2019-07-18;;ref==/locations/37
 container_location_fields = {'status': location_status_values,
                              'start_date': 'Not controlled',
                              'end_date': 'Not controlled',
@@ -67,6 +71,7 @@ date_fields = {'begin': 'Not controlled',
                'label': date_label_values}
 
 # dates_of_existence (repeatable, separate by ||)
+# example: date_type_structured==range;;date_certainty==approximate;;begin_date_expression==1985;;end_date_expression==2010
 dates_of_existence_fields = {'date_type_structured': date_type_struct_values,
                              'date_certainty': certainty_values}
 
@@ -103,6 +108,7 @@ instance_fields = {'instance_type': instance_type_values,
                    'is_representative': boolean_values}
 sub_container_fields = {'indicator_2': 'Not controlled',
                         'type_2': instance_type_values}
+
 instance_keys = list(instance_fields.keys())
 sub_container_keys = list(sub_container_fields.keys())
 
@@ -121,6 +127,15 @@ linked_agents_fields = {'ref': 'Not controlled',
                         'relators': relator_values,
                         'role': role_values}
 
+# file_versions (repeatable, separated by ||)
+# example: file_uri==https://jscholarship.library.jhu.edu/handle/1774.2/68775;;publish==TRUE;;caption==This digital material is online.
+# Click here to access it.;;is_representative==FALSE;;identifier==32195
+file_versions_fields = {'file_uri': 'Not controlled',
+                        'publish': boolean_values,
+                        'caption': 'Not controlled',
+                        'is_representative': boolean_values,
+                        'identifier': 'Not controlled'}
+
 
 # note_multipart (repeatable, separate by ||)
 # example: type==accessrestrict;;publish==True;;content==Digital content is available offline.
@@ -137,16 +152,23 @@ subnote_fields = {'content': 'Not controlled',
                   'publish': boolean_values,
                   'type': note_type_values}
 
-
 # agent_notes (repeatable, separated by ||)
-# example:
+# example: content==Choreographer and artistic directory of the Peabody Preparatory dance department,
+# circa 1985-2010.;;publish==TRUE;;type==bioghist
 agent_notes_jsonmodel_types = ['bioghist', 'mandate', 'legal_status',
                                'structure_or_genealogy', 'general_context']
 agent_note_fields = {'content': 'Not controlled',
                      'publish': boolean_values,
                      'type': agent_notes_jsonmodel_types}
 
+# do_notes (repeatable, separated by ||)
+# example: type==summary;;content==This digital material is part of the AllNighters a cappella group records,
+# collection ID RG-14-420.;;publish==TRUE
+do_note_fields = {'type': digital_object_note_values,
+                  'publish': boolean_values,
+                  'content': 'Not controlled'}
 
+# Functions to get info out of CSV and into JSON
 
 # This function validates values from enumerations.csv controlled lists for specified JSON fields.
 def validate_field_values(container, field_key, field_value, valid_field_dict):
@@ -225,7 +247,6 @@ def add_controlled_term(row_name, dict_name, json_field, value_from_csv, control
         print('{} field not found in CSV.'.format(value_from_csv))
 
 
-
 # This function grabs a value fom your CSV and adds it as a {'ref': value_from_csv} pair to JSON file you are building.
 # row_name is the name of your row variable.
 # dic_name is the name of the dictionary variable where your {'ref': value_from_csv} pair is being added.
@@ -267,6 +288,7 @@ def split_pattern(value_from_csv):
         list_of_values.append(value_in_dict)
     return list_of_values
 
+
 # This function checks to see if a values exist in cell and if so, uses split_pattern function to divide into subfields and values.
 def check_for_values(row_name, value_from_csv):
         value_from_csv = row_name.get(value_from_csv)
@@ -296,41 +318,7 @@ def build_subfields(row_name, value_from_csv, jsonmodel_type, field_dictionary):
         pass
 
 
-def add_multipart_note(row_name, value_from_csv):
-    try:
-        value_from_csv = row_name[value_from_csv]
-        list_of_values = split_pattern(value_from_csv)
-        notes_multipart = []
-        if list_of_values:
-            note = {'jsonmodel_type': 'note_multipart', 'publish': True}
-            subnotes = []
-            rights_restriction = {}
-            for entry in list_of_values:
-                subnote = {'jsonmodel_type': 'note_text'}
-                for key, value in entry.items():
-                    if key == 'type':
-                        validate_field_values(note, key, value, note_fields)
-                    elif key in rights_keys:
-                        validate_field_values(rights_restriction, key, value, rights_restriction_fields)
-                    else:
-                        validate_field_values(subnote, key, value, note_fields)
-                subnotes.append(subnote)
-            note['subnotes'] = subnotes
-            if rights_restriction:
-                value_1 = rights_restriction['local_access_restriction_type']
-                rights_restriction['local_access_restriction_type'] = [value_1]
-                note['rights_restriction'] = rights_restriction
-            notes_multipart.append(note)
-        if notes_multipart:
-            return notes_multipart
-    except KeyError:
-        pass
-
-
-def add_singlepart_note(row_name, value_from_csv):
-    note_singlepart = build_subfields(row_name, value_from_csv, 'note_singlepart', note_fields)
-    return note_singlepart
-
+# Functions to build specific complex fields
 
 def add_extents(row_name, value_from_csv):
     extents = build_subfields(row_name, value_from_csv, 'extent', extent_fields)
@@ -373,11 +361,19 @@ def add_dates_of_existence(row_name, value_from_csv):
         pass
 
 
+def add_file_versions(row_name, value_from_csv):
+    file_versions = build_subfields(row_name, value_from_csv, 'file_versions', file_versions_fields)
+    return file_versions
+
+
+def add_locations(row_name, value_from_csv):
+    container_locations = build_subfields(row_name, value_from_csv, 'container_location', container_location_fields)
+    return container_locations
+
 
 def add_linked_agents(row_name, value_from_csv):
     linked_agents = build_subfields(row_name, value_from_csv, None, date_fields)
     return linked_agents
-
 
 
 def add_instances(row_name, value_from_csv):
@@ -426,6 +422,43 @@ def add_lang_materials(row_name, value_from_csv):
     else:
         pass
 
+
+def add_multipart_note(row_name, value_from_csv):
+    try:
+        value_from_csv = row_name[value_from_csv]
+        list_of_values = split_pattern(value_from_csv)
+        notes_multipart = []
+        if list_of_values:
+            note = {'jsonmodel_type': 'note_multipart', 'publish': True}
+            subnotes = []
+            rights_restriction = {}
+            for entry in list_of_values:
+                subnote = {'jsonmodel_type': 'note_text'}
+                for key, value in entry.items():
+                    if key == 'type':
+                        validate_field_values(note, key, value, note_fields)
+                    elif key in rights_keys:
+                        validate_field_values(rights_restriction, key, value, rights_restriction_fields)
+                    else:
+                        validate_field_values(subnote, key, value, note_fields)
+                subnotes.append(subnote)
+            note['subnotes'] = subnotes
+            if rights_restriction:
+                value_1 = rights_restriction['local_access_restriction_type']
+                rights_restriction['local_access_restriction_type'] = [value_1]
+                note['rights_restriction'] = rights_restriction
+            notes_multipart.append(note)
+        if notes_multipart:
+            return notes_multipart
+    except KeyError:
+        pass
+
+
+def add_singlepart_note(row_name, value_from_csv):
+    note_singlepart = build_subfields(row_name, value_from_csv, 'note_singlepart', note_fields)
+    return note_singlepart
+
+
 def add_agent_notes(row_name, value_from_csv):
     list_of_values = check_for_values(row_name, value_from_csv)
     if list_of_values:
@@ -450,6 +483,6 @@ def add_agent_notes(row_name, value_from_csv):
             pass
 
 
-def add_locations(row_name, value_from_csv):
-    container_locations = build_subfields(row_name, value_from_csv, 'container_location', container_location_fields)
-    return container_locations
+def add_do_notes(row_name, value_from_csv):
+    do_notes = build_subfields(row_name, value_from_csv, 'note_digital_object', do_note_fields)
+    return do_notes
