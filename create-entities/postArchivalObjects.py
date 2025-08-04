@@ -67,7 +67,6 @@ for index, row in df.iterrows():
     ev.add_single_string_value(row, archival_object_record, 'repository_processing_note', 'repository_processing_note')
     ev.add_single_string_value(row, archival_object_record, 'position', 'position')
     ev.add_single_string_value(row, archival_object_record, 'component_id', 'component_id')
-    ev.add_single_string_value(row, archival_object_record, 'other_level', 'other_level')
 
     # For optional fields with 'ref' key, use function to add.
     ev.add_ref_value(row, archival_object_record, 'parent', 'parent', 'single')

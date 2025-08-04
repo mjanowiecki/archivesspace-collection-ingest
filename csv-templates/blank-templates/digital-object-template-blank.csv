@@ -1,1 +1,2 @@
-
+"req;bool","req;str","req;ctrl list","req;bool","req;bool","opt;ctrl list","opt;sub type","opt;sub type","opt;sub type","opt;sub type","opt;sub type","opt;ref","opt;sub type","← delete this row before ingest"
+"publish","title","digital_object_id","restrictions","suppressed","digital_object_type","file_versions","lang_materials","dates","extents","agent_links","subjects","notes",
