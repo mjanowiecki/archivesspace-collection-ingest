@@ -206,6 +206,28 @@ def add_single_string_value(row_name, dict_name, json_field, value_from_csv):
     except KeyError:
         print('{} field not found in CSV.'.format(value_from_csv))
 
+# This function grabs a boolean value from your spreadsheet and adds it to the JSON record you are building.
+# row_name is the name of your row variable.
+# dic_name is the name of the dictionary variable where your field (aka key) and value pair is being added.
+# json_field is what you want to name the field (key) in the JSON file.
+# value_from_csv is the name of the column in the CSV.
+
+def add_boolean_value(row_name, dict_name, json_field, value_from_csv):
+    try:
+        value_from_csv = row_name[value_from_csv]
+        # If value_from_csv is not blank, add to JSON.
+        if pd.notna(value_from_csv):
+            if isinstance(value_from_csv, bool):
+                value_from_csv = value_from_csv
+            elif isinstance(value_from_csv, str):
+                value_from_csv = ast.literal_eval(value_from_csv)
+                value_from_csv = value_from_csv
+            else:
+                print('{} should be a boolean.'.format(value_from_csv))
+            dict_name[json_field] = value_from_csv
+    except KeyError:
+        print('{} field not found in CSV.'.format(value_from_csv))
+
 # This function grabs a value from your spreadsheet and adds it to the JSON record you are building.
 # row_name is the name of your row variable.
 # dic_name is the name of the dictionary variable where your field (aka key) and value pair is being added.

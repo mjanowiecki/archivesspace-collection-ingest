@@ -42,7 +42,7 @@ if post_record == 'True':
 
     auth = requests.post(base_url+'/users/'+user+'/login?password='+password).json()
     session = auth['session']
-    headers = {'X-ArchivesSpace-Session': session, 'Content_Type': 'application/json'}
+    headers = {'X-ArchivesSpace-Session': session}
 else:
     pass
 
@@ -90,13 +90,9 @@ for index, row in df.iterrows():
     item_log = {}
 
     if post_record == 'True':
-        # Create JSON record for person.
-        person_record = json.dumps(person_record)
-        print('JSON created for {}.'.format(sort_name))
-
         try:
             # Try to POST JSON to ArchivesSpace API people endpoint.
-            post = requests.post(base_url+'/agents/people', headers=headers, data=person_record).json()
+            post = requests.post(base_url+'/agents/people', headers=headers, json=person_record).json()
             print(json.dumps(post))
             uri = post['uri']
             print('Person successfully created with URI: {}'.format(uri))
@@ -138,7 +134,7 @@ log = pd.DataFrame.from_records(all_items)
 # Create CSV of all item logs.
 dt = datetime.now().strftime('%Y-%m-%d%H.%M.%S')
 person_csv = 'postNewPersonalAgentsLog_'+dt+'.csv'
-log.to_csv(person_csv)
+log.to_csv(person_csv, index=False)
 print('{} created.'.format(person_csv))
 
 elapsed_time = time.time() - start_time

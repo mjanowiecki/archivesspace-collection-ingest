@@ -23,6 +23,7 @@ user = secret.user
 password = secret.password
 
 auth = requests.post(base_url+'/users/'+user+'/login?password='+password).json()
+print(auth)
 session = auth["session"]
 headers = {'X-ArchivesSpace-Session': session, 'Content_Type': 'application/json'}
 print('authenticated')

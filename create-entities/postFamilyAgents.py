@@ -42,7 +42,7 @@ if post_record == 'True':
 
     auth = requests.post(base_url+'/users/'+user+'/login?password='+password).json()
     session = auth['session']
-    headers = {'X-ArchivesSpace-Session': session, 'Content_Type': 'application/json'}
+    headers = {'X-ArchivesSpace-Session': session}
 else:
     pass
 
@@ -56,7 +56,7 @@ for index, row in df.iterrows():
 
     # Get agent information from CSV.
     publish_family = row.get('publish_family')
-    family_record = {'agent_type': 'agent_family', 'publish': publish_family}
+    family_record = {'agent_type': 'agent_family', 'jsonmodel_type': 'agent_family', 'publish': publish_family}
     names = []
     name = {'jsonmodel_type': 'name_family',
             'sort_name_auto_generate': True,
@@ -85,13 +85,9 @@ for index, row in df.iterrows():
     item_log = {}
 
     if post_record == 'True':
-        # Create JSON record for family.
-        family_record = json.dumps(family_record)
-        print('JSON created for {}.'.format(sort_name))
-
         try:
             # Try to POST JSON to ArchivesSpace API families endpoint.
-            post = requests.post(base_url+'/agents/families', headers=headers, data=family_record).json()
+            post = requests.post(base_url+'/agents/families', headers=headers, json=family_record).json()
             print(json.dumps(post))
             uri = post['uri']
             print('Family successfully created with URI: {}'.format(uri))
@@ -133,7 +129,7 @@ log = pd.DataFrame.from_records(all_items)
 # Create CSV of all item logs.
 dt = datetime.now().strftime('%Y-%m-%d%H.%M.%S')
 familyCSV = 'postNewFamilyAgents_'+dt+'.csv'
-log.to_csv(familyCSV)
+log.to_csv(familyCSV, index=False)
 print('{} created.'.format(familyCSV))
 
 elapsed_time = time.time() - start_time

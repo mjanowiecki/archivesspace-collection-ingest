@@ -42,7 +42,7 @@ if post_record == 'True':
 
     auth = requests.post(base_url+'/users/'+user+'/login?password='+password).json()
     session = auth['session']
-    headers = {'X-ArchivesSpace-Session': session, 'Content_Type': 'application/json'}
+    headers = {'X-ArchivesSpace-Session': session}
 else:
     pass
 
@@ -62,9 +62,6 @@ for index, row in df.iterrows():
                        'repository': {'ref': '/repositories/3'}, 'barcode': str(barcode), 'indicator': str(indicator),
                        'type': str(container_type)}
 
-
-
-    ev.add_ref_value(row, container_record, 'collection', 'collection_ref', 'multiple')
     ev.add_ref_value(row, container_record, 'container_profile', 'container_profile', 'single')
     container_locations = ev.add_locations(row, 'container_location' )
     if container_locations:
@@ -73,28 +70,30 @@ for index, row in df.iterrows():
     item_log = {}
 
     if post_record == 'True':
-        # Create JSON record for top container.
-        container_record = json.dumps(container_record)
-        print('JSON created for {}.'.format(barcode))
-
         try:
             # Try to POST JSON to ArchivesSpace API top container endpoint.
-            post = requests.post(base_url+'/repositories/'+repository+'/top_containers', headers=headers, data=container_record).json()
-            print(json.dumps(post))
-            uri = post['uri']
+            post_response = requests.post(base_url+'/repositories/'+repository+'/top_containers', headers=headers, json=container_record).json()
+            print(json.dumps(post_response))
+            uri = post_response['uri']
             print('Top container successfully created with URI: {}'.format(uri))
             item_log = {'uri': uri, 'barcode': barcode, 'indicator': indicator}
             # Add item log to list of logs
             all_items.append(item_log)
-            
 
         except requests.exceptions.JSONDecodeError:
             # If POST to ArchivesSpace fails, break loop.
             item_log = {'uri': 'error', 'barcode': barcode}
             # Add item log to list of logs
             all_items.append(item_log)
-            print('POST to AS failed, breaking loop.')
-            break
+            print('POST to AS failed.')
+
+        except KeyError:
+            # If JSON error occurs, record here.
+            error = post_response['error']
+            item_log = {'error': error, 'subject_name': term}
+            # Add item log to list of logs
+            all_items.append(item_log)
+            print('POST to AS failed.')
     else:
         # Create JSON records on your computer to review. Does not post to AS.
         dt = datetime.now().strftime('%Y-%m-%d')
@@ -115,7 +114,7 @@ log = pd.DataFrame.from_records(all_items)
 # Create CSV of all item logs.
 dt = datetime.now().strftime('%Y-%m-%d%H.%M.%S')
 top_container_csv = 'postNewTopContainersLog_'+dt+'.csv'
-log.to_csv(top_container_csv)
+log.to_csv(top_container_csv, index=False)
 print('{} created.'.format(top_container_csv))
 
 elapsed_time = time.time() - start_time

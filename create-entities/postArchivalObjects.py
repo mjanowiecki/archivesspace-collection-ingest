@@ -42,7 +42,7 @@ if post_record == 'True':
 
     auth = requests.post(base_url + '/users/' + user + '/login?password=' + password).json()
     session = auth['session']
-    headers = {'X-ArchivesSpace-Session': session, 'Content_Type': 'application/json'}
+    headers = {'X-ArchivesSpace-Session': session, 'Content-Type': 'application/json'}
 else:
     pass
 

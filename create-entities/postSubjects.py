@@ -42,7 +42,7 @@ if post_record == 'True':
 
     auth = requests.post(base_url+'/users/'+user+'/login?password='+password).json()
     session = auth['session']
-    headers = {'X-ArchivesSpace-Session': session, 'Content_Type': 'application/json'}
+    headers = {'X-ArchivesSpace-Session': session}
 else:
     pass
 
@@ -57,12 +57,12 @@ for index, row in df.iterrows():
 
     # Build JSON record for subject.
     subject_record = {'jsonmodel_type': 'subject', 'vocabulary': '/vocabularies/1',
-                      'publish': True, 'title': term}
+                      'publish': True, 'is_slug_auto': True, 'title': term}
 
     ev.add_controlled_term(row, subject_record,'source', 'source', ev.subject_source_values)
     ev.add_single_string_value(row, subject_record, 'authority_id', 'authority_id')
 
-    term_dict = {'jsonmodel_type': 'term', 'vocabulary': '/vocabularies/1'}
+    term_dict = {'jsonmodel_type': 'term', 'vocabulary': '/vocabularies/1', 'term': term}
     ev.add_controlled_term(row, term_dict, 'term_type', 'term_type', ev.subject_type_values)
     subject_record['terms'] = [term_dict]
 
@@ -70,16 +70,12 @@ for index, row in df.iterrows():
     item_log = {}
 
     if post_record == 'True':
-        # Create JSON record for subject.
-        subject_record = json.dumps(subject_record)
-        print(subject_record)
-        print('JSON created for {}.'.format(term))
-
         try:
             # Try to POST JSON to ArchivesSpace API subject endpoint.
-            post = requests.post(base_url+'/subjects', headers=headers, data=subject_record).json()
+            post_response = requests.post(base_url+'/subjects', headers=headers, json=subject_record).json()
+            print(post_response)
             # Get URI and add to item log
-            uri = post['uri']
+            uri = post_response['uri']
             print('Subject successfully created with URI: {}'.format(uri))
             item_log = {'uri': uri, 'subject_name': term}
             # Add item log to list of logs
@@ -94,7 +90,7 @@ for index, row in df.iterrows():
 
         except KeyError:
             # If JSON error occurs, record here.
-            error = post['error']
+            error = post_response['error']
             item_log = {'error': error, 'subject_name': term}
             # Add item log to list of logs
             all_items.append(item_log)
@@ -120,7 +116,7 @@ log = pd.DataFrame.from_records(all_items)
 # Create CSV of all item logs.
 dt = datetime.now().strftime('%Y-%m-%d%H.%M.%S')
 subject_csv = 'postNewSubjectsLog_'+dt+'.csv'
-log.to_csv(subject_csv)
+log.to_csv(subject_csv, index=False)
 print('{} created.'.format(subject_csv))
 
 elapsed_time = time.time() - start_time

@@ -42,7 +42,7 @@ if post_record == 'True':
 
     auth = requests.post(base_url+'/users/'+user+'/login?password='+password).json()
     session = auth['session']
-    headers = {'X-ArchivesSpace-Session': session, 'Content_Type': 'application/json'}
+    headers = {'X-ArchivesSpace-Session': session}
 else:
     pass
 
@@ -53,25 +53,24 @@ all_items = []
 for index, row in df.iterrows():
     # Get agent information from CSV.
     primary_name = row['primary_name']
+    sort_name = row['sort_name']
     print('Gathering corporate entity #{}: {}.'.format(index, primary_name))
-
     corporate_record = {'jsonmodel_type': 'agent_corporate_entity'}
-    ev.add_single_string_value(row, corporate_record, 'publish', 'publish_corporate_body')
+    ev.add_boolean_value(row, corporate_record, 'publish', 'publish_corporate_body')
     names = []
-    name = {'jsonmodel_type': 'name_corporate_entity',
-            'sort_name_auto_generate': True,
-            'authorized': True,
-            'is_display_name': True}
+    name = {'jsonmodel_type': 'name_corporate_entity', 'sort_name_auto_generate': True,
+            'authorized': True, 'is_display_name': True,}
     ev.add_single_string_value(row, name, 'authority_id', 'authority_id')
     ev.add_single_string_value(row, name, 'source', 'source')
     ev.add_single_string_value(row, name, 'rules', 'rules')
+    ev.add_single_string_value(row, name, 'primary_name', 'primary_name')
     ev.add_single_string_value(row, name, 'subordinate_name_1', 'subordinate_name_1')
     ev.add_single_string_value(row, name, 'subordinate_name_2', 'subordinate_name_2')
     ev.add_single_string_value(row, name, 'number', 'number')
     ev.add_single_string_value(row, name, 'dates', 'dates')
     ev.add_single_string_value(row, name, 'location', 'location')
-    ev.add_single_string_value(row, name, 'conference_meeting', 'conference_meeting')
-    ev.add_single_string_value(row, name, 'jurisdiction', 'jurisdiction')
+    ev.add_boolean_value(row, name, 'conference_meeting', 'conference_meeting')
+    ev.add_boolean_value(row, name, 'jurisdiction', 'jurisdiction')
     ev.add_single_string_value(row, name, 'qualifier', 'qualifier')
     names.append(name)
     corporate_record['names'] = names
@@ -88,18 +87,13 @@ for index, row in df.iterrows():
     item_log = {}
 
     if post_record == 'True':
-        # Create JSON record for corporate entity.
-        corporate_record = json.dumps(corporate_record)
-        print('JSON created for {}.'.format(primary_name))
-
         try:
             # Try to POST JSON to ArchivesSpace API corporate entities' endpoint.
-            post = requests.post(base_url+'/agents/corporate_entities', headers=headers, data=corporate_record).json()
-            print(json.dumps(post))
-            uri = post['uri']
-            title = post['title']
+            post_response = requests.post(base_url+'/agents/corporate_entities', headers=headers, json=corporate_record).json()
+            print(json.dumps(post_response))
+            uri = post_response['uri']
             print('Corporate entity successfully created with URI: {}'.format(uri))
-            item_log = {'uri': uri, 'agent_name': title}
+            item_log = {'uri': uri, 'agent_name': sort_name}
             # Add item log to list of logs
             all_items.append(item_log)
 
@@ -112,7 +106,7 @@ for index, row in df.iterrows():
 
         except KeyError:
             # If JSON error occurs, record here.
-            error = post['error']
+            error = post_response['error']
             item_log = {'error': error, 'agent_name': primary_name}
             # Add item log to list of logs
             all_items.append(item_log)
@@ -139,7 +133,7 @@ log = pd.DataFrame.from_records(all_items)
 # Create CSV of all item logs.
 dt = datetime.now().strftime('%Y-%m-%d%H.%M.%S')
 corporateCSV = 'postNewCorporateAgents_'+dt+'.csv'
-log.to_csv(corporateCSV)
+log.to_csv(corporateCSV, index=False)
 print('{} created.'.format(corporateCSV))
 
 elapsed_time = time.time() - start_time
