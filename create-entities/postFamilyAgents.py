@@ -87,9 +87,8 @@ for index, row in df.iterrows():
     if post_record == 'True':
         try:
             # Try to POST JSON to ArchivesSpace API families endpoint.
-            post = requests.post(base_url+'/agents/families', headers=headers, json=family_record).json()
-            print(json.dumps(post))
-            uri = post['uri']
+            post_response = requests.post(base_url+'/agents/families', headers=headers, json=family_record).json()
+            uri = post_response['uri']
             print('Family successfully created with URI: {}'.format(uri))
             item_log = {'uri': uri, 'agent_name': sort_name}
             # Add item log to list of logs
@@ -104,7 +103,7 @@ for index, row in df.iterrows():
 
         except KeyError:
             # If JSON error occurs, record here.
-            error = post['error']
+            error = post_response['error']
             item_log = {'error': error, 'agent_name': sort_name}
             # Add item log to list of logs
             all_items.append(item_log)

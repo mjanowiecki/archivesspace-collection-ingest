@@ -19,7 +19,7 @@ date_role_values = list(ser.get('date_role'))
 date_type_struct_values = list(ser.get('date_type_structured'))
 date_standard_values = list(ser.get('date_standardized_type'))
 
-# Extentrelated lists
+# Extent-related lists
 portion_values = list(ser.get('extent_portion'))
 instance_type_values = list(ser.get('instance_instance_type'))
 
@@ -38,7 +38,7 @@ name_order_values = list(ser.get('name_person_name_order'))
 
 # Note-related lists
 note_type_values = list(ser.get('note_multipart_type'))
-subnote_type_values = list(ser.get('note_singlepart_type'))
+note_single_type_values = list(ser.get('note_singlepart_type'))
 local_access_restrict_values = list(ser.get('restriction_type'))
 digital_object_note_values = list(ser.get('note_digital_object_type'))
 
@@ -49,6 +49,9 @@ subject_type_values = list(ser.get('subject_term_type'))
 # Top container related lists
 container_type_values = list(ser.get('container_type'))
 location_status_values = list(ser.get('container_location_status'))
+
+# Digital object related lists
+digital_object_type = list(ser.get('digital_object_digital_object_type'))
 
 
 # Dictionaries of subfields for main field with accepted values.
@@ -124,7 +127,7 @@ lang_material_fields = {'content': 'Not controlled',
 # linked_agents (repeatable, separate by ||)
 # example: role==creator;;relator==pht;;ref==/agents/corporate_entities/388
 linked_agents_fields = {'ref': 'Not controlled',
-                        'relators': relator_values,
+                        'relator': relator_values,
                         'role': role_values}
 
 # file_versions (repeatable, separated by ||)
@@ -148,9 +151,9 @@ rights_keys = list(rights_restriction_fields.keys())
 
 # note_singlepart (not repeatable)
 # example: type==physdesc;;publish==True;;content==The handwritten letter is fragile and should be handled with care.
-subnote_fields = {'content': 'Not controlled',
+single_note_fields = {'content': 'Not controlled - List',
                   'publish': boolean_values,
-                  'type': note_type_values}
+                  'type': note_single_type_values}
 
 # agent_notes (repeatable, separated by ||)
 # example: content==Choreographer and artistic directory of the Peabody Preparatory dance department,
@@ -166,7 +169,7 @@ agent_note_fields = {'content': 'Not controlled',
 # collection ID RG-14-420.;;publish==TRUE
 do_note_fields = {'type': digital_object_note_values,
                   'publish': boolean_values,
-                  'content': 'Not controlled'}
+                  'content': 'Not controlled - List'}
 
 # Functions to get info out of CSV and into JSON
 
@@ -178,14 +181,16 @@ def validate_field_values(container, field_key, field_value, valid_field_dict):
         field_value = ast.literal_eval(field_value)
     retrieved_field_value = valid_field_dict.get(field_key)
     if retrieved_field_value is None:
-        print('{} field is not in {}.'.format(field_key, valid_field_dict))
+        print('{} subfield from {} is not in {}.'.format(field_key, container, valid_field_dict.keys()))
     elif retrieved_field_value == 'Not controlled':
         container[field_key] = field_value
+    elif retrieved_field_value == 'Not controlled - List':
+        container[field_key] = [field_value]
     else:
         if field_value in retrieved_field_value:
             container[field_key] = field_value
         else:
-            print('{} field has bad {} field_value.'.format(field_key, field_value))
+            print('{} field for {} has bad value of "{}". Value must be in {}.'.format(field_key, container, field_value, retrieved_field_value))
 
 # This function grabs a value from your spreadsheet and adds it to the JSON record you are building.
 # row_name is the name of your row variable.
@@ -290,7 +295,7 @@ def add_ref_value(row_name, dict_name, json_field, value_from_csv, repeat):
                     new_list.append(new_dict)
                 dict_name[json_field] = new_list
     except KeyError:
-        print('{} field not found in CSV.'.format(value_from_csv))
+        pass
 
 
 # This function splits up a list into subfields and values based on specified patterns.
@@ -369,7 +374,7 @@ def add_dates_of_existence(row_name, value_from_csv):
                     elif key in date_single_keys:
                         validate_field_values(structured_date_single, key, value, date_single_fields)
                     else:
-                        print('Error!')
+                        print('{} not found in dates of existence subfields.'.format(key))
                 if structured_date_range:
                     structured_date_range['jsonmodel_type'] = 'structured_date_range'
                     date_of_existence['structured_date_range'] = structured_date_range
@@ -384,7 +389,7 @@ def add_dates_of_existence(row_name, value_from_csv):
 
 
 def add_file_versions(row_name, value_from_csv):
-    file_versions = build_subfields(row_name, value_from_csv, 'file_versions', file_versions_fields)
+    file_versions = build_subfields(row_name, value_from_csv, 'file_version', file_versions_fields)
     return file_versions
 
 
@@ -394,7 +399,7 @@ def add_locations(row_name, value_from_csv):
 
 
 def add_linked_agents(row_name, value_from_csv):
-    linked_agents = build_subfields(row_name, value_from_csv, None, date_fields)
+    linked_agents = build_subfields(row_name, value_from_csv, None, linked_agents_fields)
     return linked_agents
 
 
@@ -413,7 +418,7 @@ def add_instances(row_name, value_from_csv):
                 elif key in sub_container_keys:
                     validate_field_values(sub_container, key, value, sub_container_fields)
                 else:
-                    print('Error!')
+                    print('{} not found in instance subfields.'.format(key))
             instance['sub_container'] = sub_container
             instances.append(instance)
         if instances:
@@ -428,15 +433,21 @@ def add_lang_materials(row_name, value_from_csv):
         lang_materials = []
         for entry in list_of_values:
             lang_material = {'jsonmodel_type': 'lang_material'}
+            language_and_script = {}
+            notes = []
+            note = {}
             for key, value in entry.items():
-                if key == 'language':
-                    validate_field_values(lang_material, key, value, lang_material_fields)
+                if (key == 'language') or (key == 'script'):
+                    validate_field_values(language_and_script, key, value, lang_material_fields)
                 else:
-                    notes = []
-                    note = {'jsonmodel_type': 'note_langmaterial'}
                     validate_field_values(note, key, value, lang_material_fields)
+            if language_and_script:
+                language_and_script['jsonmodel_type'] = 'language_and_script'
+                lang_material['language_and_script'] = language_and_script
             if note:
+                note['jsonmodel_type'] = 'note_langmaterial'
                 notes.append(note)
+            if notes:
                 lang_material['notes'] = notes
             lang_materials.append(lang_material)
         if lang_materials:
@@ -447,10 +458,9 @@ def add_lang_materials(row_name, value_from_csv):
 
 def add_multipart_note(row_name, value_from_csv):
     try:
-        value_from_csv = row_name[value_from_csv]
-        list_of_values = split_pattern(value_from_csv)
-        notes_multipart = []
+        list_of_values = check_for_values(row_name, value_from_csv)
         if list_of_values:
+            notes_multipart = []
             note = {'jsonmodel_type': 'note_multipart', 'publish': True}
             subnotes = []
             rights_restriction = {}
@@ -470,14 +480,14 @@ def add_multipart_note(row_name, value_from_csv):
                 rights_restriction['local_access_restriction_type'] = [value_1]
                 note['rights_restriction'] = rights_restriction
             notes_multipart.append(note)
-        if notes_multipart:
-            return notes_multipart
+            if notes_multipart:
+                return notes_multipart
     except KeyError:
         pass
 
 
 def add_singlepart_note(row_name, value_from_csv):
-    note_singlepart = build_subfields(row_name, value_from_csv, 'note_singlepart', note_fields)
+    note_singlepart = build_subfields(row_name, value_from_csv, 'note_singlepart', single_note_fields)
     return note_singlepart
 
 

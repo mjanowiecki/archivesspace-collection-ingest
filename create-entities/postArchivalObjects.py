@@ -65,7 +65,7 @@ for index, row in df.iterrows():
 
     # For optional fields, try to find value and add to archival_object_record if found.
     ev.add_single_string_value(row, archival_object_record, 'repository_processing_note', 'repository_processing_note')
-    ev.add_single_string_value(row, archival_object_record, 'position', 'position')
+    ev.add_integer_value(row, archival_object_record, 'position', 'position')
     ev.add_single_string_value(row, archival_object_record, 'component_id', 'component_id')
 
     # For optional fields with 'ref' key, use function to add.
@@ -119,14 +119,10 @@ for index, row in df.iterrows():
 
     if post_record == 'True':
         # Create JSON record for archival object.
-        archival_object_record = json.dumps(archival_object_record)
-        print('JSON created for {}.'.format(title))
-
         try:
             # Try to POST JSON to ArchivesSpace API archival object endpoint.
-            post = requests.post(base_url+'/repositories/'+repository+'/archival_objects', headers=headers, data=archival_object_record).json()
-            print(json.dumps(post))
-            uri = post['uri']
+            post_response = requests.post(base_url+'/repositories/'+repository+'/archival_objects', headers=headers, json=archival_object_record).json()
+            uri = post_response['uri']
             print('Archival object successfully created with URI: {}'.format(uri))
             item_log = {'uri': uri, 'title': title}
             # Add item log to list of logs
@@ -141,10 +137,11 @@ for index, row in df.iterrows():
 
         except KeyError:
             # If JSON error occurs, record here.
-            error = post['error']
+            error = post_response['error']
             item_log = {'error': error, 'title': title}
             # Add item log to list of logs
             all_items.append(item_log)
+            print(error)
             print('POST to AS failed.')
 
     else:
@@ -168,7 +165,7 @@ log = pd.DataFrame.from_records(all_items)
 # Create CSV of all item logs.
 dt = datetime.now().strftime('%Y-%m-%d%H.%M.%S')
 archival_object_csv = 'postNewArchivalObjectsLog_'+dt+'.csv'
-log.to_csv(archival_object_csv)
+log.to_csv(archival_object_csv, index=False)
 print('{} created.'.format(archival_object_csv))
 
 elapsed_time = time.time() - start_time

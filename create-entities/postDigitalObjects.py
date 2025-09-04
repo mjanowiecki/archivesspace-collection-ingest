@@ -62,7 +62,7 @@ for index, row in df.iterrows():
     digital_object_record['publish'] = row['publish']
     digital_object_record['restrictions'] = row['restrictions']
     digital_object_record['suppressed'] = row['suppressed']
-    digital_object_record['digital_object_type'] = row['digital_object_type']
+    ev.add_controlled_term(row,digital_object_record, 'digital_object_type', 'digital_object_type', ev.digital_object_type)
 
     # For optional fields with 'ref' key, use function to add.
     ev.add_ref_value(row, digital_object_record, 'subjects', 'subjects', 'multi')
@@ -108,14 +108,12 @@ for index, row in df.iterrows():
 
     if post_record == 'True':
         # Create JSON record for archival object.
-        digital_object_record = json.dumps(digital_object_record)
         print('JSON created for {}.'.format(title))
 
         try:
             # Try to POST JSON to ArchivesSpace API digital object endpoint.
-            post = requests.post(base_url+'/repositories/'+repository+'/digital_objects', headers=headers, data=digital_object_record).json()
-            print(json.dumps(post))
-            uri = post['uri']
+            post_response = requests.post(base_url+'/repositories/'+repository+'/digital_objects', headers=headers, json=digital_object_record).json()
+            uri = post_response['uri']
             print('Digital object successfully created with URI: {}'.format(uri))
             item_log = {'uri': uri, 'title': title}
             # Add item log to list of logs
@@ -130,7 +128,7 @@ for index, row in df.iterrows():
 
         except KeyError:
             # If JSON error occurs, record here.
-            error = post['error']
+            error = post_response['error']
             item_log = {'error': error, 'title': title}
             # Add item log to list of logs
             all_items.append(item_log)
@@ -157,7 +155,7 @@ log = pd.DataFrame.from_records(all_items)
 # Create CSV of all item logs.
 dt = datetime.now().strftime('%Y-%m-%d%H.%M.%S')
 digital_object_csv = 'postNewDigitalObjectsLog_'+dt+'.csv'
-log.to_csv(digital_object_csv)
+log.to_csv(digital_object_csv, index=False)
 print('{} created.'.format(digital_object_csv))
 
 elapsed_time = time.time() - start_time

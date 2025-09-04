@@ -61,8 +61,8 @@ for index, row in df.iterrows():
     name = {'jsonmodel_type': 'name_corporate_entity', 'sort_name_auto_generate': True,
             'authorized': True, 'is_display_name': True,}
     ev.add_single_string_value(row, name, 'authority_id', 'authority_id')
-    ev.add_single_string_value(row, name, 'source', 'source')
-    ev.add_single_string_value(row, name, 'rules', 'rules')
+    ev.add_controlled_term(row, name, 'source', 'source', ev.name_source_values)
+    ev.add_controlled_term(row, name, 'rules', 'rules', ev.name_rule_values)
     ev.add_single_string_value(row, name, 'primary_name', 'primary_name')
     ev.add_single_string_value(row, name, 'subordinate_name_1', 'subordinate_name_1')
     ev.add_single_string_value(row, name, 'subordinate_name_2', 'subordinate_name_2')
@@ -90,7 +90,6 @@ for index, row in df.iterrows():
         try:
             # Try to POST JSON to ArchivesSpace API corporate entities' endpoint.
             post_response = requests.post(base_url+'/agents/corporate_entities', headers=headers, json=corporate_record).json()
-            print(json.dumps(post_response))
             uri = post_response['uri']
             print('Corporate entity successfully created with URI: {}'.format(uri))
             item_log = {'uri': uri, 'agent_name': sort_name}

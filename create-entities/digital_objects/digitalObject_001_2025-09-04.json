@@ -1,0 +1,65 @@
+{
+  "jsonmodel_type": "digital_object",
+  "is_slug_auto": false,
+  "title": "Digital photographs of blue jay",
+  "digital_object_id": "EX-0001_001",
+  "publish": true,
+  "restrictions": false,
+  "suppressed": false,
+  "digital_object_type": "Still image",
+  "subjects": [
+    {
+      "ref": "/subjects/2437"
+    },
+    {
+      "ref": "/subjects/2727"
+    }
+  ],
+  "dates": [
+    {
+      "label": "creation",
+      "date_type": "inclusive",
+      "begin": "2003-03",
+      "end": "2003-12",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "linked_agents": [
+    {
+      "role": "creator",
+      "ref": "/agents/people/6454"
+    }
+  ],
+  "notes": [
+    {
+      "type": "summary",
+      "content": "These photographs are part of the Blue Jay Example Collection, id EX-0001.",
+      "publish": true,
+      "jsonmodel_type": "note_digital_object"
+    },
+    {
+      "type": "accessrestrict",
+      "content": "A digital copy of the photographs are available for access upon request. Contact Special Collections for more information.",
+      "publish": true,
+      "jsonmodel_type": "note_digital_object"
+    }
+  ],
+  "extents": [
+    {
+      "portion": "whole",
+      "number": "8.78",
+      "extent_type": "gigabytes",
+      "container_summary": "Disk EX-001_001",
+      "physical_details": "tiff",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "file_versions": [
+    {
+      "file_uri": "u:/collections/EX-001/digital_objects/photographs",
+      "publish": true,
+      "is_representative": false,
+      "jsonmodel_type": "file_version"
+    }
+  ]
+}

@@ -57,7 +57,7 @@ for index, row in df.iterrows():
 
     # Build JSON record for person.
     person_record = {'agent_type': 'agent_person'}
-    ev.add_controlled_term(row, person_record, 'publish', 'publish_person', ev.boolean_values)
+    ev.boolean_values(row, person_record, 'publish', 'publish_person')
     names = []
     name = {'jsonmodel_type': 'name_person',
             'sort_name_auto_generate': True,
@@ -92,9 +92,8 @@ for index, row in df.iterrows():
     if post_record == 'True':
         try:
             # Try to POST JSON to ArchivesSpace API people endpoint.
-            post = requests.post(base_url+'/agents/people', headers=headers, json=person_record).json()
-            print(json.dumps(post))
-            uri = post['uri']
+            post_response = requests.post(base_url+'/agents/people', headers=headers, json=person_record).json()
+            uri = post_response['uri']
             print('Person successfully created with URI: {}'.format(uri))
             item_log = {'uri': uri, 'agent_name': sort_name}
             # Add item log to list of logs
@@ -109,7 +108,7 @@ for index, row in df.iterrows():
 
         except KeyError:
             # If JSON error occurs, record here.
-            error = post['error']
+            error = post_response['error']
             item_log = {'error': error, 'agent_name': sort_name}
             # Add item log to list of logs
             all_items.append(item_log)

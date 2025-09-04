@@ -73,7 +73,6 @@ for index, row in df.iterrows():
         try:
             # Try to POST JSON to ArchivesSpace API subject endpoint.
             post_response = requests.post(base_url+'/subjects', headers=headers, json=subject_record).json()
-            print(post_response)
             # Get URI and add to item log
             uri = post_response['uri']
             print('Subject successfully created with URI: {}'.format(uri))
