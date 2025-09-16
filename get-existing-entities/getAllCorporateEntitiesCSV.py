@@ -4,7 +4,7 @@ import pandas as pd
 from datetime import datetime
 import time
 
-
+# Start script timer.
 start_time = time.time()
 
 # Gather login info and authenticate session in ArchivesSpace.
@@ -34,7 +34,7 @@ corporate_ids = requests.get(base_url+endpoint, headers=headers).json()
 total_corporate_entities = len(corporate_ids)
 print('Total of {} corporate_entities.'.format(total_corporate_entities))
 
-# Get properties from each corporate entity and put in all_items.
+# Get properties from each corporate entity and put in all_items log.
 all_items = []
 for count, corporate_id in enumerate(corporate_ids):
     endpoint = '/agents/corporate_entities/'+str(corporate_id)
@@ -64,7 +64,7 @@ for count, corporate_id in enumerate(corporate_ids):
     corporate_dict['location'] = location
     all_items.append(corporate_dict)
 
-# Convert all_items to CSV and save.
+# Convert all_items to DataFrame, then to CSV and save.
 df = pd.DataFrame.from_records(all_items)
 print(df.head(15))
 dt = datetime.now().strftime('%Y-%m-%d%H.%M.%S')

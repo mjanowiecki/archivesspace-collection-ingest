@@ -1,11 +1,10 @@
-import csv
-
 import pandas as pd
 import argparse
 from datetime import datetime
 import os
 import csv
 
+# Create argparse inputs for terminal.
 parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--file')
 parser.add_argument('-d', '--directory')
@@ -20,9 +19,10 @@ if args.directory:
 else:
     directory = input('Enter directory containing log csvs: ')
 
-
+# Read archival or digital object file into DataFrame.
 metadata = pd.read_csv(filename, dtype=str)
 
+# Create single DataFrame from taxonomy CSVs.
 dataframes = []
 for count, file in enumerate(os.listdir(directory)):
     file = directory + "/" + file
@@ -33,6 +33,7 @@ for count, file in enumerate(os.listdir(directory)):
 
 find_replace = pd.concat(dataframes)
 
+# Loop through taxonomy terms and replace name with URI in specific fields in archival or digital object spreadsheet.
 for index, row in find_replace.iterrows():
     old_term = row['agent_name']
     new_term = row['uri']

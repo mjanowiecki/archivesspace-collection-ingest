@@ -1,3 +1,5 @@
+"""Create family JSON files for ArchivesSpace from CSV template. Option to POST to ArchivesSpace via API or save JSON file to local machine."""
+
 import json
 import requests
 import secret
@@ -7,6 +9,7 @@ import argparse
 from datetime import datetime
 import extractvalues as ev
 
+# Create argparse inputs for terminal.
 parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--file')
 parser.add_argument('-p', '--post_record')
@@ -19,10 +22,12 @@ else:
 if args.post_record:
     post_record = args.post_record
 else:
-    post_record = input('Enter True to post records to AS.')
+    post_record = input('Enter True to post records to AS: ')
 
+# Start script timer.
 start_time = time.time()
 
+# If posting to ArchivesSpace, authenticate to stage or production instance with secret files.
 if post_record == 'True':
     # Log into ArchivesSpace and start session on selected server.
     secretVersion = input('To edit production server, enter secret filename: ')
@@ -57,6 +62,8 @@ for index, row in df.iterrows():
     # Get agent information from CSV.
     publish_family = row.get('publish_family')
     family_record = {'agent_type': 'agent_family', 'jsonmodel_type': 'agent_family', 'publish': publish_family}
+
+    # Add name components.
     names = []
     name = {'jsonmodel_type': 'name_family',
             'sort_name_auto_generate': True,
@@ -73,10 +80,12 @@ for index, row in df.iterrows():
     names.append(name)
     family_record['names'] = names
 
+    # Add dates of existence.
     dates = ev.add_dates_of_existence(row, 'dates_of_existence')
     if dates:
         family_record['dates_of_existence'] = dates
 
+    # Add notes.
     notes = ev.add_agent_notes(row, 'notes')
     if notes:
         family_record['notes'] = notes
@@ -122,15 +131,16 @@ for index, row in df.iterrows():
         all_items.append(item_log)
     print('')
 
-# Convert all_items to DataFrame.
+# Convert all_items log to DataFrame.
 log = pd.DataFrame.from_records(all_items)
 
-# Create CSV of all item logs.
+# Create CSV of item log from DataFrame.
 dt = datetime.now().strftime('%Y-%m-%d%H.%M.%S')
 familyCSV = 'postNewFamilyAgents_'+dt+'.csv'
 log.to_csv(familyCSV, index=False)
 print('{} created.'.format(familyCSV))
 
+# Calculate total time of script and print to terminal.
 elapsed_time = time.time() - start_time
 m, s = divmod(elapsed_time, 60)
 h, m = divmod(m, 60)

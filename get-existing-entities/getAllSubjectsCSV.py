@@ -4,6 +4,7 @@ import pandas as pd
 from datetime import datetime
 import time
 
+# Start script timer.
 start_time = time.time()
 
 # Gather login info and authenticate session in ArchivesSpace.
@@ -32,7 +33,7 @@ subject_ids = requests.get(base_url+endpoint, headers=headers).json()
 total_subjects = len(subject_ids)
 print('Total of {} subjects.'.format(total_subjects))
 
-# Get properties from each subject and put in all_items.
+# Get properties from each subject and put in all_items log.
 all_items = []
 for count, subject_id in enumerate(subject_ids):
     subject_dict = {}
@@ -52,7 +53,7 @@ for count, subject_id in enumerate(subject_ids):
     subject_dict['term_type'] = term_type
     all_items.append(subject_dict)
 
-# Convert all_items to CSV and save.
+# Convert all_items to DataFrame, then to CSV and save.
 df = pd.DataFrame.from_records(all_items)
 print(df.head(15))
 dt = datetime.now().strftime('%Y-%m-%d%H.%M.%S')

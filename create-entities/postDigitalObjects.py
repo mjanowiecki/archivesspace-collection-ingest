@@ -1,3 +1,5 @@
+"""Create digital object JSON files for ArchivesSpace from CSV template. Option to POST to ArchivesSpace via API or save JSON file to local machine."""
+
 import pandas as pd
 import json
 import argparse
@@ -8,6 +10,7 @@ from datetime import datetime
 import os
 import secret
 
+# Create argparse inputs for terminal.
 parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--file')
 parser.add_argument('-p', '--post_record')
@@ -20,10 +23,12 @@ else:
 if args.post_record:
     post_record = args.post_record
 else:
-    post_record = input('Enter True to post records to AS.')
+    post_record = input('Enter True to post records to AS: ')
 
+# Start script timer.
 start_time = time.time()
 
+# If posting to ArchivesSpace, authenticate to stage or production instance with secret files.
 if post_record == 'True':
     secretVersion = input('To edit production server, enter secret filename: ')
     if secretVersion != '':
@@ -107,7 +112,7 @@ for index, row in df.iterrows():
     item_log = {}
 
     if post_record == 'True':
-        # Create JSON record for archival object.
+        # Create JSON record for digital object.
         print('JSON created for {}.'.format(title))
 
         try:
@@ -149,15 +154,16 @@ for index, row in df.iterrows():
         all_items.append(item_log)
     print('')
 
-# Convert all_items to DataFrame.
+# Convert all_items log to DataFrame.
 log = pd.DataFrame.from_records(all_items)
 
-# Create CSV of all item logs.
+# Create CSV of item log from DataFrame.
 dt = datetime.now().strftime('%Y-%m-%d%H.%M.%S')
 digital_object_csv = 'postNewDigitalObjectsLog_'+dt+'.csv'
 log.to_csv(digital_object_csv, index=False)
 print('{} created.'.format(digital_object_csv))
 
+# Calculate total time of script and print to terminal.
 elapsed_time = time.time() - start_time
 m, s = divmod(elapsed_time, 60)
 h, m = divmod(m, 60)

@@ -3,6 +3,10 @@ import secret
 import pandas as pd
 import argparse
 from datetime import datetime
+import time
+
+# Start script timer.
+start_time = time.time()
 
 secretVersion = input('To edit production server, enter the name of the secret file: ')
 if secretVersion != '':
@@ -47,6 +51,7 @@ print(auth)
 print(session)
 headers = {'X-ArchivesSpace-Session': session, 'Content_Type': 'application/json'}
 
+# Get properties from each digital object and put in all_items log.
 all_items = []
 for count, item in enumerate(itemList):
     digital_dict = {}
@@ -60,7 +65,7 @@ for count, item in enumerate(itemList):
         collect_property(file, 'file_uri')
     all_items.append(digital_dict)
 
-# Convert all_items to CSV and save.
+# Convert all_items to DataFrame, then to CSV and save.
 df = pd.DataFrame.from_records(all_items)
 print(df.head)
 dt = datetime.now().strftime('%Y-%m-%d%H.%M.%S')

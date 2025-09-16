@@ -1,10 +1,11 @@
-"""Joins two CSV using pandas left merge on an identifier."""
+"""Joins two CSVs using pandas left merge on an identifier."""
 
 import pandas as pd
 import argparse
 from datetime import datetime
 import csv
 
+# Create argparse inputs for terminal.
 parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--file')
 parser.add_argument('-f2', '--file2')
