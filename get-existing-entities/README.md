@@ -1,0 +1,1 @@
+This folder contains scripts to get all of a specific entity from your ArchivesSpace instance via API (for instance, all subjects) and saves the metadata details to a CSV. Please note, these scripts do not collect every single field and value associated with the entities.
