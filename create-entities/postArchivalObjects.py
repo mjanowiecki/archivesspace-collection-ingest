@@ -119,6 +119,15 @@ for index, row in df.iterrows():
     if instances:
         archival_object_record['instances'] = instances
 
+    digital_objects = ev.add_digital_objects(row, 'digital_objects')
+    if digital_objects:
+        instances = archival_object_record.get('instances')
+        if instances:
+            for digital_object in digital_objects:
+                instances.append(digital_object)
+        else:
+            archival_object_record['instances'] = digital_objects
+
     # Create dictionary for item log.
     item_log = {}
 

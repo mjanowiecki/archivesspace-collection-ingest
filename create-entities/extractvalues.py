@@ -94,6 +94,10 @@ dates_of_existence_keys = list(dates_of_existence_fields.keys())
 date_range_keys = list(date_range_fields.keys())
 date_single_keys = list(date_single_fields.keys())
 
+# digital_objects (repeatable, separate by ||)
+# example: ref==/repositories/3/digital_objects/141;;is_representative==False
+digital_object_fields = {'ref': 'Not controlled',
+                         'is_representative' : boolean_values}
 
 # extents (repeatable, separate by ||)
 # example: portion==whole;;extent_type==cubic_feet;;number==.167;;container_summary==1 legal size folder
@@ -387,6 +391,18 @@ def add_dates_of_existence(row_name, value_from_csv):
     else:
         pass
 
+
+def add_digital_objects(row_name, value_from_csv):
+    digital_objects = build_subfields(row_name, value_from_csv, 'instance', digital_object_fields)
+    if digital_objects:
+        for digital_object in digital_objects:
+            digital_object['instance_type'] = 'digital_object'
+            ref = digital_object['ref']
+            digital_object['digital_object'] = {'ref': ref}
+            del digital_object['ref']
+        return digital_objects
+    else:
+        pass
 
 def add_file_versions(row_name, value_from_csv):
     file_versions = build_subfields(row_name, value_from_csv, 'file_version', file_versions_fields)

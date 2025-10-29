@@ -52,6 +52,12 @@ for index, row in find_replace.iterrows():
     if pd.notnull(old_term):
         metadata['instances'] = metadata['instances'].str.replace(old_term, new_term, regex=False)
 
+for index, row in find_replace.iterrows():
+    old_term = row.get('title')
+    new_term = row.get('uri')
+    if pd.notnull(old_term):
+        metadata['digital_objects'] = metadata['digital_objects'].str.replace(old_term, new_term, regex=False)
+
 
 # Create CSV for new DataFrame.
 filename = filename[:-4]
